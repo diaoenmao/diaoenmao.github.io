@@ -2,18 +2,18 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Enmao Diao
     - name: Date of Birth
-      value: 14th March 1879
+      value: 7th July 1994
     - name: Languages
-      value: English, German
+      value: Chinese, English
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Ph.D. in Electrical and Computer Engineering
+      institution: Duke University
+      year: 2023
       description:
         - Description 1.
         - Description 2.
@@ -21,9 +21,21 @@
           contents:
             - Sub-description 1.
             - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+    - title: M.S. in Electrical and Computer Engineering
+      institution: Harvard University
+      year: 2018
+      description:
+        - Description 1.
+        - Description 2.
+    - title: B.S. in Electrical and Computer Engineering
+      institution: Georgian Institute of Technology
+      year: 2016
+      description:
+        - Description 1.
+        - Description 2.
+    - title: B.S. in Computer Science
+      institution: Georgian Institute of Technology
+      year: 2016
       description:
         - Description 1.
         - Description 2.
@@ -31,9 +43,9 @@
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Postdoctoral Researcher
+      institution: Duke University
+      year: 2023-now
       description:
         - Description 1.
         - Description 2.
@@ -41,32 +53,22 @@
           contents:
             - Sub-description 1.
             - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
+    - title: Applied Scientist
+      institution: Amazon
+      year: 2021
+      description:
+        - Description 1.
+        - Description 2.
+        - title: Description 3.
+          contents:
+            - Sub-description 1.
+            - Sub-description 2.
+    - title: Project Manager
+      institution: Duke Data+
       year: 1933
       description:
         - Description 1.
         - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 
 - title: Honors and Awards
   type: time_table
@@ -82,7 +84,7 @@
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Journal Reviewer
       items: 
         - Description 1.
         - Description 2.
