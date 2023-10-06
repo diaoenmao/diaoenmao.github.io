@@ -3,6 +3,7 @@ version: "3"
 services:
   jekyll:
     image: amirpourmand/al-folio
+    # command: jekyll serve --watch --drafts --incremental
     ports:
       - 8080:8080
     volumes:

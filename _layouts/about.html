@@ -4,13 +4,6 @@ layout: default
 
 <!-- about.html -->
       <div class="post">
-        <header class="post-header">
-          <h1 class="post-title">
-            {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
-          </h1>
-          <p class="desc">{{ page.subtitle }}</p>
-        </header>
-
         <article>
           {% if page.profile -%}
           <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
@@ -29,33 +22,43 @@ layout: default
               alt=page.profile.image
               cache_bust=true -%}
             {% endif -%}
+
+          </div>
+          {%- endif %}
+
+        </article>
+
+          <div class="clearfix">
+          <header class="post-header">
+          <h1 class="post-title">
+              <span class="font-weight-bold">{{ site.first_name }} </span> {{ site.last_name }} ({{ site.cn_name }})
+          </h1>
+            <p class="desc">{{ page.subtitle }}</p>
+          </header>
+
             {%- if page.profile.more_info %}
             <div class="more-info">
               {{ page.profile.more_info }}
             </div>
             {%- endif %}
-          </div>
-          {%- endif %}
 
+            {%- if page.profile.goal %}
+            <div class="goal">
+              {{ page.profile.goal }}
+            </div>
+
+            {%- endif %}
            <!-- Social -->
           {%- if page.social %}
             <div class="social">
               <div class="contact-icons">
                 {% include social.html %}
               </div>
-
-              <div class="contact-note">
-                {{ site.contact_note }}
               </div>
-
-            </div>
           {%- endif %}
-        </article>
-
-          <div class="clearfix">
-            {{ content }}
           </div>
 
+          {{ content }}
           <!-- News -->
           {% if page.news and site.announcements.enabled -%}
             <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
@@ -70,7 +73,7 @@ layout: default
 
           <!-- Selected papers -->
           {% if page.selected_papers -%}
-            <h2>selected publications <a href="{{ '/publications/' | relative_url }}" style="color: inherit;">[full list]</a></h2>
+            <h2>selected publications <a href="{{ '/publications/' | relative_url }}">[full list]</a></h2>
             {%- include selected_papers.html %}
           {%- endif %}
 
