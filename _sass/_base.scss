@@ -629,10 +629,11 @@ footer.sticky-bottom {
 
         abbr {
           display: inline-block;
-          background-color: var(--global-theme-color);
+          //background-color: var(--global-theme-color);
           padding-left: 1rem;
           padding-right: 1rem;
-
+          background-color: var(--global-theme-color) !important;
+          color: var(--global-bg-color) !important;
           a {
             color: white;
 
@@ -643,7 +644,7 @@ footer.sticky-bottom {
         }
 
         .award {
-          background-color: white;
+          background-color: var(--global-bg-color) !important;
           color: var(--global-theme-color) !important;
           border: 1px solid var(--global-theme-color);
         }
