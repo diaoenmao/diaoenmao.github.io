@@ -1,5 +1,5 @@
 <ul class="card-text font-weight-light list-group list-group-flush">
-  {% assign education = data[1] | sort: 'startDate' | reverse %}
+  {% assign education = data[1] | sort: 'date' | reverse %}
   {% for content in education %}
   <li class="list-group-item">
     <div class="row">
@@ -7,7 +7,7 @@
         {% if content.startDate and content.startDate!="" %}
         {% assign startDate = content.startDate | split: "-" | slice: 0,2 | join: "." %}
         {% assign endDate   = content.endDate   | split: "-" | slice: 0,2 | join: "." | default: "Present" %}
-        {% assign date = startDate | append: " - "%}
+        {% assign date = startDate | append: "<br>"%}
         {% assign date = date | append: endDate %}
         {% else %}
         {% assign date = null %}

@@ -4,67 +4,62 @@
     "label": "",
     "image": "",
     "email": "diao_em@hotmail.com",
-    "phone": "(404) 834-3911",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
-    "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
-    },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
-      }
-    ]
+    "phone": "+1 (404) 834-3911",
+    "website": "https://diaoenmao.com/"
   },
-  "work": [
+  "experience": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": [
-        "Relativity"
+      "name": "Duke University, Durham, North Carolina",
+      "position": "Postdoctoral Researcher",
+      "startDate": "2023-01",
+      "endDate": "Present",
+      "summary": "Developed Efficient and Collaborative Methods for Distributed Machine Learning and Artificial General Intelligence."
+    },
+    {
+      "name": "Amazon Alexa, Amazon, Cambridge, Massachusetts",
+      "position": "Applied Scientist",
+      "startDate": "2022-02",
+      "endDate": "2022-09",
+      "summary": "Studied Semi-Supervised and Personalized Federated Learning and developed its applications for Alexa devices."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Duke University, Durham, North Carolina",
+      "studyType": "Ph.D. in Electrical Engineering",
+      "startDate": "2018-08",
+      "endDate": "2023-09",
+      "courses": [
+        "Advised by <a href='https://ece.duke.edu/faculty/vahid-tarokh'>Prof. Vahid Tarokh</a> and <a href='http://jding.org/'>Prof. Jie Ding</a>"
+      ]
+    },
+    {
+      "institution": "Harvard University, Cambridge, Massachusetts",
+      "studyType": "M.S. in Electrical Engineering",
+      "startDate": "2016-08",
+      "endDate": "2018-05",
+      "courses": [
+        "Advised by <a href='https://ece.duke.edu/faculty/vahid-tarokh'>Prof. Vahid Tarokh</a> and <a href='http://jding.org/'>Prof. Jie Ding</a>"
+      ]
+    },
+     {
+      "institution": "Georgia Institute of Technology, Atlanta, Georgia",
+      "studyType": "B.S. in Electrical Engineering and Computer Science",
+      "startDate": "2012-08",
+      "endDate": "2016-05",
+      "courses": [
+        "Highest honor"
       ]
     }
   ],
   "volunteer": [],
-  "education": [
-    {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "",
-      "courses": [
-        "Theory of Relativity"
-      ]
-    }
-  ],
-  "awards": [
-    {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
-  ],
   "certificates": [],
   "publications": [],
   "skills": [],
   "languages": [
     {
-      "language": "German",
-      "fluency": "Native speaker"
+      "language": "Chinese",
+      "fluency": "Native"
     },
     {
       "language": "English",

@@ -121,7 +121,7 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: DreamSoul # blog_name will be displayed in your blog page
-blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
+blog_nav_title:  # your blog must have a title for it to be displayed in the nav bar
 blog_description: a simple whitespace theme for academics
 permalink: /blog/:year/:title/
 
@@ -404,7 +404,7 @@ jekyll_get_json:
     json: assets/json/resume.json # it can also be an url
 jsonresume:
   - basics
-  - work
+  - experience
   - education
   - publications
   - projects

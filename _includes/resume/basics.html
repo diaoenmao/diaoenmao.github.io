@@ -8,7 +8,7 @@
   <tr>
     <td class="p-1 pr-2 font-weight-bold"><b>{{ content[0] | capitalize }}</b></td>
     <td class="p-1 pl-2 font-weight-light text">
-      {% if content[0] == "url" %}
+      {% if content[0] == "website" %}
       <a href="{{ content[1] }}" target="_blank" rel="noopener noreferrer">{{ content[1] }}</a>
       {% elsif content[0] == "email" %}
       <a href="mailto:{{ content[1] }}" target="_blank">{{ content[1] }}</a>
