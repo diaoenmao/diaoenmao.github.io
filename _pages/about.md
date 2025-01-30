@@ -8,7 +8,7 @@ profile:
   align: left
   image: prof_pic.png
   image_circular: true # crops the image to make it circular
-  more_info: <strong>Research interests</strong> <br> Distributed Machine Learning, Efficient Machine Learning, <br> Signal Processing, Artificial General Intelligence
+  more_info: <strong>Research interests</strong> <br> Distributed Machine Learning, Efficient Machine Learning, <br> Signal Processing, Artificial Intelligence
   goal: <em>To develop ground-breaking ML methods and cutting-edge AI applications
 
 news: true  # includes a list of news items

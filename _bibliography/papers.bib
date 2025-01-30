@@ -250,18 +250,6 @@
   abstract={Classical change detection algorithms typically require modeling pre-change and post-change distributions. The calculations may not be feasible for various machine learning models because of the complexity of computing the partition functions and normalized distributions. Additionally, these methods may suffer from a lack of robustness to model mismatch and noise. In this paper, we develop a new variant of the classical Cumulative Sum (CUSUM) change detection, namely Score-based CUSUM (SCUSUM), based on Fisher divergence and the Hyvärinen score. Our method allows the applications of the quickest change detection for unnormalized distributions. We provide a theoretical analysis of the detection delay given the constraints on false alarms. We prove the asymptotic optimality of the proposed method in some particular cases. We also provide numerical experiments to demonstrate our method’s computation, performance, and robustness advantages.}
 }
 
-@article{wu2023quickest,
-  abbr={arXiv},
-  title={Quickest Change Detection for Unnormalized Statistical Models},
-  author={Wu, Suya and Diao, Enmao and Banerjee, Taposh and Ding, Jie and Tarokh, Vahid},
-  journal={arXiv e-prints},
-  pages={arXiv--2302},
-  year={2023},
-  pdf={https://arxiv.org/abs/2302.00250},
-  code={https://github.com/suuyawu/Quickest-Change-Detection-for-Unnormalized-Statistical-Models},
-  abstract={Classical quickest change detection algorithms require modeling pre-change and post-change distributions. Such an approach may not be feasible for various machine learning models because of the complexity of computing the explicit distributions. Additionally, these methods may suffer from a lack of robustness to model mismatch and noise. This paper develops a new variant of the classical Cumulative Sum (CUSUM) algorithm for the quickest change detection. This variant is based on Fisher divergence and the Hyvärinen score and is called the Score-based CUSUM (SCUSUM) algorithm. The SCUSUM algorithm allows the applications of change detection for unnormalized statistical models, i.e., models for which the probability density function contains an unknown normalization constant. The asymptotic optimality of the proposed algorithm is investigated by deriving expressions for average detection delay and the mean running time to a false alarm. Numerical results are provided to demonstrate the performance of the proposed algorithm.}
-}
-
 @inproceedings{diao2023semi,
   abbr={ICME},
   title={Semi-Supervised Federated Learning for Keyword Spotting},
@@ -308,15 +296,19 @@
   abstract={A primary function of back-propagation is to compute both the gradient of hidden representations and parameters for optimization with gradient descent. Training large models requires high computational costs due to their vast parameter sizes. While Parameter-Efficient Fine-Tuning (PEFT) methods aim to train smaller auxiliary models to save computational space, they still present computational overheads, especially in Fine-Tuning as a Service (FTaaS) for numerous users. We introduce Collaborative Adaptation (ColA) with Gradient Learning (GL), a parameter-free, model-agnostic fine-tuning approach that decouples the computation of the gradient of hidden representations and parameters. In comparison to PEFT methods, ColA facilitates more cost-effective FTaaS by offloading the computation of the gradient to low-cost devices. We also provide a theoretical analysis of ColA and experimentally demonstrate that ColA can perform on par or better than existing PEFT methods on various benchmarks.}
 }
 
-@article{diao2024large,
-  abbr={arXiv},
-  title={Large Deviation Analysis of Score-based Hypothesis Testing},
-  author={Diao, Enmao and Banerjee, Taposh and Tarokh, Vahid},
-  journal={arXiv preprint arXiv:2401.15519},
+@article{wu2023quickest,
+  abbr={TIT},
+  title={Quickest Change Detection for Unnormalized Statistical Models},
+  author={Wu, Suya and Diao, Enmao and Banerjee, Taposh and Ding, Jie and Tarokh, Vahid},
+  journal={IEEE Transactions on Information Theory (TIT)},
+  volume={70},
+  number={2},
+  pages={1220--1232},
   year={2024},
-  pdf={https://arxiv.org/abs/2401.15519},
-  code={https://github.com/diaoenmao/Large-Deviation-Analysis-for-Hypothesis-Testing-for-Score-based-Models},
-  abstract={Score-based statistical models play an important role in modern machine learning, statistics, and signal processing. For hypothesis testing, a score-based hypothesis test is proposed in \cite{wu2022score}. We analyze the performance of this score-based hypothesis testing procedure and derive upper bounds on the probabilities of its Type I and II errors. We prove that the exponents of our error bounds are asymptotically (in the number of samples) tight for the case of simple null and alternative hypotheses. We calculate these error exponents explicitly in specific cases and provide numerical studies for various other scenarios of interest.}
+  publisher={IEEE},
+  pdf={https://arxiv.org/abs/2302.00250},
+  code={https://github.com/suuyawu/Quickest-Change-Detection-for-Unnormalized-Statistical-Models},
+  abstract={Classical quickest change detection algorithms require modeling pre-change and post-change distributions. Such an approach may not be feasible for various machine learning models because of the complexity of computing the explicit distributions. Additionally, these methods may suffer from a lack of robustness to model mismatch and noise. This paper develops a new variant of the classical Cumulative Sum (CUSUM) algorithm for the quickest change detection. This variant is based on Fisher divergence and the Hyvärinen score and is called the Score-based CUSUM (SCUSUM) algorithm. The SCUSUM algorithm allows the applications of change detection for unnormalized statistical models, i.e., models for which the probability density function contains an unknown normalization constant. The asymptotic optimality of the proposed algorithm is investigated by deriving expressions for average detection delay and the mean running time to a false alarm. Numerical results are provided to demonstrate the performance of the proposed algorithm.}
 }
 
 @article{zhang2024data,
@@ -328,4 +320,15 @@
   publisher={IEEE},
   pdf={https://ieeexplore.ieee.org/document/10480715},
   abstract={In ground penetrating radar (GPR) B-scan images, ground surface clutter is the main source of interference, often obscuring or distorting subsurface target signals. We propose a deep autoencoder-based method to mitigate rough surface clutter in GPR images by treating it as an anomaly detection problem. First, the rough surface region in a B-scan image is partitioned into small patches, which act as the training dataset for the deep autoencoder. Through the training process, the autoencoder learns and captures the patterns associated with the rough surface patches. Following training, the entire B-scan image is divided into small patches of the same size as the training patches, and each of them is fed into the autoencoder to compute an anomaly score. To reconstruct a clutter-reduced B-scan image, we employ a weighted sum approach to aggregate all patches based on their anomaly scores. We evaluate our method against conventional subspace projection techniques using simulated and field-collected B-scans. The results clearly indicate that our approach surpasses these subspace methods. Furthermore, we employ t-distributed stochastic neighbor embedding (t-SNE) analysis to gain deeper insights into our method’s effectiveness in reducing rough surface clutter. The outcomes of this analysis reinforce the practical viability of our approach for GPR image processing.}
+}
+
+@article{diao2024large,
+  abbr={arXiv},
+  title={Large Deviation Analysis of Score-based Hypothesis Testing},
+  author={Diao, Enmao and Banerjee, Taposh and Tarokh, Vahid},
+  journal={arXiv preprint arXiv:2401.15519},
+  year={2024},
+  pdf={https://arxiv.org/abs/2401.15519},
+  code={https://github.com/diaoenmao/Large-Deviation-Analysis-for-Hypothesis-Testing-for-Score-based-Models},
+  abstract={Score-based statistical models play an important role in modern machine learning, statistics, and signal processing. For hypothesis testing, a score-based hypothesis test is proposed in \cite{wu2022score}. We analyze the performance of this score-based hypothesis testing procedure and derive upper bounds on the probabilities of its Type I and II errors. We prove that the exponents of our error bounds are asymptotically (in the number of samples) tight for the case of simple null and alternative hypotheses. We calculate these error exponents explicitly in specific cases and provide numerical studies for various other scenarios of interest.}
 }
