@@ -4,7 +4,6 @@
     "label": "",
     "image": "",
     "email": "diao_em@hotmail.com",
-    "phone": "+1 (404) 834-3911",
     "website": "https://diaoenmao.com/"
   },
   "experience": [
@@ -13,14 +12,14 @@
       "position": "Postdoctoral Researcher",
       "startDate": "2023-10",
       "endDate": "2024-01",
-      "summary": "Developed Efficient and Collaborative Methods for Distributed Machine Learning and studied score-based methods."
+      "highlights": "Developed Efficient and Collaborative Methods for Distributed Machine Learning and studied score-based methods."
     },
     {
       "name": "Amazon Alexa, Amazon, Cambridge, Massachusetts",
       "position": "Applied Scientist",
       "startDate": "2022-02",
       "endDate": "2022-09",
-      "summary": "Studied Semi-Supervised and Personalized Federated Learning and developed its applications for Alexa devices."
+      "highlights": "Studied Semi-Supervised and Personalized Federated Learning and developed its applications for Alexa devices."
     }
   ],
   "education": [
