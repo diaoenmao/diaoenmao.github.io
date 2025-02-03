@@ -1,6 +1,8 @@
 github_users:
   - diaoenmao
 
+repo_description_lines_max: 2
+
 github_repos:
   - diaoenmao/DRASIC-Distributed-Recurrent-Autoencoder-for-Scalable-Image-Compression
   - diaoenmao/Dimension-Reduced-Turbulent-Flow-Data-From-Deep-Vector-Quantizers
