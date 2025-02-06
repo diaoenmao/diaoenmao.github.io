@@ -34,7 +34,7 @@
   author={Wu, Suya and Diao, Enmao and Ding, Jie and Tarokh, Vahid},
   booktitle={2020 Data Compression Conference (DCC)},
   pages={399--399},
-  year={2020},
+  year={2019},
   organization={IEEE},
   pdf={https://arxiv.org/abs/1910.10341},
   code={https://github.com/diaoenmao/Deep-Clustering-of-Compressed-Variational-Embeddings},
@@ -89,7 +89,7 @@
   title={HeteroFL: Computation and Communication Efficient Federated Learning for Heterogeneous Clients},
   author={Diao, Enmao and Ding, Jie and Tarokh, Vahid},
   booktitle={International Conference on Learning Representations (ICLR)},
-  year={2020},
+  year={2021},
   pdf={https://arxiv.org/abs/2010.01264},
   code={https://github.com/diaoenmao/HeteroFL-Computation-and-Communication-Efficient-Federated-Learning-for-Heterogeneous-Clients},
   selected={true},
@@ -216,7 +216,7 @@
   title={Pruning Deep Neural Networks from a Sparsity Perspective},
   author={Diao, Enmao and Wang, Ganghua and Zhang, Jiawei and Yang, Yuhong and Ding, Jie and Tarokh, Vahid},
   booktitle={The Eleventh International Conference on Learning Representations (ICLR)},
-  year={2022},
+  year={2023},
   pdf={https://arxiv.org/abs/2302.05601},
   code={https://github.com/diaoenmao/Pruning-Deep-Neural-Networks-from-a-Sparsity-Perspective},
   selected={true},
@@ -227,9 +227,9 @@
   abbr={CVMI},
   title={Multimodal Controller for Generative Models},
   author={Diao, Enmao and Ding, Jie and Tarokh, Vahid},
-  booktitle={Computer Vision and Machine Intelligence (CVMI)},
+  booktitle={Computer Vision and Machine Intelligence},
   pages={109--121},
-  year={2022},
+  year={2023},
   publisher={Springer},
   pdf={https://arxiv.org/abs/2002.02572},
   code={https://github.com/diaoenmao/Multimodal-Controller-for-Generative-Models},
@@ -255,7 +255,7 @@
   title={Semi-Supervised Federated Learning for Keyword Spotting},
   author={Diao, Enmao and Tramel, Eric W and Ding, Jie and Zhang, Tao},
   booktitle={2023 IEEE International Conference on Multimedia and Expo (ICME)},
-  pages={466-469},
+  pages={466--469},
   year={2023},
   organization={IEEE},
   pdf={https://arxiv.org/abs/2305.05110},
@@ -286,16 +286,6 @@
   abstract={Detecting an abrupt and persistent change in the underlying distribution of online data streams is an important problem in many applications. This paper proposes a new robust score-based algorithm called RSCUSUM, which can be applied to unnormalized models and addresses the issue of unknown post-change distributions. RSCUSUM replaces the Kullback-Leibler divergence with the Fisher divergence between pre- and post-change distributions for computational efficiency in unnormalized statistical models and introduces a notion of the ``least favorable'' distribution for robust change detection. The algorithm and its theoretical analysis are demonstrated through simulation studies.}
 }
 
-@article{diao2023cola,
-  abbr={arXiv},
-  title={ColA: Collaborative Adaptation with Gradient Learning},
-  author={Diao, Enmao and Le, Qi and Wu, Suya and Wang, Xinran and Anwar, Ali and Ding, Jie and Tarokh, Vahid},
-  year={2023},
-  pdf={},
-  code={https://github.com/diaoenmao/ColA-Collaborative-Adaptation-with-Gradient-Learning},
-  abstract={A primary function of back-propagation is to compute both the gradient of hidden representations and parameters for optimization with gradient descent. Training large models requires high computational costs due to their vast parameter sizes. While Parameter-Efficient Fine-Tuning (PEFT) methods aim to train smaller auxiliary models to save computational space, they still present computational overheads, especially in Fine-Tuning as a Service (FTaaS) for numerous users. We introduce Collaborative Adaptation (ColA) with Gradient Learning (GL), a parameter-free, model-agnostic fine-tuning approach that decouples the computation of the gradient of hidden representations and parameters. In comparison to PEFT methods, ColA facilitates more cost-effective FTaaS by offloading the computation of the gradient to low-cost devices. We also provide a theoretical analysis of ColA and experimentally demonstrate that ColA can perform on par or better than existing PEFT methods on various benchmarks.}
-}
-
 @article{wu2023quickest,
   abbr={TIT},
   title={Quickest Change Detection for Unnormalized Statistical Models},
@@ -304,11 +294,33 @@
   volume={70},
   number={2},
   pages={1220--1232},
-  year={2024},
+  year={2023},
   publisher={IEEE},
   pdf={https://arxiv.org/abs/2302.00250},
   code={https://github.com/suuyawu/Quickest-Change-Detection-for-Unnormalized-Statistical-Models},
+  selected={true},
   abstract={Classical quickest change detection algorithms require modeling pre-change and post-change distributions. Such an approach may not be feasible for various machine learning models because of the complexity of computing the explicit distributions. Additionally, these methods may suffer from a lack of robustness to model mismatch and noise. This paper develops a new variant of the classical Cumulative Sum (CUSUM) algorithm for the quickest change detection. This variant is based on Fisher divergence and the Hyvärinen score and is called the Score-based CUSUM (SCUSUM) algorithm. The SCUSUM algorithm allows the applications of change detection for unnormalized statistical models, i.e., models for which the probability density function contains an unknown normalization constant. The asymptotic optimality of the proposed algorithm is investigated by deriving expressions for average detection delay and the mean running time to a false alarm. Numerical results are provided to demonstrate the performance of the proposed algorithm.}
+}
+
+@phdthesis{diao2023efficient,
+  abbr={Thesis},
+  title={Efficient and Collaborative Methods for Distributed Machine Learning},
+  author={Diao, Enmao},
+  year={2023},
+  pdf={https://www.proquest.com/docview/2865965932},
+  selected={true},
+  school={Duke University},
+  abstract={In recent years, there has been a significant expansion in the scale and complexity of neural networks. This has resulted in significant demand for data, computation, and energy resources. In this light, it is crucial to enhance and optimize the efficiency of these ML models and algorithms. Additionally, the rise in computational capabilities of modern devices has prompted a shift towards distributed systems that enable localized data storage and model training. While this evolution promises substantial potential, it introduces a series of challenges. Such challenges encompass addressing the heterogeneity across systems, data, models, and supervision, balancing the trade-off among communication, computation, and performance, as well as building a community of shared interest to encourage collaboration in the emerging era of Artificial General Intelligence (AGI).In this dissertation, we contribute to the establishment of a theoretically justified, methodologically comprehensive, and universally applicable Efficient and Collaborative Distributed Machine Learning framework. Specifically, in Part I, we contribute to methodologies for Efficient Machine Learning including for both learning and inference. In this direction, we propose a parameter-efficient model, namely Restricted Recurrent Neural Networks (RRNN), that leverage the recurrent structures of RNNs using weight sharing in order to improve learning efficiency. We also introduce an optimal measure of vector sparsity named the PQ Index (PQI), and postulate a hypothesis connecting this sparsity measure and compressibility of neural networks. Based on this, we propose a Sparsity-informed Adaptive Pruning (SAP) algorithm. This algorithm adaptively determines the pruning ratio to enhance inference efficiency. In Part II, we address both efficiency and collaboration in Distributed Machine Learning. We introduce Distributed Recurrent Autoencoders for Scalable Image Compression (DRASIC), a data-driven Distributed Source Coding framework that can compress heterogeneous data in a scalable and distributed manner. We then propose Heterogeneous Federated Learning (HeteroFL), demonstrating the feasibility of training localized heterogeneous models to create a global inference model. Subsequently, we propose a new Federated Learning (FL) framework, namely SemiFL, to tackle Semi-Supervised Federated Learning (SSFL) for clients with unlabeled data. This method performs comparably with state-of-the-art centralized Semi-Supervised Learning (SSL), and fully supervised FL techniques. Finally, we propose Gradient Assisted Learning (GAL) in order to enable collaborations among multiple organizations without sharing data, models, and objective functions. This method significantly out-performs local learning baselines and achieves near-oracle performance. In Part III, we develop collaborative applications for building a community of shared interest. We apply SemiFL to Keyword Spotting (KWS), a technique widely used in virtual assistants. Numerical experiments demonstrate that one can train models from the scratch, or transfer from pre-trained models in order to leverage heterogeneous unlabeled on-device data, using only a small amount of labeled data from the server. Finally, we propose a Decentralized Multi-Target Cross-Domain Recommendation (DMTCDR) which enhances the recommendation performance of decentralized organizations without compromising data privacy or model confidentiality.}
+}
+
+@article{diao2023cola,
+  abbr={arXiv},
+  title={ColA: Collaborative Adaptation with Gradient Learning},
+  author={Diao, Enmao and Le, Qi and Wu, Suya and Wang, Xinran and Anwar, Ali and Ding, Jie and Tarokh, Vahid},
+  year={2024},
+  pdf={https://arxiv.org/abs/2404.13844},
+  code={https://github.com/diaoenmao/ColA-Collaborative-Adaptation-with-Gradient-Learning},
+  abstract={A primary function of back-propagation is to compute both the gradient of hidden representations and parameters for optimization with gradient descent. Training large models requires high computational costs due to their vast parameter sizes. While Parameter-Efficient Fine-Tuning (PEFT) methods aim to train smaller auxiliary models to save computational space, they still present computational overheads, especially in Fine-Tuning as a Service (FTaaS) for numerous users. We introduce Collaborative Adaptation (ColA) with Gradient Learning (GL), a parameter-free, model-agnostic fine-tuning approach that decouples the computation of the gradient of hidden representations and parameters. In comparison to PEFT methods, ColA facilitates more cost-effective FTaaS by offloading the computation of the gradient to low-cost devices. We also provide a theoretical analysis of ColA and experimentally demonstrate that ColA can perform on par or better than existing PEFT methods on various benchmarks.}
 }
 
 @article{zhang2024data,
@@ -319,16 +331,80 @@
   year={2024},
   publisher={IEEE},
   pdf={https://ieeexplore.ieee.org/document/10480715},
+  selected={true},
   abstract={In ground penetrating radar (GPR) B-scan images, ground surface clutter is the main source of interference, often obscuring or distorting subsurface target signals. We propose a deep autoencoder-based method to mitigate rough surface clutter in GPR images by treating it as an anomaly detection problem. First, the rough surface region in a B-scan image is partitioned into small patches, which act as the training dataset for the deep autoencoder. Through the training process, the autoencoder learns and captures the patterns associated with the rough surface patches. Following training, the entire B-scan image is divided into small patches of the same size as the training patches, and each of them is fed into the autoencoder to compute an anomaly score. To reconstruct a clutter-reduced B-scan image, we employ a weighted sum approach to aggregate all patches based on their anomaly scores. We evaluate our method against conventional subspace projection techniques using simulated and field-collected B-scans. The results clearly indicate that our approach surpasses these subspace methods. Furthermore, we employ t-distributed stochastic neighbor embedding (t-SNE) analysis to gain deeper insights into our method’s effectiveness in reducing rough surface clutter. The outcomes of this analysis reinforce the practical viability of our approach for GPR image processing.}
 }
 
-@article{diao2024large,
+@inproceedings{gu2024esc,
+  abbr={EMNLP},
+  title={ESC: Efficient Speech Coding with Cross-Scale Residual Vector Quantized Transformers},
+  author={Gu, Yuzhe and Diao, Enmao},
+  booktitle={2024 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  pages={10084--10096},
+  year={2024},
+  organization={ACL},
+  pdf={https://arxiv.org/abs/2404.19441},
+  code={https://github.com/yzguu830/efficient-speech-codec},
+  selected={true},
+  abstract={Neural speech codecs aim to compress input signals into minimal bits while maintaining content quality in a low-latency manner. However, existing neural codecs often trade model complexity for reconstruction performance. These codecs primarily use convolutional blocks for feature transformation, which are not inherently suited for capturing the local redundancies in speech signals. To compensate, they require either adversarial discriminators or a large number of model parameters to enhance audio quality. In response to these challenges, we introduce the Efficient Speech Codec (ESC), a lightweight, parameter-efficient speech codec based on a cross-scale residual vector quantization scheme and transformers. Our model employs mirrored hierarchical window transformer blocks and performs step-wise decoding from coarse-to-fine feature representations. To enhance bitrate efficiency, we propose a novel combination of vector quantization techniques along with a pre-training paradigm. Extensive experiments demonstrate that ESC can achieve high-fidelity speech reconstruction with significantly lower model complexity, making it a promising alternative to existing convolutional audio codecs.}
+}
+
+@inproceedings{zhang2024pixelcnn,
+  abbr={RadarConf},
+  title={A PixelCNN Based Method for Rough Surface Clutter Reduction in GPR B-scan Images},
+  author={Zhang, Yan and Diao, Enmao and Huston, Dryver and Xia, Tian},
+  booktitle={2024 IEEE Radar Conference (RadarConf24)},
+  pages={1--6},
+  year={2024},
+  pdf={https://ieeexplore.ieee.org/document/10549712/},
+  organization={IEEE},
+  selected={true},
+  abstract={Reducing the rough surface clutter in a Ground Penetrating Radar (GPR) B-scan image is essential for detecting shallow buried targets and for improving the performance of subsequent image processing algorithms. Challenges involved in this problem lie in the difficulties with modeling the variations of the rough surface profile. In this paper, we propose a novel PixelCNN based method for reducing rough surface clutter in GPR B-scan images. In the proposed method, the rough surface region in a B-scan image is split into small patches which are used to train a PixelCNN model. Given an input patch, the trained PixelCNN model can output the probability that the input patch comes from the rough surface region. For reconstructing a clutter reduced B-scan, the entire B-scan image is split into patches and each patch is input into the trained PixelCNN model to get its corresponding probability. Negative log-probabilities are then utilized as scores to suppress the rough surface region and to enhance the target profile in the B-scan image. To demonstrate the effectiveness of the proposed method, we test it on four simulation B-scan images and two real-world B-scan images. The proposed method is compared with traditional subspace projection methods. The results indicate that the proposed method outperforms traditional subspace projection methods.}
+}
+
+@article{moushegian2024robust,
   abbr={arXiv},
+  title={Robust Score-Based Quickest Change Detection},
+  author={Moushegian, Sean and Wu, Suya and Diao, Enmao and Ding, Jie and Banerjee, Taposh and Tarokh, Vahid},
+  journal={arXiv preprint arXiv:2407.11094},
+  year={2024},
+  pdf={https://arxiv.org/abs/2407.11094},
+  abstract={Methods in the field of quickest change detection rapidly detect in real-time a change in the data-generating distribution of an online data stream. Existing methods have been able to detect this change point when the densities of the pre- and post-change distributions are known. Recent work has extended these results to the case where the pre- and post-change distributions are known only by their score functions. This work considers the case where the pre- and post-change score functions are known only to correspond to distributions in two disjoint sets. This work employs a pair of "least-favorable" distributions to robustify the existing score-based quickest change detection algorithm, the properties of which are studied. This paper calculates the least-favorable distributions for specific model classes and provides methods of estimating the least-favorable distributions for common constructions. Simulation results are provided demonstrating the performance of our robust change detection algorithm.}
+}
+
+@article{diao2024large,
+  abbr={IEEE Access},
   title={Large Deviation Analysis of Score-based Hypothesis Testing},
   author={Diao, Enmao and Banerjee, Taposh and Tarokh, Vahid},
   journal={arXiv preprint arXiv:2401.15519},
   year={2024},
   pdf={https://arxiv.org/abs/2401.15519},
   code={https://github.com/diaoenmao/Large-Deviation-Analysis-for-Hypothesis-Testing-for-Score-based-Models},
+  selected={true},
   abstract={Score-based statistical models play an important role in modern machine learning, statistics, and signal processing. For hypothesis testing, a score-based hypothesis test is proposed in \cite{wu2022score}. We analyze the performance of this score-based hypothesis testing procedure and derive upper bounds on the probabilities of its Type I and II errors. We prove that the exponents of our error bounds are asymptotically (in the number of samples) tight for the case of simple null and alternative hypotheses. We calculate these error exponents explicitly in specific cases and provide numerical studies for various other scenarios of interest.}
+}
+
+@inproceedings{le2024dynamicfl,
+  abbr={IEEE BigData},
+  title={DynamicFL: Federated Learning with Dynamic Communication Resource Allocation},
+  author={Le, Qi and Diao, Enmao and Wang, Xinran and Khan, Ahmad Faraz and Tarokh, Vahid and Ding, Jie and Anwar, Ali},
+  booktitle={2024 IEEE International Conference on Big Data (BigData)},
+  pages={998--1008},
+  year={2024},
+  pdf={https://arxiv.org/abs/2409.04986},
+  code={https://github.com/Qi-Le1/DynamicFL},
+  organization={IEEE},
+  selected={true},
+  abstract={Federated Learning (FL) is a collaborative machine learning framework that allows multiple users to train models utilizing their local data in a distributed manner. However, considerable statistical heterogeneity in local data across devices often leads to suboptimal model performance compared with independently and identically distributed (IID) data scenarios. In this paper, we introduce DynamicFL, a new FL framework that investigates the trade-offs between global model performance and communication costs for two widely adopted FL methods: Federated Stochastic Gradient Descent (FedSGD) and Federated Averaging (FedAvg). Our approach allocates diverse communication resources to clients based on their data statistical heterogeneity, considering communication resource constraints, and attains substantial performance enhancements compared to uniform communication resource allocation. Notably, our method bridges the gap between FedSGD and FedAvg, providing a flexible framework leveraging communication heterogeneity to address statistical heterogeneity in FL. Through extensive experiments, we demonstrate that DynamicFL surpasses current state-of-the-art methods with up to a 10% increase in model accuracy, demonstrating its adaptability and effectiveness in tackling data statistical heterogeneity challenges.}
+}
+
+@article{wang2024map,
+  abbr={ICLR},
+  title={MAP: Multi-Human-Value Alignment Palette},
+  author={Wang, Xinran and Le, Qi and Ahmed, Ammar and Diao, Enmao and Zhou, Yi and Baracaldo, Nathalie and Ding, Jie and Anwar, Ali},
+  journal={arXiv preprint arXiv:2410.19198},
+  year={2024},
+  pdf={https://arxiv.org/abs/2410.19198},
+  selected={true},
+  abstract={Ensuring that generative AI systems align with human values is essential but challenging, especially when considering multiple human values and their potential trade-offs. Since human values can be personalized and dynamically change over time, the desirable levels of value alignment vary across different ethnic groups, industry sectors, and user cohorts. Within existing frameworks, it is hard to define human values and align AI systems accordingly across different directions simultaneously, such as harmlessness, helpfulness, and positiveness. To address this, we develop a novel, first-principle approach called Multi-Human-Value Alignment Palette (MAP), which navigates the alignment across multiple human values in a structured and reliable way. MAP formulates the alignment problem as an optimization task with user-defined constraints, which define human value targets. It can be efficiently solved via a primal-dual approach, which determines whether a user-defined alignment target is achievable and how to achieve it. We conduct a detailed theoretical analysis of MAP by quantifying the trade-offs between values, the sensitivity to constraints, the fundamental connection between multi-value alignment and sequential alignment, and proving that linear weighted rewards are sufficient for multi-value alignment. Extensive experiments demonstrate MAP's ability to align multiple values in a principled manner while delivering strong empirical performance across various tasks.}
 }

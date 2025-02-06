@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2022-09-14 20:00:00-0400
+date: 2024-04-30 00:00:00-0000
 inline: true
 related_posts: false
 ---
 
-Two papers are accepted in NeurIPS 2022.
+[ESC: Efficient Speech Coding with Cross-Scale Residual Vector Quantized Transformers](https://arxiv.org/abs/2404.19441) is accepted in EMNLP 2024.
