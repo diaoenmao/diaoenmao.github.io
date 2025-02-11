@@ -9,7 +9,7 @@ profile:
   image: prof_pic.png
   image_circular: true # crops the image to make it circular
   more_info: <strong>Research interests</strong> <br> Distributed Machine Learning, Efficient Machine Learning, <br> Signal Processing, Artificial Intelligence
-  goal: <em>To develop ground-breaking ML methods and cutting-edge AI applications # myTODO fix this
+  goal: <center><em>To create AI like never before</em></center>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
