@@ -1,192 +1,252 @@
 ---
 ---
-
-@inproceedings{ding2018penalized,
-  abbr={ICASSP},
-  title={A Penalized Method for the Predictive Limit of Learning},
-  author={Ding, Jie and Diao, Enmao and Zhou, Jiawei and Tarokh, Vahid},
-  booktitle={2018 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
-  pages={4414--4418},
-  year={2018},
-  date={2018-04-15},
-  organization={IEEE},
-  pdf={https://ieeexplore.ieee.org/abstract/document/8461832},
-  code={https://github.com/diaoenmao/On-Statistical-Efficiency-in-Learning},
-  abstract={Machine learning systems learn from and make predictions by building models from observed data. Because large models tend to overfit while small models tend to underfit for a given fixed dataset, a critical challenge is to select an appropriate model (e.g. set of variables/features). Model selection aims to strike a balance between the goodness of fit and model complexity, and thus to gain reliable predictive power. In this paper, we study a penalized model selection technique that asymptotically achieves the optimal expected prediction loss (referred to as the limit of learning) offered by a set of candidate models. We prove that the proposed procedure is both statistically efficient in the sense that it asymptotically approaches the limit of learning, and computationally efficient in the sense that it can be much faster than cross validation methods. Our theory applies for a wide variety of model classes, loss functions, and high dimensions (in the sense that the models' complexity can grow with data size). We released a python package with our proposed method for general usage like logistic regression and neural networks.}
-}
-
-@inproceedings{diao2019restricted,
-  abbr={IEEE Big Data},
-  selected={true},
-  title={Restricted Recurrent Neural Networks},
-  author={Diao, Enmao and Ding, Jie and Tarokh, Vahid},
-  booktitle={2019 IEEE International Conference on Big Data (Big Data)},
-  pages={56--63},
-  year={2019},
-  date={2019-12-09},
-  organization={IEEE},
-  award={Student Travel Award},
-  award_name={Student Travel Award},
-  pdf={https://arxiv.org/abs/1908.07724},
-  code={https://github.com/diaoenmao/Restricted-Recurrent-Neural-Networks},
-  abstract={Recurrent Neural Network (RNN) and its variations such as Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU), have become standard building blocks for learning online data of sequential nature in many research areas, including natural language processing and speech data analysis. In this paper, we present a new methodology to significantly reduce the number of parameters in RNNs while maintaining performance that is comparable or even better than classical RNNs. The new proposal, referred to as Restricted Recurrent Neural Network (RRNN), restricts the weight matrices corresponding to the input data and hidden states at each time step to share a large proportion of parameters. The new architecture can be regarded as a compression of its classical counterpart, but it does not require pre-training or sophisticated parameter fine-tuning, both of which are major issues in most existing compression techniques. Experiments on natural language modeling show that compared with its classical counterpart, the restricted recurrent architecture generally produces comparable results at about 50% compression rate. In particular, the Restricted LSTM can outperform classical RNN with even less number of parameters.}
-}
-
-@inproceedings{diao2020drasic,
-  abbr={DCC},
-  title={DRASIC: Distributed Recurrent Autoencoder for Scalable Image Compression},
-  author={Diao, Enmao and Ding, Jie and Tarokh, Vahid},
-  booktitle={2020 Data Compression Conference (DCC)},
-  pages={3--12},
-  year={2020},
-  date={2020-03-24},
-  organization={IEEE},
-  pdf={https://arxiv.org/abs/1903.09887},
-  code={https://github.com/diaoenmao/DRASIC-Distributed-Recurrent-Autoencoder-for-Scalable-Image-Compression},
-  selected={true},
-  abstract={We propose a new architecture for distributed image compression from a group of distributed data sources. The work is motivated by practical needs of data-driven codec design, low power consumption, robustness, and data privacy. The proposed architecture, which we refer to as Distributed Recurrent Autoencoder for Scalable Image Compression (DRASIC), is able to train distributed encoders and one joint decoder on correlated data sources. Its compression capability is much better than the method of training codecs separately. Meanwhile, the performance of our distributed system with 10 distributed sources is only within 2 dB peak signal-to-noise ratio (PSNR) of the performance of a single codec trained with all data sources. We experiment distributed sources with different correlations and show how our data-driven methodology well matches the Slepian-Wolf Theorem in Distributed Source Coding (DSC). To the best of our knowledge, this is the first data-driven DSC framework for general distributed code design with deep learning.}
-}
-
-@inproceedings{wu2020deep,
-  abbr={DCC},
-  title={Deep Clustering of Compressed Variational Embeddings},
-  author={Wu, Suya and Diao, Enmao and Ding, Jie and Tarokh, Vahid},
-  booktitle={2020 Data Compression Conference (DCC)},
-  pages={399},
-  year={2020},
-  date={2020-03-24},
-  organization={IEEE},
-  pdf={https://arxiv.org/abs/1910.10341},
-  code={https://github.com/diaoenmao/Deep-Clustering-of-Compressed-Variational-Embeddings},
-  abstract={Motivated by the ever-increasing demands for limited communication bandwidth and low-power consumption, we propose a new methodology, named joint Variational Autoencoders with Bernoulli mixture models (VAB), for performing clustering in the compressed data domain. The idea is to reduce the data dimension by Variational Autoencoders (VAEs) and group data representations by Bernoulli mixture models (BMMs). Once jointly trained for compression and clustering, the model can be decomposed into two parts: a data vendor that encodes the raw data into compressed data, and a data consumer that classifies the received (compressed) data. In this way, the data vendor benefits from data security and communication bandwidth, while the data consumer benefits from low computational complexity. To enable training using the gradient descent algorithm, we propose to use the Gumbel-Softmax distribution to resolve the infeasibility of the back-propagation algorithm when assessing categorical samples.}
-}
-
-@inproceedings{wang2020speech,
-  abbr={ICASSP},
-  selected={true},
-  title={Speech Emotion Recognition with Dual-Sequence LSTM Architecture},
-  author={Wang, Jianyou and Xue, Michael and Culhane, Ryan and Diao, Enmao and Ding, Jie and Tarokh, Vahid},
-  booktitle={ICASSP 2020-2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
-  pages={6474--6478},
-  year={2020},
-  date={2020-05-04},
-  organization={IEEE},
-  pdf={https://arxiv.org/abs/1910.08874},
-  code={https://github.com/diaoenmao/Speech-Emotion-Recognition-with-Dual-Sequence-LSTM-Architecture},
-  abstract={Speech Emotion Recognition (SER) has emerged as a critical component of the next generation of human-machine interfacing technologies. In this work, we propose a new dual-level model that predicts emotions based on both MFCC features and mel-spectrograms produced from raw audio signals. Each utterance is preprocessed into MFCC features and two mel-spectrograms at different time-frequency resolutions. A standard LSTM processes the MFCC features, while a novel LSTM architecture, denoted as Dual-Sequence LSTM (DS-LSTM), processes the two mel-spectrograms simultaneously. The outputs are later averaged to produce a final classification of the utterance. Our proposed model achieves, on average, a weighted accuracy of 72.7% and an unweighted accuracy of 73.3% - a 6% improvement over current state-of-the-art unimodal models - and is comparable with multimodal models that leverage textual information as well as audio signals.}
-}
-
-@article{ding2020statistical,
-  abbr={TIT},
-  title={On Statistical Efficiency in Learning},
-  author={Ding, Jie and Diao, Enmao and Zhou, Jiawei and Tarokh, Vahid},
-  journal={IEEE Transactions on Information Theory},
-  volume={67},
-  number={4},
-  pages={2488--2506},
-  year={2020},
-  date={2020-12-28},
-  publisher={IEEE},
-  pdf={https://arxiv.org/abs/2012.13307},
-  code={https://github.com/diaoenmao/On-Statistical-Efficiency-in-Learning},
-  abstract={A central issue of many statistical learning problems is to select an appropriate model from a set of candidate models. Large models tend to inflate the variance (or overfitting), while small models tend to cause biases (or underfitting) for a given fixed dataset. In this work, we address the critical challenge of model selection to strike a balance between model fitting and model complexity, thus gaining reliable predictive power. We consider the task of approaching the theoretical limit of statistical learning, meaning that the selected model has the predictive performance that is as good as the best possible model given a class of potentially misspecified candidate models. We propose a generalized notion of Takeuchi’s information criterion and prove that the proposed method can asymptotically achieve the optimal out-sample prediction loss under reasonable assumptions. It is the first proof of the asymptotic property of Takeuchi’s information criterion to our best knowledge. Our proof applies to a wide variety of nonlinear models, loss functions, and high dimensionality (in the sense that the models’ complexity can grow with sample size). The proposed method can be used as a computationally efficient surrogate for leave-one-out cross-validation. Moreover, for modeling streaming data, we propose an online algorithm that sequentially expands the model complexity to enhance selection stability and reduce computation cost. Experimental studies show that the proposed method has desirable predictive power and significantly less computational cost than some popular methods.}
-}
-
-@inproceedings{diao2020heterofl,
+@inproceedings{wang2024map,
   abbr={ICLR},
   selected={true},
-  title={HeteroFL: Computation and Communication Efficient Federated Learning for Heterogeneous Clients},
-  author={Diao, Enmao and Ding, Jie and Tarokh, Vahid},
+  title={MAP: Multi-Human-Value Alignment Palette},
+  author={Wang, Xinran and Le, Qi and Ahmed, Ammar and Diao, Enmao and Zhou, Yi and Baracaldo, Nathalie and Ding, Jie and Anwar, Ali},
   booktitle={International Conference on Learning Representations},
-  year={2021},
-  date={2021-05-03},
-  pdf={https://arxiv.org/abs/2010.01264},
-  code={https://github.com/diaoenmao/HeteroFL-Computation-and-Communication-Efficient-Federated-Learning-for-Heterogeneous-Clients},
-  abstract={Federated Learning (FL) is a method of training machine learning models on private data distributed over a large number of possibly heterogeneous clients such as mobile phones and IoT devices. In this work, we propose a new federated learning framework named HeteroFL to address heterogeneous clients equipped with very different computation and communication capabilities. Our solution can enable the training of heterogeneous local models with varying computation complexities and still produce a single global inference model. For the first time, our method challenges the underlying assumption of existing work that local models have to share the same architecture as the global model. We demonstrate several strategies to enhance FL training and conduct extensive empirical evaluations, including five computation complexity levels of three model architecture on three datasets. We show that adaptively distributing subnetworks according to clients' capabilities is both computation and communication efficient.}
+  year={2025},
+  date={2025-01-23},
+  award={Oral},
+  award_name={Oral},
+  pdf={https://arxiv.org/abs/2410.19198},
+  abstract={Ensuring that generative AI systems align with human values is essential but challenging, especially when considering multiple human values and their potential trade-offs. Since human values can be personalized and dynamically change over time, the desirable levels of value alignment vary across different ethnic groups, industry sectors, and user cohorts. Within existing frameworks, it is hard to define human values and align AI systems accordingly across different directions simultaneously, such as harmlessness, helpfulness, and positiveness. To address this, we develop a novel, first-principle approach called Multi-Human-Value Alignment Palette (MAP), which navigates the alignment across multiple human values in a structured and reliable way. MAP formulates the alignment problem as an optimization task with user-defined constraints, which define human value targets. It can be efficiently solved via a primal-dual approach, which determines whether a user-defined alignment target is achievable and how to achieve it. We conduct a detailed theoretical analysis of MAP by quantifying the trade-offs between values, the sensitivity to constraints, the fundamental connection between multi-value alignment and sequential alignment, and proving that linear weighted rewards are sufficient for multi-value alignment. Extensive experiments demonstrate MAP's ability to align multiple values in a principled manner while delivering strong empirical performance across various tasks.}
 }
 
-@article{diao2021decentralized,
-  abbr={arXiv},
-  title={Decentralized Multi-Target Cross-Domain Recommendation for Multi-organization Collaborations},
-  author={Diao, Enmao and Tarokh, Vahid and Ding, Jie},
-  journal={arXiv preprint arXiv:2110.13340},
-  year={2021},
-  date={2021-10-26},
-  pdf={https://arxiv.org/abs/2110.13340},
-  code={https://github.com/diaoenmao/Decentralized-Multi-Target-Cross-Domain-Recommendation-for-Multi-organization-Collaborations},
-  abstract={Recommender Systems (RSs) are operated locally by different organizations in many realistic scenarios. If various organizations can fully share their data and perform computation in a centralized manner, they may significantly improve the accuracy of recommendations. However, collaborations among multiple organizations in enhancing the performance of recommendations are primarily limited due to the difficulty of sharing data and models. To address this challenge, we propose Decentralized Multi-Target Cross-Domain Recommendation (DMTCDR) with Multi-Target Assisted Learning (MTAL) and Assisted AutoEncoder (AAE). Our method can help multiple organizations collaboratively improve their recommendation performance in a decentralized manner without sharing sensitive assets. Consequently, it allows decentralized organizations to collaborate and form a community of shared interest. We conduct extensive experiments to demonstrate that the new method can significantly outperform locally trained RSs and mitigate the cold start problem.}
+@inproceedings{le2025probe,
+  abbr={ICLR},
+  selected={true},
+  title={Probe Pruning: Accelerating LLMs through Dynamic Pruning via Model-Probing},
+  author={Le, Qi and Diao, Enmao and Wang, Ziyan and Wang, Xinran and Ding, Jie and Yang, Li and Anwar, Ali},
+  booktitle={International Conference on Learning Representations},
+  year={2025},
+  date={2025-01-23},
+  pdf={https://arxiv.org/abs/2502.15618},
+  abstract={We introduce Probe Pruning (PP), a novel framework for online, dynamic, structured pruning of Large Language Models (LLMs) applied in a batch-wise manner. PP leverages the insight that not all samples and tokens contribute equally to the model's output, and probing a small portion of each batch effectively identifies crucial weights, enabling tailored dynamic pruning for different batches. It comprises three main stages: probing, history-informed pruning, and full inference. In the probing stage, PP selects a small yet crucial set of hidden states, based on residual importance, to run a few model layers ahead. During the history-informed pruning stage, PP strategically integrates the probing states with historical states. Subsequently, it structurally prunes weights based on the integrated states and the PP importance score, a metric developed specifically to assess the importance of each weight channel in maintaining performance. In the final stage, full inference is conducted on the remaining weights. A major advantage of PP is its compatibility with existing models, as it operates without requiring additional neural network modules or fine-tuning. Comprehensive evaluations of PP on LLaMA-2/3 and OPT models reveal that even minimal probing-using just 1.5% of FLOPs-can substantially enhance the efficiency of structured pruning of LLMs. For instance, when evaluated on LLaMA-2-7B with WikiText2, PP achieves a 2.56 times lower ratio of performance degradation per unit of runtime reduction compared to the state-of-the-art method at a 40% pruning ratio.}
 }
 
-@article{momenifar2021emulating,
-  abbr={AAAI},
-  title={Emulating Spatio-Temporal Realizations of Three-Dimensional Isotropic Turbulence via Deep Sequence Learning Models},
-  author={Momenifar, Mohammadreza and Diao, Enmao and Tarokh, Vahid and Bragg, Andrew D},
-  journal={2022 Workshop on AI to Accelerate Science and Engineering (AAAI)},
-  year={2022},
-  date={2022-02-22},
-  pdf={https://arxiv.org/abs/2112.03469},
-  code={https://github.com/MReza89/Emulating-Spatio-Temporal-Realizations-of-Three-Dimensional-Isotropic-Turbulence-via-Deep-Sequence},
-  abstract={We use a data-driven approach to model a three-dimensional turbulent flow using cutting-edge Deep Learning techniques. The deep learning framework incorporates physical constraints on the flow, such as preserving incompressibility and global statistical invariants of velocity gradient tensor. The accuracy of the model is assessed using statistical and physics-based metrics. The data set comes from Direct Numerical Simulation of an incompressible, statistically stationary, isotropic turbulent flow in a cubic box. Since the size of the dataset is memory intensive, we first generate a low-dimensional representation of the velocity data, and then pass it to a sequence prediction network that learns the spatial and temporal correlations of the underlying data. The dimensionality reduction is performed via extraction using Vector-Quantized Autoencoder (VQ-AE), which learns the discrete latent variables. For the sequence forecasting, the idea of Transformer architecture from natural language processing is used, and its performance compared against more standard Recurrent Networks (such as Convolutional LSTM). These architectures are designed and trained to perform a sequence to sequence multi-class classification task in which they take an input sequence with a fixed length (k) and predict a sequence with a fixed length (p), representing the future time instants of the flow. Our results for the short-term predictions show that the accuracy of results for both models deteriorates across predicted snapshots due to autoregressive nature of the predictions. Based on our diagnostics tests, the trained Conv-Transformer model outperforms the Conv-LSTM one and can accurately, both quantitatively and qualitatively, retain the large scales and capture well the inertial scales of flow but fails at recovering the small and intermittent fluid motions.}
+@inproceedings{wang2025aid,
+  abbr={NAACL},
+  selected={true},
+  title={AID: Adaptive Integration of Detectors for Safe AI with Language Models},
+  author={Wang, Xinran and and Diao, Enmao and Le, Qi and Ding, Jie and Anwar, Ali},
+  booktitle={Nations of the Americas Chapter of the ACL},
+  year={2025},
+  date={2025-01-23},
+  pdf={},
+  abstract={As Large Language Models (LLMs) increasingly influence content generation across diverse platforms, there is a heightened urgency to regulate their outputs to ensure safe usage. However, defining ``safety'' is complex, given that entities across domains may interpret it through varied lenses and develop safety detectors—models trained to identify specific unsafe content based on predefined criteria. To address this complexity, we introduce the approach of Adaptive Integration of Detectors (AID) to orchestrate the strengths of multiple pretrained detectors to ensure comprehensive effectiveness in diverse scenarios. AID employs a Mixture-of-Experts (MoE) framework, wherein it dynamically assigns and learns data-adaptive weights for each detector using domain-specific annotated data and LLM-extracted features. We provide theoretical insights into why MoE can be effective by showing its optimality in a Neyman-Pearson setting. Our experimental studies using various detection tasks curated from benchmark datasets demonstrate AID's ability to synergistically combine the unique capabilities of individual detectors. For example, it is observed that AID can improve the area under the curve (AUC) by an absolute value of 0.07 to 0.21, with a median of 0.12, compared to the best individual detectors developed for specific safety aspects. The improvement is particularly significant for complex detection tasks that mix different unsafe data sources. }
 }
 
-@inproceedings{momenifar2022physics,
-  abbr={DCC},
-  title={A Physics-Informed Vector Quantized Autoencoder for Data Compression of Turbulent Flow},
-  author={Momenifar, Mohammadreza and Diao, Enmao and Tarokh, Vahid and Bragg, Andrew D},
-  booktitle={2022 Data Compression Conference (DCC)},
-  pages={01--10},
-  year={2022},
-  date={2022-03-22},
+@inproceedings{le2024dynamicfl,
+  abbr={IEEE BigData},
+  selected={true},
+  title={DynamicFL: Federated Learning with Dynamic Communication Resource Allocation},
+  author={Le, Qi and Diao, Enmao and Wang, Xinran and Khan, Ahmad Faraz and Tarokh, Vahid and Ding, Jie and Anwar, Ali},
+  booktitle={2024 IEEE International Conference on Big Data (BigData)},
+  pages={998--1008},
+  year={2024},
+  date={2024-12-15},
+  award={Best Student Paper},
+  award_name={Best Student Paper},
+  pdf={https://arxiv.org/abs/2409.04986},
+  code={https://github.com/Qi-Le1/DynamicFL},
   organization={IEEE},
-  pdf={https://arxiv.org/abs/2201.03617},
-  code={https://github.com/diaoenmao/Dimension-Reduced-Turbulent-Flow-Data-From-Deep-Vector-Quantizers},
-  abstract={Analyzing large-scale data from simulations of turbulent flows is memory intensive, requiring significant resources. This major challenge highlights the need for data compression techniques. In this study, we apply a physics-informed Deep Learning technique based on vector quantization to generate a discrete, low-dimensional representation of data from simulations of three-dimensional turbulent flows. The deep learning framework is composed of convolutional layers and incorporates physical constraints on the flow, such as preserving incompressibility and global statistical characteristics of the velocity gradients. The accuracy of the model is assessed using statistical, comparison-based similarity and physics-based metrics. The training data set is produced from Direct Numerical Simulation of an incompressible, statistically stationary, isotropic turbulent flow. The performance of this lossy data compression scheme is evaluated not only with unseen data from the stationary, isotropic turbulent flow, but also with data from decaying isotropic turbulence, and a Taylor-Green vortex flow. Defining the compression ratio (CR) as the ratio of original data size to the compressed one, the results show that our model based on vector quantization can offer CR = 85 with a mean square error (MSE) of O(10−3), and predictions that faithfully reproduce the statistics of the flow, except at the very smallest scales where there is some loss. Compared to the recent study based on a conventional autoencoder where compression is performed in a continuous space, our model improves the CR by more than 30 percent, and reduces the MSE by an order of magnitude. Our compression model is an attractive solution for situations where fast, high quality and low-overhead encoding and decoding of large data are required.}
+  abstract={Federated Learning (FL) is a collaborative machine learning framework that allows multiple users to train models utilizing their local data in a distributed manner. However, considerable statistical heterogeneity in local data across devices often leads to suboptimal model performance compared with independently and identically distributed (IID) data scenarios. In this paper, we introduce DynamicFL, a new FL framework that investigates the trade-offs between global model performance and communication costs for two widely adopted FL methods: Federated Stochastic Gradient Descent (FedSGD) and Federated Averaging (FedAvg). Our approach allocates diverse communication resources to clients based on their data statistical heterogeneity, considering communication resource constraints, and attains substantial performance enhancements compared to uniform communication resource allocation. Notably, our method bridges the gap between FedSGD and FedAvg, providing a flexible framework leveraging communication heterogeneity to address statistical heterogeneity in FL. Through extensive experiments, we demonstrate that DynamicFL surpasses current state-of-the-art methods with up to a 10% increase in model accuracy, demonstrating its adaptability and effectiveness in tackling data statistical heterogeneity challenges.}
 }
 
-@article{momenifar2022dimension,
-  abbr={JoT},
-  title={Dimension Reduced Turbulent Flow Data from Deep Vector Quantizers},
-  author={Momenifar, Mohammadreza and Diao, Enmao and Tarokh, Vahid and Bragg, Andrew D},
-  journal={Journal of Turbulence},
-  volume={23},
-  number={4-5},
-  pages={232--264},
-  year={2022},
-  date={2022-04-11},
-  publisher={Taylor \& Francis},
-  pdf={https://arxiv.org/abs/2103.01074},
-  code={https://github.com/diaoenmao/Dimension-Reduced-Turbulent-Flow-Data-From-Deep-Vector-Quantizers},
-  abstract={Analysing large-scale data from simulations of turbulent flows is memory intensive, requiring significant resources. This major challenge highlights the need for data compression techniques. In this study, we apply a physics-informed Deep Learning technique based on vector quantisation to generate a discrete, low-dimensional representation of data from simulations of three-dimensional turbulent flows. The deep learning framework is composed of convolutional layers and incorporates physical constraints on the flow, such as preserving incompressibility and global statistical characteristics of the velocity gradients. The accuracy of the model is assessed using statistical, comparison-based similarity and physics-based metrics. The training data set is produced from Direct Numerical Simulation of an incompressible, statistically stationary, isotropic turbulent flow. The performance of this lossy data compression scheme is evaluated not only with unseen data from the stationary, isotropic turbulent flow, but also with data from decaying isotropic turbulence, a Taylor–Green vortex flow, and a turbulent channel flow. Defining the compression ratio (CR) as the ratio of original data size to the compressed one, the results show that our model based on vector quantisation can offer CR = 85 with a mean square error (MSE) of (10−3), and predictions that faithfully reproduce the statistics of the flow, except at the very smallest scales where there is some loss. Compared to the recent study of Glaws. et al. [Deep learning for in situ data compression of large turbulent flow simulations. Phys Rev Fluids. 2020;5(11):114602], which was based on a conventional autoencoder (where compression is performed in a continuous space), our model improves the CR by more than 30%, and reduces the MSE by an order of magnitude. Our compression model is an attractive solution for situations where fast, high quality and low-overhead encoding and decoding of large data are required.}
+@inproceedings{gu2024esc,
+  abbr={EMNLP},
+  selected={true},
+  title={ESC: Efficient Speech Coding with Cross-Scale Residual Vector Quantized Transformers},
+  author={Gu, Yuzhe and Diao, Enmao},
+  booktitle={Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing},
+  pages={10084--10096},
+  year={2024},
+  date={2024-11-08},
+  publisher={Association for Computational Linguistics},
+  pdf={https://arxiv.org/abs/2404.19441},
+  code={https://github.com/yzguu830/efficient-speech-codec},
+  abstract={Neural speech codecs aim to compress input signals into minimal bits while maintaining content quality in a low-latency manner. However, existing neural codecs often trade model complexity for reconstruction performance. These codecs primarily use convolutional blocks for feature transformation, which are not inherently suited for capturing the local redundancies in speech signals. To compensate, they require either adversarial discriminators or a large number of model parameters to enhance audio quality. In response to these challenges, we introduce the Efficient Speech Codec (ESC), a lightweight, parameter-efficient speech codec based on a cross-scale residual vector quantization scheme and transformers. Our model employs mirrored hierarchical window transformer blocks and performs step-wise decoding from coarse-to-fine feature representations. To enhance bitrate efficiency, we propose a novel combination of vector quantization techniques along with a pre-training paradigm. Extensive experiments demonstrate that ESC can achieve high-fidelity speech reconstruction with significantly lower model complexity, making it a promising alternative to existing convolutional audio codecs}
 }
 
-@article{wu2022score,
+@article{diao2024large,
   abbr={IEEE Access},
-  title={Score-based Hypothesis Testing for Unnormalized Models},
-  author={Wu, Suya and Diao, Enmao and Elkhalil, Khalil and Ding, Jie and Tarokh, Vahid},
+  selected={true},
+  title={Large Deviation Analysis of Score-based Hypothesis Testing},
+  author={Diao, Enmao and Banerjee, Taposh and Tarokh, Vahid},
   journal={IEEE Access},
-  volume={10},
-  pages={71936--71950},
-  year={2022},
-  date={2022-07-04},
+  volume={12},
+  pages={117691--117700},
+  year={2024},
+  date={2024-08-21},
   publisher={IEEE},
-  pdf={https://ieeexplore.ieee.org/document/9813688},
-  code={https://github.com/suuyawu/Score-based-Hypothesis-Testing-for-Unnormalized-Models},
-  abstract={Unnormalized statistical models play an important role in machine learning, statistics, and signal processing. In this paper, we derive a new hypothesis testing procedure for unnormalized models. Our approach is motivated by the success of score matching techniques that avoid the intensive computational costs of normalization constants in many high-dimensional settings. Our proposed test statistic is the difference between Hyvärinen scores corresponding to the null and alternative hypotheses. Under some reasonable conditions, we prove that the asymptotic distribution of this statistic is Chi-squared. We outline a bootstrap approach to learn the test critical values, particularly when the distribution under the null hypothesis cannot be expressed in a closed form, and provide consistency guarantees. Finally, we conduct extensive numerical experiments and demonstrate that our proposed approach outperforms goodness-of-fit benchmarks in various settings.}
+  pdf={https://arxiv.org/abs/2401.15519},
+  code={https://github.com/diaoenmao/Large-Deviation-Analysis-for-Hypothesis-Testing-for-Score-based-Models},
+  abstract={Score-based statistical models play an important role in modern machine learning, statistics, and signal processing. For hypothesis testing, a score-based hypothesis test is proposed in \cite{wu2022score}. We analyze the performance of this score-based hypothesis testing procedure and derive upper bounds on the probabilities of its Type I and II errors. We prove that the exponents of our error bounds are asymptotically (in the number of samples) tight for the case of simple null and alternative hypotheses. We calculate these error exponents explicitly in specific cases and provide numerical studies for various other scenarios of interest.}
 }
 
-@inproceedings{le2022personalized,
-  abbr={Asilomar},
-  title={Personalized Federated Recommender Systems with Private and Partially Federated AutoEncoders},
-  author={Le, Qi and Diao, Enmao and Wang, Xinran and Anwar, Ali and Tarokh, Vahid and Ding, Jie},
-  booktitle={2022 56th Asilomar Conference on Signals, Systems, and Computers},
-  pages={1157--1163},
-  year={2022},
-  date={2022-10-31},
-  organization={IEEE},
-  pdf={https://arxiv.org/abs/2212.08779},
-  code={https://github.com/diaoenmao/Personalized-Federated-Recommender-Systems-with-Private-and-Partially-Federated-AutoEncoders},
-  abstract={Recommender Systems (RSs) have become increasingly important in many application domains, such as digital marketing. Conventional RSs often need to collect users' data, centralize them on the server-side, and form a global model to generate reliable recommendations. However, they suffer from two critical limitations: the personalization problem that the RSs trained traditionally may not be customized for individual users, and the privacy problem that directly sharing user data is not encouraged. We propose Personalized Federated Recommender Systems (PersonalFR), which introduces a personalized autoencoder-based recommendation model with Federated Learning (FL) to address these challenges. PersonalFR guarantees that each user can learn a personal model from the local dataset and other participating users' data without sharing local data, data embeddings, or models. PersonalFR consists of three main components, including AutoEncoder-based RSs (ARSs) that learn the user-item interactions, Partially Federated Learning (PFL) that updates the encoder locally and aggregates the decoder on the server-side, and Partial Compression (PC) that only computes and transmits active model parameters. Extensive experiments on two real-world datasets demonstrate that PersonalFR can achieve private and personalized performance comparable to that trained by centralizing all users' data. Moreover, PersonalFR requires significantly less computation and communication overhead than standard FL baselines.}
+@article{moushegian2024robust,
+  abbr={arXiv},
+  title={Robust Score-Based Quickest Change Detection},
+  author={Moushegian, Sean and Wu, Suya and Diao, Enmao and Ding, Jie and Banerjee, Taposh and Tarokh, Vahid},
+  journal={arXiv preprint arXiv:2407.11094},
+  year={2024},
+  date={2024-07-15},
+  pdf={https://arxiv.org/abs/2407.11094},
+  abstract={Methods in the field of quickest change detection rapidly detect in real-time a change in the data-generating distribution of an online data stream. Existing methods have been able to detect this change point when the densities of the pre- and post-change distributions are known. Recent work has extended these results to the case where the pre- and post-change distributions are known only by their score functions. This work considers the case where the pre- and post-change score functions are known only to correspond to distributions in two disjoint sets. This work employs a pair of "least-favorable" distributions to robustify the existing score-based quickest change detection algorithm, the properties of which are studied. This paper calculates the least-favorable distributions for specific model classes and provides methods of estimating the least-favorable distributions for common constructions. Simulation results are provided demonstrating the performance of our robust change detection algorithm.}
 }
+
+@inproceedings{zhang2024pixelcnn,
+  abbr={RadarConf},
+  selected={true},
+  title={A PixelCNN Based Method for Rough Surface Clutter Reduction in GPR B-scan Images},
+  author={Zhang, Yan and Diao, Enmao and Huston, Dryver and Xia, Tian},
+  booktitle={2024 IEEE Radar Conference (RadarConf24)},
+  pages={1--6},
+  year={2024},
+  date={2024-05-06},
+  organization={IEEE},
+  pdf={https://ieeexplore.ieee.org/document/10549712/},
+  abstract={Reducing the rough surface clutter in a Ground Penetrating Radar (GPR) B-scan image is essential for detecting shallow buried targets and for improving the performance of subsequent image processing algorithms. Challenges involved in this problem lie in the difficulties with modeling the variations of the rough surface profile. In this paper, we propose a novel PixelCNN based method for reducing rough surface clutter in GPR B-scan images. In the proposed method, the rough surface region in a B-scan image is split into small patches which are used to train a PixelCNN model. Given an input patch, the trained PixelCNN model can output the probability that the input patch comes from the rough surface region. For reconstructing a clutter reduced B-scan, the entire B-scan image is split into patches and each patch is input into the trained PixelCNN model to get its corresponding probability. Negative log-probabilities are then utilized as scores to suppress the rough surface region and to enhance the target profile in the B-scan image. To demonstrate the effectiveness of the proposed method, we test it on four simulation B-scan images and two real-world B-scan images. The proposed method is compared with traditional subspace projection methods. The results indicate that the proposed method outperforms traditional subspace projection methods.}
+}
+
+@article{diao2023cola,
+  abbr={arXiv},
+  title={ColA: Collaborative Adaptation with Gradient Learning},
+  author={Diao, Enmao and Le, Qi and Wu, Suya and Wang, Xinran and Anwar, Ali and Ding, Jie and Tarokh, Vahid},
+  year={2024},
+  date={2024-04-22},
+  pdf={https://arxiv.org/abs/2404.13844},
+  code={https://github.com/diaoenmao/ColA-Collaborative-Adaptation-with-Gradient-Learning},
+  abstract={A primary function of back-propagation is to compute both the gradient of hidden representations and parameters for optimization with gradient descent. Training large models requires high computational costs due to their vast parameter sizes. While Parameter-Efficient Fine-Tuning (PEFT) methods aim to train smaller auxiliary models to save computational space, they still present computational overheads, especially in Fine-Tuning as a Service (FTaaS) for numerous users. We introduce Collaborative Adaptation (ColA) with Gradient Learning (GL), a parameter-free, model-agnostic fine-tuning approach that decouples the computation of the gradient of hidden representations and parameters. In comparison to PEFT methods, ColA facilitates more cost-effective FTaaS by offloading the computation of the gradient to low-cost devices. We also provide a theoretical analysis of ColA and experimentally demonstrate that ColA can perform on par or better than existing PEFT methods on various benchmarks.}
+}
+
+@article{zhang2024data,
+  abbr={TGRS},
+  selected={true},
+  title={A Data Efficient Deep Learning Method for Rough Surface Clutter Reduction in GPR Images},
+  author={Zhang, Yan and Diao, Enmao and Huston, Dryver and Xia, Tian},
+  journal={IEEE Transactions on Geoscience and Remote Sensing},
+  volume={62},
+  pages={1--10},
+  year={2024},
+  date={2024-03-28},
+  publisher={IEEE},
+  pdf={https://ieeexplore.ieee.org/document/10480715},
+  abstract={In ground penetrating radar (GPR) B-scan images, ground surface clutter is the main source of interference, often obscuring or distorting subsurface target signals. We propose a deep autoencoder-based method to mitigate rough surface clutter in GPR images by treating it as an anomaly detection problem. First, the rough surface region in a B-scan image is partitioned into small patches, which act as the training dataset for the deep autoencoder. Through the training process, the autoencoder learns and captures the patterns associated with the rough surface patches. Following training, the entire B-scan image is divided into small patches of the same size as the training patches, and each of them is fed into the autoencoder to compute an anomaly score. To reconstruct a clutter-reduced B-scan image, we employ a weighted sum approach to aggregate all patches based on their anomaly scores. We evaluate our method against conventional subspace projection techniques using simulated and field-collected B-scans. The results clearly indicate that our approach surpasses these subspace methods. Furthermore, we employ t-distributed stochastic neighbor embedding (t-SNE) analysis to gain deeper insights into our method’s effectiveness in reducing rough surface clutter. The outcomes of this analysis reinforce the practical viability of our approach for GPR image processing.}
+}
+
+@article{wu2023quickest,
+  abbr={TIT},
+  selected={true},
+  title={Quickest Change Detection for Unnormalized Statistical Models},
+  author={Wu, Suya and Diao, Enmao and Banerjee, Taposh and Ding, Jie and Tarokh, Vahid},
+  journal={IEEE Transactions on Information Theory},
+  volume={70},
+  number={2},
+  pages={1220--1232},
+  year={2023},
+  date={2023-10-27},
+  publisher={IEEE},
+  pdf={https://arxiv.org/abs/2302.00250},
+  code={https://github.com/suuyawu/Quickest-Change-Detection-for-Unnormalized-Statistical-Models},
+  abstract={Classical quickest change detection algorithms require modeling pre-change and post-change distributions. Such an approach may not be feasible for various machine learning models because of the complexity of computing the explicit distributions. Additionally, these methods may suffer from a lack of robustness to model mismatch and noise. This paper develops a new variant of the classical Cumulative Sum (CUSUM) algorithm for the quickest change detection. This variant is based on Fisher divergence and the Hyvärinen score and is called the Hyvärinen score-based CUSUM (SCUSUM) algorithm. The SCUSUM algorithm allows the applications of change detection for unnormalized statistical models, i.e., models for which the probability density function contains an unknown normalization constant. The asymptotic optimality of the proposed algorithm is investigated by deriving expressions for average detection delay and the mean running time to a false alarm. Numerical results are provided to demonstrate the performance of the proposed algorithm.}
+}
+
+@phdthesis{diao2023efficient,
+  abbr={Thesis},
+  selected={true},
+  title={Efficient and Collaborative Methods for Distributed Machine Learning},
+  author={Diao, Enmao},
+  year={2023},
+  date={2023-09-01},
+  pdf={https://www.proquest.com/docview/2865965932},
+  school={Duke University},
+  abstract={In recent years, there has been a significant expansion in the scale and complexity of neural networks. This has resulted in significant demand for data, computation, and energy resources. In this light, it is crucial to enhance and optimize the efficiency of these ML models and algorithms. Additionally, the rise in computational capabilities of modern devices has prompted a shift towards distributed systems that enable localized data storage and model training. While this evolution promises substantial potential, it introduces a series of challenges. Such challenges encompass addressing the heterogeneity across systems, data, models, and supervision, balancing the trade-off among communication, computation, and performance, as well as building a community of shared interest to encourage collaboration in the emerging era of Artificial General Intelligence (AGI).In this dissertation, we contribute to the establishment of a theoretically justified, methodologically comprehensive, and universally applicable Efficient and Collaborative Distributed Machine Learning framework. Specifically, in Part I, we contribute to methodologies for Efficient Machine Learning including for both learning and inference. In this direction, we propose a parameter-efficient model, namely Restricted Recurrent Neural Networks (RRNN), that leverage the recurrent structures of RNNs using weight sharing in order to improve learning efficiency. We also introduce an optimal measure of vector sparsity named the PQ Index (PQI), and postulate a hypothesis connecting this sparsity measure and compressibility of neural networks. Based on this, we propose a Sparsity-informed Adaptive Pruning (SAP) algorithm. This algorithm adaptively determines the pruning ratio to enhance inference efficiency. In Part II, we address both efficiency and collaboration in Distributed Machine Learning. We introduce Distributed Recurrent Autoencoders for Scalable Image Compression (DRASIC), a data-driven Distributed Source Coding framework that can compress heterogeneous data in a scalable and distributed manner. We then propose Heterogeneous Federated Learning (HeteroFL), demonstrating the feasibility of training localized heterogeneous models to create a global inference model. Subsequently, we propose a new Federated Learning (FL) framework, namely SemiFL, to tackle Semi-Supervised Federated Learning (SSFL) for clients with unlabeled data. This method performs comparably with state-of-the-art centralized Semi-Supervised Learning (SSL), and fully supervised FL techniques. Finally, we propose Gradient Assisted Learning (GAL) in order to enable collaborations among multiple organizations without sharing data, models, and objective functions. This method significantly out-performs local learning baselines and achieves near-oracle performance. In Part III, we develop collaborative applications for building a community of shared interest. We apply SemiFL to Keyword Spotting (KWS), a technique widely used in virtual assistants. Numerical experiments demonstrate that one can train models from the scratch, or transfer from pre-trained models in order to leverage heterogeneous unlabeled on-device data, using only a small amount of labeled data from the server. Finally, we propose a Decentralized Multi-Target Cross-Domain Recommendation (DMTCDR) which enhances the recommendation performance of decentralized organizations without compromising data privacy or model confidentiality.}
+}
+
+@article{varma2023once,
+  abbr={KDD},
+  title={Once-for-All Federated Learning: Learning From and Deploying to Heterogeneous Clients},
+  author={Varma, Kamala and Diao, Enmao and Roosta, Tanya and Ding, Jie and Zhang, Tao},
+  booktitle={2023 International Workshop on Federated Learning for Distributed Data Mining (KDD)},
+  year={2023},
+  date={2023-08-06},
+  pdf={https://openreview.net/forum?id=aJhe-VC0Ue},
+  abstract={Federated learning (FL) enables multiple client devices to train a single machine learning model collaboratively. As FL often involves various smart devices, it is important to adapt the FL pipeline to accommodate device resource constraints. This work addresses the problem of training and storing memory-intensive deep neural network architectures on resource-constrained devices. Existing solutions often involve computationally expensive methods. We propose Once-for-All Federated Learning (OFA-FL) to overcome this limitation by learning a model that concurrently optimizes sub-networks of various sizes. Clients can therefore receive the sub-network best suited for their device resources without extra computation. Our experiments show that each component of OFAFL contributes to well-performing FL-produced sub-networks while maintaining a global network design that supports the efficient deployment of device resource-specific sub-networks.}
+}
+
+@inproceedings{wu2023robust,
+  abbr={UAI},
+  selected={true},
+  title={Robust Quickest Change Detection for Unnormalized Models},
+  author={Wu, Suya and Diao, Enmao and Ding, Jie and Banerjee, Taposh and Tarokh, Vahid},
+  booktitle={Proceedings of the Thirty-Ninth Conference on Uncertainty in Artificial Intelligence},
+  pages={2314--2323},
+  year={2023},
+  date={2023-07-31},
+  publisher={PMLR},
+  pdf={https://arxiv.org/abs/2306.05091},
+  abstract={Detecting an abrupt and persistent change in the underlying distribution of online data streams is an important problem in many applications. This paper proposes a new robust score-based algorithm called RSCUSUM, which can be applied to unnormalized models and addresses the issue of unknown post-change distributions. RSCUSUM replaces the Kullback-Leibler divergence with the Fisher divergence between pre-and post-change distributions for computational efficiency in unnormalized statistical models and introduces a notion of the “least favorable” distribution for robust change detection. The algorithm and its theoretical analysis are demonstrated through simulation studies.}
+}
+
+@inproceedings{diao2023semi,
+  abbr={ICME},
+  title={Semi-Supervised Federated Learning for Keyword Spotting},
+  author={Diao, Enmao and Tramel, Eric W and Ding, Jie and Zhang, Tao},
+  booktitle={2023 IEEE International Conference on Multimedia and Expo Workshops (ICMEW)},
+  pages={466--469},
+  year={2023},
+  date={2023-07-10},
+  organization={IEEE},
+  pdf={https://arxiv.org/abs/2305.05110},
+  code={https://github.com/diaoenmao/Semi-Supervised-Federated-Learing-for-Keyword-Spotting},
+  abstract={Keyword Spotting (KWS) is a critical aspect of audio-based applications on mobile devices and virtual assistants. Recent developments in Federated Learning (FL) have significantly expanded the ability to train machine learning models by utilizing the computational and private data resources of numerous distributed devices. However, existing FL methods typically require that devices possess accurate ground-truth labels, which can be both expensive and impractical when dealing with local audio data. In this study, we first demonstrate the effectiveness of Semi-Supervised Federated Learning (SSL) and FL for KWS. We then extend our investigation to Semi-Supervised Federated Learning (SSFL) for KWS, where devices possess completely unlabeled data, while the server has access to a small amount of labeled data. We perform numerical analyses using state-of-the-art SSL, FL, and SSFL techniques to demonstrate that the performance of KWS models can be significantly improved by leveraging the abundant unlabeled heterogeneous data available on devices.}
+}
+
+@inproceedings{diao2023multimodal,
+  abbr={CVMI},
+  title={Multimodal Controller for Generative Models},
+  author={Diao, Enmao and Ding, Jie and Tarokh, Vahid},
+  booktitle={Computer Vision and Machine Intelligence},
+  pages={109--121},
+  year={2023},
+  date={2023-05-06},
+  publisher={Springer Nature Singapore},
+  pdf={https://arxiv.org/abs/2002.02572},
+  code={https://github.com/diaoenmao/Multimodal-Controller-for-Generative-Models},
+  abstract={Class-conditional generative models are crucial tools for data generation from user-specified class labels. Existing approaches for class-conditional generative models require nontrivial modifications of backbone generative architectures to model conditional information fed into the model. This paper introduces a plug-and-play module, named `multimodal controller' to generate multimodal data without introducing additional learning parameters. In the absence of the controllers, our model reduces to non-conditional generative models. We test the efficacy of multimodal controllers on CIFAR10, COIL100, and Omniglot benchmark datasets. We demonstrate that multimodal controlled generative models (including VAE, PixelCNN, Glow, and GAN) can generate class-conditional images of significantly better quality when compared with conditional generative models. Moreover, we show that multimodal controlled models can also create novel modalities of images.}
+}
+
+@inproceedings{diao2022pruning,
+  abbr={ICLR},
+  selected={true},
+  title={Pruning Deep Neural Networks from a Sparsity Perspective},
+  author={Diao, Enmao and Wang, Ganghua and Zhang, Jiawei and Yang, Yuhong and Ding, Jie and Tarokh, Vahid},
+  booktitle={International Conference on Learning Representations},
+  year={2023},
+  date={2023-05-01},
+  pdf={https://arxiv.org/abs/2302.05601},
+  code={https://github.com/diaoenmao/Pruning-Deep-Neural-Networks-from-a-Sparsity-Perspective},
+  abstract={In recent years, deep network pruning has attracted significant attention in order to enable the rapid deployment of AI into small devices with computation and memory constraints. Pruning is often achieved by dropping redundant weights, neurons, or layers of a deep network while attempting to retain a comparable test performance. Many deep pruning algorithms have been proposed with impressive empirical success. However, existing approaches lack a quantifiable measure to estimate the compressibility of a sub-network during each pruning iteration and thus may under-prune or over-prune the model. In this work, we propose PQ Index (PQI) to measure the potential compressibility of deep neural networks and use this to develop a Sparsity-informed Adaptive Pruning (SAP) algorithm. Our extensive experiments corroborate the hypothesis that for a generic pruning procedure, PQI decreases first when a large model is being effectively regularized and then increases when its compressibility reaches a limit that appears to correspond to the beginning of underfitting. Subsequently, PQI decreases again when the model collapse and significant deterioration in the performance of the model start to occur. Additionally, our experiments demonstrate that the proposed adaptive pruning algorithm with proper choice of hyper-parameters is superior to the iterative pruning algorithms such as the lottery ticket-based pruning methods, in terms of both compression efficiency and robustness.}
+}
+
+@inproceedings{wu2023score,
+  abbr={AISTATS},
+  selected={true},
+  title={Score-based Quickest Change Detection for Unnormalized Models},
+  author={Wu, Suya and Diao, Enmao and Banerjee, Taposh and Ding, Jie and Tarokh, Vahid},
+  booktitle={Proceedings of The 26th International Conference on Artificial Intelligence and Statistics},
+  pages={10546--10565},
+  year={2023},
+  date={2023-04-24},
+  publisher={PMLR},
+  pdf={https://proceedings.mlr.press/v206/wu23b.html},
+  code={https://github.com/suuyawu/Quickest-Change-Detection-for-Unnormalized-Statistical-Models},
+  abstract={Classical change detection algorithms typically require modeling pre-change and post-change distributions. The calculations may not be feasible for various machine learning models because of the complexity of computing the partition functions and normalized distributions. Additionally, these methods may suffer from a lack of robustness to model mismatch and noise. In this paper, we develop a new variant of the classical Cumulative Sum (CUSUM) change detection, namely Score-based CUSUM (SCUSUM), based on Fisher divergence and the Hyvärinen score. Our method allows the applications of the quickest change detection for unnormalized distributions. We provide a theoretical analysis of the detection delay given the constraints on false alarms. We prove the asymptotic optimality of the proposed method in some particular cases. We also provide numerical experiments to demonstrate our method’s computation, performance, and robustness advantages.}
+}
+
 
 @inproceedings{diao2022gal,
   abbr={NeurIPS},
@@ -231,248 +291,189 @@
   abstract={With an ever-increasing number of smart edge devices with computation and communication constraints, Federated Learning (FL) is a promising paradigm for learning from distributed devices and their data. Typical approaches to FL aim to learn a single model that simultaneously performs well for all clients. But such an approach may be ineffective when the clients’ data distributions are heterogeneous. In these cases, we aim to learn personalized models for each client’s data yet still leverage shared information across clients. A critical avenue that may allow for such personalization is the presence of client-specific side information available to each client, such as client embeddings obtained from domain-specific knowledge, pre-trained models, or simply one-hot encodings. In this work, we propose a new FL framework for utilizing a general form of client-specific side information for personalized federated learning. We prove that incorporating side information can improve model performance for simplified multi-task linear regression and matrix completion problems. Further, we validate these results with image classification experiments on Omniglot, CIFAR-10, and CIFAR-100, revealing that proper use of side information can be beneficial for personalization.}
 }
 
-@inproceedings{wu2023score,
-  abbr={AISTATS},
-  selected={true},
-  title={Score-based Quickest Change Detection for Unnormalized Models},
-  author={Wu, Suya and Diao, Enmao and Banerjee, Taposh and Ding, Jie and Tarokh, Vahid},
-  booktitle={Proceedings of The 26th International Conference on Artificial Intelligence and Statistics},
-  pages={10546--10565},
-  year={2023},
-  publisher={PMLR},
-  pdf={https://proceedings.mlr.press/v206/wu23b.html},
-  code={https://github.com/suuyawu/Quickest-Change-Detection-for-Unnormalized-Statistical-Models},
-  abstract={Classical change detection algorithms typically require modeling pre-change and post-change distributions. The calculations may not be feasible for various machine learning models because of the complexity of computing the partition functions and normalized distributions. Additionally, these methods may suffer from a lack of robustness to model mismatch and noise. In this paper, we develop a new variant of the classical Cumulative Sum (CUSUM) change detection, namely Score-based CUSUM (SCUSUM), based on Fisher divergence and the Hyvärinen score. Our method allows the applications of the quickest change detection for unnormalized distributions. We provide a theoretical analysis of the detection delay given the constraints on false alarms. We prove the asymptotic optimality of the proposed method in some particular cases. We also provide numerical experiments to demonstrate our method’s computation, performance, and robustness advantages.}
-}
-
-@inproceedings{diao2022pruning,
-  abbr={ICLR},
-  selected={true},
-  title={Pruning Deep Neural Networks from a Sparsity Perspective},
-  author={Diao, Enmao and Wang, Ganghua and Zhang, Jiawei and Yang, Yuhong and Ding, Jie and Tarokh, Vahid},
-  booktitle={International Conference on Learning Representations},
-  year={2023},
-  date={2023-05-01},
-  pdf={https://arxiv.org/abs/2302.05601},
-  code={https://github.com/diaoenmao/Pruning-Deep-Neural-Networks-from-a-Sparsity-Perspective},
-  abstract={In recent years, deep network pruning has attracted significant attention in order to enable the rapid deployment of AI into small devices with computation and memory constraints. Pruning is often achieved by dropping redundant weights, neurons, or layers of a deep network while attempting to retain a comparable test performance. Many deep pruning algorithms have been proposed with impressive empirical success. However, existing approaches lack a quantifiable measure to estimate the compressibility of a sub-network during each pruning iteration and thus may under-prune or over-prune the model. In this work, we propose PQ Index (PQI) to measure the potential compressibility of deep neural networks and use this to develop a Sparsity-informed Adaptive Pruning (SAP) algorithm. Our extensive experiments corroborate the hypothesis that for a generic pruning procedure, PQI decreases first when a large model is being effectively regularized and then increases when its compressibility reaches a limit that appears to correspond to the beginning of underfitting. Subsequently, PQI decreases again when the model collapse and significant deterioration in the performance of the model start to occur. Additionally, our experiments demonstrate that the proposed adaptive pruning algorithm with proper choice of hyper-parameters is superior to the iterative pruning algorithms such as the lottery ticket-based pruning methods, in terms of both compression efficiency and robustness.}
-}
-
-@inproceedings{diao2023multimodal,
-  abbr={CVMI},
-  title={Multimodal Controller for Generative Models},
-  author={Diao, Enmao and Ding, Jie and Tarokh, Vahid},
-  booktitle={Computer Vision and Machine Intelligence},
-  pages={109--121},
-  year={2023},
-  date={2023-05-06},
-  publisher={Springer Nature Singapore},
-  pdf={https://arxiv.org/abs/2002.02572},
-  code={https://github.com/diaoenmao/Multimodal-Controller-for-Generative-Models},
-  abstract={Class-conditional generative models are crucial tools for data generation from user-specified class labels. Existing approaches for class-conditional generative models require nontrivial modifications of backbone generative architectures to model conditional information fed into the model. This paper introduces a plug-and-play module, named `multimodal controller' to generate multimodal data without introducing additional learning parameters. In the absence of the controllers, our model reduces to non-conditional generative models. We test the efficacy of multimodal controllers on CIFAR10, COIL100, and Omniglot benchmark datasets. We demonstrate that multimodal controlled generative models (including VAE, PixelCNN, Glow, and GAN) can generate class-conditional images of significantly better quality when compared with conditional generative models. Moreover, we show that multimodal controlled models can also create novel modalities of images.}
-}
-
-@inproceedings{diao2023semi,
-  abbr={ICME},
-  title={Semi-Supervised Federated Learning for Keyword Spotting},
-  author={Diao, Enmao and Tramel, Eric W and Ding, Jie and Zhang, Tao},
-  booktitle={2023 IEEE International Conference on Multimedia and Expo Workshops (ICMEW)},
-  pages={466--469},
-  year={2023},
-  date={2023-07-10},
+@inproceedings{le2022personalized,
+  abbr={Asilomar},
+  title={Personalized Federated Recommender Systems with Private and Partially Federated AutoEncoders},
+  author={Le, Qi and Diao, Enmao and Wang, Xinran and Anwar, Ali and Tarokh, Vahid and Ding, Jie},
+  booktitle={2022 56th Asilomar Conference on Signals, Systems, and Computers},
+  pages={1157--1163},
+  year={2022},
+  date={2022-10-31},
   organization={IEEE},
-  pdf={https://arxiv.org/abs/2305.05110},
-  code={https://github.com/diaoenmao/Semi-Supervised-Federated-Learing-for-Keyword-Spotting},
-  abstract={Keyword Spotting (KWS) is a critical aspect of audio-based applications on mobile devices and virtual assistants. Recent developments in Federated Learning (FL) have significantly expanded the ability to train machine learning models by utilizing the computational and private data resources of numerous distributed devices. However, existing FL methods typically require that devices possess accurate ground-truth labels, which can be both expensive and impractical when dealing with local audio data. In this study, we first demonstrate the effectiveness of Semi-Supervised Federated Learning (SSL) and FL for KWS. We then extend our investigation to Semi-Supervised Federated Learning (SSFL) for KWS, where devices possess completely unlabeled data, while the server has access to a small amount of labeled data. We perform numerical analyses using state-of-the-art SSL, FL, and SSFL techniques to demonstrate that the performance of KWS models can be significantly improved by leveraging the abundant unlabeled heterogeneous data available on devices.}
+  pdf={https://arxiv.org/abs/2212.08779},
+  code={https://github.com/diaoenmao/Personalized-Federated-Recommender-Systems-with-Private-and-Partially-Federated-AutoEncoders},
+  abstract={Recommender Systems (RSs) have become increasingly important in many application domains, such as digital marketing. Conventional RSs often need to collect users' data, centralize them on the server-side, and form a global model to generate reliable recommendations. However, they suffer from two critical limitations: the personalization problem that the RSs trained traditionally may not be customized for individual users, and the privacy problem that directly sharing user data is not encouraged. We propose Personalized Federated Recommender Systems (PersonalFR), which introduces a personalized autoencoder-based recommendation model with Federated Learning (FL) to address these challenges. PersonalFR guarantees that each user can learn a personal model from the local dataset and other participating users' data without sharing local data, data embeddings, or models. PersonalFR consists of three main components, including AutoEncoder-based RSs (ARSs) that learn the user-item interactions, Partially Federated Learning (PFL) that updates the encoder locally and aggregates the decoder on the server-side, and Partial Compression (PC) that only computes and transmits active model parameters. Extensive experiments on two real-world datasets demonstrate that PersonalFR can achieve private and personalized performance comparable to that trained by centralizing all users' data. Moreover, PersonalFR requires significantly less computation and communication overhead than standard FL baselines.}
 }
 
-@inproceedings{wu2023robust,
-  abbr={UAI},
-  selected={true},
-  title={Robust Quickest Change Detection for Unnormalized Models},
-  author={Wu, Suya and Diao, Enmao and Ding, Jie and Banerjee, Taposh and Tarokh, Vahid},
-  booktitle={Proceedings of the Thirty-Ninth Conference on Uncertainty in Artificial Intelligence},
-  pages={2314--2323},
-  year={2023},
-  date={2023-07-31},
-  publisher={PMLR},
-  pdf={https://arxiv.org/abs/2306.05091},
-  abstract={Detecting an abrupt and persistent change in the underlying distribution of online data streams is an important problem in many applications. This paper proposes a new robust score-based algorithm called RSCUSUM, which can be applied to unnormalized models and addresses the issue of unknown post-change distributions. RSCUSUM replaces the Kullback-Leibler divergence with the Fisher divergence between pre-and post-change distributions for computational efficiency in unnormalized statistical models and introduces a notion of the “least favorable” distribution for robust change detection. The algorithm and its theoretical analysis are demonstrated through simulation studies.}
-}
-
-@article{varma2023once,
-  abbr={KDD},
-  title={Once-for-All Federated Learning: Learning From and Deploying to Heterogeneous Clients},
-  author={Varma, Kamala and Diao, Enmao and Roosta, Tanya and Ding, Jie and Zhang, Tao},
-  booktitle={2023 International Workshop on Federated Learning for Distributed Data Mining (KDD)},
-  year={2023},
-  date={2023-08-06},
-  pdf={https://openreview.net/forum?id=aJhe-VC0Ue},
-  abstract={Federated learning (FL) enables multiple client devices to train a single machine learning model collaboratively. As FL often involves various smart devices, it is important to adapt the FL pipeline to accommodate device resource constraints. This work addresses the problem of training and storing memory-intensive deep neural network architectures on resource-constrained devices. Existing solutions often involve computationally expensive methods. We propose Once-for-All Federated Learning (OFA-FL) to overcome this limitation by learning a model that concurrently optimizes sub-networks of various sizes. Clients can therefore receive the sub-network best suited for their device resources without extra computation. Our experiments show that each component of OFAFL contributes to well-performing FL-produced sub-networks while maintaining a global network design that supports the efficient deployment of device resource-specific sub-networks.}
-}
-
-@phdthesis{diao2023efficient,
-  abbr={Thesis},
-  selected={true},
-  title={Efficient and Collaborative Methods for Distributed Machine Learning},
-  author={Diao, Enmao},
-  year={2023},
-  date={2023-09-01},
-  pdf={https://www.proquest.com/docview/2865965932},
-  school={Duke University},
-  abstract={In recent years, there has been a significant expansion in the scale and complexity of neural networks. This has resulted in significant demand for data, computation, and energy resources. In this light, it is crucial to enhance and optimize the efficiency of these ML models and algorithms. Additionally, the rise in computational capabilities of modern devices has prompted a shift towards distributed systems that enable localized data storage and model training. While this evolution promises substantial potential, it introduces a series of challenges. Such challenges encompass addressing the heterogeneity across systems, data, models, and supervision, balancing the trade-off among communication, computation, and performance, as well as building a community of shared interest to encourage collaboration in the emerging era of Artificial General Intelligence (AGI).In this dissertation, we contribute to the establishment of a theoretically justified, methodologically comprehensive, and universally applicable Efficient and Collaborative Distributed Machine Learning framework. Specifically, in Part I, we contribute to methodologies for Efficient Machine Learning including for both learning and inference. In this direction, we propose a parameter-efficient model, namely Restricted Recurrent Neural Networks (RRNN), that leverage the recurrent structures of RNNs using weight sharing in order to improve learning efficiency. We also introduce an optimal measure of vector sparsity named the PQ Index (PQI), and postulate a hypothesis connecting this sparsity measure and compressibility of neural networks. Based on this, we propose a Sparsity-informed Adaptive Pruning (SAP) algorithm. This algorithm adaptively determines the pruning ratio to enhance inference efficiency. In Part II, we address both efficiency and collaboration in Distributed Machine Learning. We introduce Distributed Recurrent Autoencoders for Scalable Image Compression (DRASIC), a data-driven Distributed Source Coding framework that can compress heterogeneous data in a scalable and distributed manner. We then propose Heterogeneous Federated Learning (HeteroFL), demonstrating the feasibility of training localized heterogeneous models to create a global inference model. Subsequently, we propose a new Federated Learning (FL) framework, namely SemiFL, to tackle Semi-Supervised Federated Learning (SSFL) for clients with unlabeled data. This method performs comparably with state-of-the-art centralized Semi-Supervised Learning (SSL), and fully supervised FL techniques. Finally, we propose Gradient Assisted Learning (GAL) in order to enable collaborations among multiple organizations without sharing data, models, and objective functions. This method significantly out-performs local learning baselines and achieves near-oracle performance. In Part III, we develop collaborative applications for building a community of shared interest. We apply SemiFL to Keyword Spotting (KWS), a technique widely used in virtual assistants. Numerical experiments demonstrate that one can train models from the scratch, or transfer from pre-trained models in order to leverage heterogeneous unlabeled on-device data, using only a small amount of labeled data from the server. Finally, we propose a Decentralized Multi-Target Cross-Domain Recommendation (DMTCDR) which enhances the recommendation performance of decentralized organizations without compromising data privacy or model confidentiality.}
-}
-
-@article{wu2023quickest,
-  abbr={TIT},
-  selected={true},
-  title={Quickest Change Detection for Unnormalized Statistical Models},
-  author={Wu, Suya and Diao, Enmao and Banerjee, Taposh and Ding, Jie and Tarokh, Vahid},
-  journal={IEEE Transactions on Information Theory},
-  volume={70},
-  number={2},
-  pages={1220--1232},
-  year={2023},
-  date={2023-10-27},
-  publisher={IEEE},
-  pdf={https://arxiv.org/abs/2302.00250},
-  code={https://github.com/suuyawu/Quickest-Change-Detection-for-Unnormalized-Statistical-Models},
-  abstract={Classical quickest change detection algorithms require modeling pre-change and post-change distributions. Such an approach may not be feasible for various machine learning models because of the complexity of computing the explicit distributions. Additionally, these methods may suffer from a lack of robustness to model mismatch and noise. This paper develops a new variant of the classical Cumulative Sum (CUSUM) algorithm for the quickest change detection. This variant is based on Fisher divergence and the Hyvärinen score and is called the Hyvärinen score-based CUSUM (SCUSUM) algorithm. The SCUSUM algorithm allows the applications of change detection for unnormalized statistical models, i.e., models for which the probability density function contains an unknown normalization constant. The asymptotic optimality of the proposed algorithm is investigated by deriving expressions for average detection delay and the mean running time to a false alarm. Numerical results are provided to demonstrate the performance of the proposed algorithm.}
-}
-
-@article{zhang2024data,
-  abbr={TGRS},
-  selected={true},
-  title={A Data Efficient Deep Learning Method for Rough Surface Clutter Reduction in GPR Images},
-  author={Zhang, Yan and Diao, Enmao and Huston, Dryver and Xia, Tian},
-  journal={IEEE Transactions on Geoscience and Remote Sensing},
-  volume={62},
-  pages={1--10},
-  year={2024},
-  date={2024-03-28},
-  publisher={IEEE},
-  pdf={https://ieeexplore.ieee.org/document/10480715},
-  abstract={In ground penetrating radar (GPR) B-scan images, ground surface clutter is the main source of interference, often obscuring or distorting subsurface target signals. We propose a deep autoencoder-based method to mitigate rough surface clutter in GPR images by treating it as an anomaly detection problem. First, the rough surface region in a B-scan image is partitioned into small patches, which act as the training dataset for the deep autoencoder. Through the training process, the autoencoder learns and captures the patterns associated with the rough surface patches. Following training, the entire B-scan image is divided into small patches of the same size as the training patches, and each of them is fed into the autoencoder to compute an anomaly score. To reconstruct a clutter-reduced B-scan image, we employ a weighted sum approach to aggregate all patches based on their anomaly scores. We evaluate our method against conventional subspace projection techniques using simulated and field-collected B-scans. The results clearly indicate that our approach surpasses these subspace methods. Furthermore, we employ t-distributed stochastic neighbor embedding (t-SNE) analysis to gain deeper insights into our method’s effectiveness in reducing rough surface clutter. The outcomes of this analysis reinforce the practical viability of our approach for GPR image processing.}
-}
-
-@article{diao2023cola,
-  abbr={arXiv},
-  title={ColA: Collaborative Adaptation with Gradient Learning},
-  author={Diao, Enmao and Le, Qi and Wu, Suya and Wang, Xinran and Anwar, Ali and Ding, Jie and Tarokh, Vahid},
-  year={2024},
-  date={2024-04-22},
-  pdf={https://arxiv.org/abs/2404.13844},
-  code={https://github.com/diaoenmao/ColA-Collaborative-Adaptation-with-Gradient-Learning},
-  abstract={A primary function of back-propagation is to compute both the gradient of hidden representations and parameters for optimization with gradient descent. Training large models requires high computational costs due to their vast parameter sizes. While Parameter-Efficient Fine-Tuning (PEFT) methods aim to train smaller auxiliary models to save computational space, they still present computational overheads, especially in Fine-Tuning as a Service (FTaaS) for numerous users. We introduce Collaborative Adaptation (ColA) with Gradient Learning (GL), a parameter-free, model-agnostic fine-tuning approach that decouples the computation of the gradient of hidden representations and parameters. In comparison to PEFT methods, ColA facilitates more cost-effective FTaaS by offloading the computation of the gradient to low-cost devices. We also provide a theoretical analysis of ColA and experimentally demonstrate that ColA can perform on par or better than existing PEFT methods on various benchmarks.}
-}
-
-@inproceedings{zhang2024pixelcnn,
-  abbr={RadarConf},
-  selected={true},
-  title={A PixelCNN Based Method for Rough Surface Clutter Reduction in GPR B-scan Images},
-  author={Zhang, Yan and Diao, Enmao and Huston, Dryver and Xia, Tian},
-  booktitle={2024 IEEE Radar Conference (RadarConf24)},
-  pages={1--6},
-  year={2024},
-  date={2024-05-06},
-  organization={IEEE},
-  pdf={https://ieeexplore.ieee.org/document/10549712/},
-  abstract={Reducing the rough surface clutter in a Ground Penetrating Radar (GPR) B-scan image is essential for detecting shallow buried targets and for improving the performance of subsequent image processing algorithms. Challenges involved in this problem lie in the difficulties with modeling the variations of the rough surface profile. In this paper, we propose a novel PixelCNN based method for reducing rough surface clutter in GPR B-scan images. In the proposed method, the rough surface region in a B-scan image is split into small patches which are used to train a PixelCNN model. Given an input patch, the trained PixelCNN model can output the probability that the input patch comes from the rough surface region. For reconstructing a clutter reduced B-scan, the entire B-scan image is split into patches and each patch is input into the trained PixelCNN model to get its corresponding probability. Negative log-probabilities are then utilized as scores to suppress the rough surface region and to enhance the target profile in the B-scan image. To demonstrate the effectiveness of the proposed method, we test it on four simulation B-scan images and two real-world B-scan images. The proposed method is compared with traditional subspace projection methods. The results indicate that the proposed method outperforms traditional subspace projection methods.}
-}
-
-@article{moushegian2024robust,
-  abbr={arXiv},
-  title={Robust Score-Based Quickest Change Detection},
-  author={Moushegian, Sean and Wu, Suya and Diao, Enmao and Ding, Jie and Banerjee, Taposh and Tarokh, Vahid},
-  journal={arXiv preprint arXiv:2407.11094},
-  year={2024},
-  date={2024-07-15},
-  pdf={https://arxiv.org/abs/2407.11094},
-  abstract={Methods in the field of quickest change detection rapidly detect in real-time a change in the data-generating distribution of an online data stream. Existing methods have been able to detect this change point when the densities of the pre- and post-change distributions are known. Recent work has extended these results to the case where the pre- and post-change distributions are known only by their score functions. This work considers the case where the pre- and post-change score functions are known only to correspond to distributions in two disjoint sets. This work employs a pair of "least-favorable" distributions to robustify the existing score-based quickest change detection algorithm, the properties of which are studied. This paper calculates the least-favorable distributions for specific model classes and provides methods of estimating the least-favorable distributions for common constructions. Simulation results are provided demonstrating the performance of our robust change detection algorithm.}
-}
-
-@article{diao2024large,
+@article{wu2022score,
   abbr={IEEE Access},
-  selected={true},
-  title={Large Deviation Analysis of Score-based Hypothesis Testing},
-  author={Diao, Enmao and Banerjee, Taposh and Tarokh, Vahid},
+  title={Score-based Hypothesis Testing for Unnormalized Models},
+  author={Wu, Suya and Diao, Enmao and Elkhalil, Khalil and Ding, Jie and Tarokh, Vahid},
   journal={IEEE Access},
-  volume={12},
-  pages={117691--117700},
-  year={2024},
-  date={2024-08-21},
+  volume={10},
+  pages={71936--71950},
+  year={2022},
+  date={2022-07-04},
   publisher={IEEE},
-  pdf={https://arxiv.org/abs/2401.15519},
-  code={https://github.com/diaoenmao/Large-Deviation-Analysis-for-Hypothesis-Testing-for-Score-based-Models},
-  abstract={Score-based statistical models play an important role in modern machine learning, statistics, and signal processing. For hypothesis testing, a score-based hypothesis test is proposed in \cite{wu2022score}. We analyze the performance of this score-based hypothesis testing procedure and derive upper bounds on the probabilities of its Type I and II errors. We prove that the exponents of our error bounds are asymptotically (in the number of samples) tight for the case of simple null and alternative hypotheses. We calculate these error exponents explicitly in specific cases and provide numerical studies for various other scenarios of interest.}
+  pdf={https://ieeexplore.ieee.org/document/9813688},
+  code={https://github.com/suuyawu/Score-based-Hypothesis-Testing-for-Unnormalized-Models},
+  abstract={Unnormalized statistical models play an important role in machine learning, statistics, and signal processing. In this paper, we derive a new hypothesis testing procedure for unnormalized models. Our approach is motivated by the success of score matching techniques that avoid the intensive computational costs of normalization constants in many high-dimensional settings. Our proposed test statistic is the difference between Hyvärinen scores corresponding to the null and alternative hypotheses. Under some reasonable conditions, we prove that the asymptotic distribution of this statistic is Chi-squared. We outline a bootstrap approach to learn the test critical values, particularly when the distribution under the null hypothesis cannot be expressed in a closed form, and provide consistency guarantees. Finally, we conduct extensive numerical experiments and demonstrate that our proposed approach outperforms goodness-of-fit benchmarks in various settings.}
 }
 
-@inproceedings{gu2024esc,
-  abbr={EMNLP},
-  selected={true},
-  title={ESC: Efficient Speech Coding with Cross-Scale Residual Vector Quantized Transformers},
-  author={Gu, Yuzhe and Diao, Enmao},
-  booktitle={Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing},
-  pages={10084--10096},
-  year={2024},
-  date={2024-11-08},
-  publisher={Association for Computational Linguistics},
-  pdf={https://arxiv.org/abs/2404.19441},
-  code={https://github.com/yzguu830/efficient-speech-codec},
-  abstract={Neural speech codecs aim to compress input signals into minimal bits while maintaining content quality in a low-latency manner. However, existing neural codecs often trade model complexity for reconstruction performance. These codecs primarily use convolutional blocks for feature transformation, which are not inherently suited for capturing the local redundancies in speech signals. To compensate, they require either adversarial discriminators or a large number of model parameters to enhance audio quality. In response to these challenges, we introduce the Efficient Speech Codec (ESC), a lightweight, parameter-efficient speech codec based on a cross-scale residual vector quantization scheme and transformers. Our model employs mirrored hierarchical window transformer blocks and performs step-wise decoding from coarse-to-fine feature representations. To enhance bitrate efficiency, we propose a novel combination of vector quantization techniques along with a pre-training paradigm. Extensive experiments demonstrate that ESC can achieve high-fidelity speech reconstruction with significantly lower model complexity, making it a promising alternative to existing convolutional audio codecs}
+@article{momenifar2022dimension,
+  abbr={JoT},
+  title={Dimension Reduced Turbulent Flow Data from Deep Vector Quantizers},
+  author={Momenifar, Mohammadreza and Diao, Enmao and Tarokh, Vahid and Bragg, Andrew D},
+  journal={Journal of Turbulence},
+  volume={23},
+  number={4-5},
+  pages={232--264},
+  year={2022},
+  date={2022-04-11},
+  publisher={Taylor \& Francis},
+  pdf={https://arxiv.org/abs/2103.01074},
+  code={https://github.com/diaoenmao/Dimension-Reduced-Turbulent-Flow-Data-From-Deep-Vector-Quantizers},
+  abstract={Analysing large-scale data from simulations of turbulent flows is memory intensive, requiring significant resources. This major challenge highlights the need for data compression techniques. In this study, we apply a physics-informed Deep Learning technique based on vector quantisation to generate a discrete, low-dimensional representation of data from simulations of three-dimensional turbulent flows. The deep learning framework is composed of convolutional layers and incorporates physical constraints on the flow, such as preserving incompressibility and global statistical characteristics of the velocity gradients. The accuracy of the model is assessed using statistical, comparison-based similarity and physics-based metrics. The training data set is produced from Direct Numerical Simulation of an incompressible, statistically stationary, isotropic turbulent flow. The performance of this lossy data compression scheme is evaluated not only with unseen data from the stationary, isotropic turbulent flow, but also with data from decaying isotropic turbulence, a Taylor–Green vortex flow, and a turbulent channel flow. Defining the compression ratio (CR) as the ratio of original data size to the compressed one, the results show that our model based on vector quantisation can offer CR = 85 with a mean square error (MSE) of (10−3), and predictions that faithfully reproduce the statistics of the flow, except at the very smallest scales where there is some loss. Compared to the recent study of Glaws. et al. [Deep learning for in situ data compression of large turbulent flow simulations. Phys Rev Fluids. 2020;5(11):114602], which was based on a conventional autoencoder (where compression is performed in a continuous space), our model improves the CR by more than 30%, and reduces the MSE by an order of magnitude. Our compression model is an attractive solution for situations where fast, high quality and low-overhead encoding and decoding of large data are required.}
 }
 
-@inproceedings{le2024dynamicfl,
-  abbr={IEEE BigData},
-  selected={true},
-  title={DynamicFL: Federated Learning with Dynamic Communication Resource Allocation},
-  author={Le, Qi and Diao, Enmao and Wang, Xinran and Khan, Ahmad Faraz and Tarokh, Vahid and Ding, Jie and Anwar, Ali},
-  booktitle={2024 IEEE International Conference on Big Data (BigData)},
-  pages={998--1008},
-  year={2024},
-  date={2024-12-15},
-  award={Best Student Paper},
-  award_name={Best Student Paper},
-  pdf={https://arxiv.org/abs/2409.04986},
-  code={https://github.com/Qi-Le1/DynamicFL},
+@inproceedings{momenifar2022physics,
+  abbr={DCC},
+  title={A Physics-Informed Vector Quantized Autoencoder for Data Compression of Turbulent Flow},
+  author={Momenifar, Mohammadreza and Diao, Enmao and Tarokh, Vahid and Bragg, Andrew D},
+  booktitle={2022 Data Compression Conference (DCC)},
+  pages={01--10},
+  year={2022},
+  date={2022-03-22},
   organization={IEEE},
-  abstract={Federated Learning (FL) is a collaborative machine learning framework that allows multiple users to train models utilizing their local data in a distributed manner. However, considerable statistical heterogeneity in local data across devices often leads to suboptimal model performance compared with independently and identically distributed (IID) data scenarios. In this paper, we introduce DynamicFL, a new FL framework that investigates the trade-offs between global model performance and communication costs for two widely adopted FL methods: Federated Stochastic Gradient Descent (FedSGD) and Federated Averaging (FedAvg). Our approach allocates diverse communication resources to clients based on their data statistical heterogeneity, considering communication resource constraints, and attains substantial performance enhancements compared to uniform communication resource allocation. Notably, our method bridges the gap between FedSGD and FedAvg, providing a flexible framework leveraging communication heterogeneity to address statistical heterogeneity in FL. Through extensive experiments, we demonstrate that DynamicFL surpasses current state-of-the-art methods with up to a 10% increase in model accuracy, demonstrating its adaptability and effectiveness in tackling data statistical heterogeneity challenges.}
+  pdf={https://arxiv.org/abs/2201.03617},
+  code={https://github.com/diaoenmao/Dimension-Reduced-Turbulent-Flow-Data-From-Deep-Vector-Quantizers},
+  abstract={Analyzing large-scale data from simulations of turbulent flows is memory intensive, requiring significant resources. This major challenge highlights the need for data compression techniques. In this study, we apply a physics-informed Deep Learning technique based on vector quantization to generate a discrete, low-dimensional representation of data from simulations of three-dimensional turbulent flows. The deep learning framework is composed of convolutional layers and incorporates physical constraints on the flow, such as preserving incompressibility and global statistical characteristics of the velocity gradients. The accuracy of the model is assessed using statistical, comparison-based similarity and physics-based metrics. The training data set is produced from Direct Numerical Simulation of an incompressible, statistically stationary, isotropic turbulent flow. The performance of this lossy data compression scheme is evaluated not only with unseen data from the stationary, isotropic turbulent flow, but also with data from decaying isotropic turbulence, and a Taylor-Green vortex flow. Defining the compression ratio (CR) as the ratio of original data size to the compressed one, the results show that our model based on vector quantization can offer CR = 85 with a mean square error (MSE) of O(10−3), and predictions that faithfully reproduce the statistics of the flow, except at the very smallest scales where there is some loss. Compared to the recent study based on a conventional autoencoder where compression is performed in a continuous space, our model improves the CR by more than 30 percent, and reduces the MSE by an order of magnitude. Our compression model is an attractive solution for situations where fast, high quality and low-overhead encoding and decoding of large data are required.}
 }
 
-@inproceedings{wang2025aid,
-  abbr={NAACL},
-  selected={true},
-  title={AID: Adaptive Integration of Detectors for Safe AI with Language Models},
-  author={Wang, Xinran and and Diao, Enmao and Le, Qi and Ding, Jie and Anwar, Ali},
-  booktitle={Nations of the Americas Chapter of the ACL},
-  year={2025},
-  date={2025-01-23},
-  pdf={},
-  abstract={As Large Language Models (LLMs) increasingly influence content generation across diverse platforms, there is a heightened urgency to regulate their outputs to ensure safe usage. However, defining ``safety'' is complex, given that entities across domains may interpret it through varied lenses and develop safety detectors—models trained to identify specific unsafe content based on predefined criteria. To address this complexity, we introduce the approach of Adaptive Integration of Detectors (AID) to orchestrate the strengths of multiple pretrained detectors to ensure comprehensive effectiveness in diverse scenarios. AID employs a Mixture-of-Experts (MoE) framework, wherein it dynamically assigns and learns data-adaptive weights for each detector using domain-specific annotated data and LLM-extracted features. We provide theoretical insights into why MoE can be effective by showing its optimality in a Neyman-Pearson setting. Our experimental studies using various detection tasks curated from benchmark datasets demonstrate AID's ability to synergistically combine the unique capabilities of individual detectors. For example, it is observed that AID can improve the area under the curve (AUC) by an absolute value of 0.07 to 0.21, with a median of 0.12, compared to the best individual detectors developed for specific safety aspects. The improvement is particularly significant for complex detection tasks that mix different unsafe data sources. }
+@article{momenifar2021emulating,
+  abbr={AAAI},
+  title={Emulating Spatio-Temporal Realizations of Three-Dimensional Isotropic Turbulence via Deep Sequence Learning Models},
+  author={Momenifar, Mohammadreza and Diao, Enmao and Tarokh, Vahid and Bragg, Andrew D},
+  journal={2022 Workshop on AI to Accelerate Science and Engineering (AAAI)},
+  year={2022},
+  date={2022-02-22},
+  pdf={https://arxiv.org/abs/2112.03469},
+  code={https://github.com/MReza89/Emulating-Spatio-Temporal-Realizations-of-Three-Dimensional-Isotropic-Turbulence-via-Deep-Sequence},
+  abstract={We use a data-driven approach to model a three-dimensional turbulent flow using cutting-edge Deep Learning techniques. The deep learning framework incorporates physical constraints on the flow, such as preserving incompressibility and global statistical invariants of velocity gradient tensor. The accuracy of the model is assessed using statistical and physics-based metrics. The data set comes from Direct Numerical Simulation of an incompressible, statistically stationary, isotropic turbulent flow in a cubic box. Since the size of the dataset is memory intensive, we first generate a low-dimensional representation of the velocity data, and then pass it to a sequence prediction network that learns the spatial and temporal correlations of the underlying data. The dimensionality reduction is performed via extraction using Vector-Quantized Autoencoder (VQ-AE), which learns the discrete latent variables. For the sequence forecasting, the idea of Transformer architecture from natural language processing is used, and its performance compared against more standard Recurrent Networks (such as Convolutional LSTM). These architectures are designed and trained to perform a sequence to sequence multi-class classification task in which they take an input sequence with a fixed length (k) and predict a sequence with a fixed length (p), representing the future time instants of the flow. Our results for the short-term predictions show that the accuracy of results for both models deteriorates across predicted snapshots due to autoregressive nature of the predictions. Based on our diagnostics tests, the trained Conv-Transformer model outperforms the Conv-LSTM one and can accurately, both quantitatively and qualitatively, retain the large scales and capture well the inertial scales of flow but fails at recovering the small and intermittent fluid motions.}
 }
 
-@inproceedings{le2025probe,
+@article{diao2021decentralized,
+  abbr={arXiv},
+  title={Decentralized Multi-Target Cross-Domain Recommendation for Multi-organization Collaborations},
+  author={Diao, Enmao and Tarokh, Vahid and Ding, Jie},
+  journal={arXiv preprint arXiv:2110.13340},
+  year={2021},
+  date={2021-10-26},
+  pdf={https://arxiv.org/abs/2110.13340},
+  code={https://github.com/diaoenmao/Decentralized-Multi-Target-Cross-Domain-Recommendation-for-Multi-organization-Collaborations},
+  abstract={Recommender Systems (RSs) are operated locally by different organizations in many realistic scenarios. If various organizations can fully share their data and perform computation in a centralized manner, they may significantly improve the accuracy of recommendations. However, collaborations among multiple organizations in enhancing the performance of recommendations are primarily limited due to the difficulty of sharing data and models. To address this challenge, we propose Decentralized Multi-Target Cross-Domain Recommendation (DMTCDR) with Multi-Target Assisted Learning (MTAL) and Assisted AutoEncoder (AAE). Our method can help multiple organizations collaboratively improve their recommendation performance in a decentralized manner without sharing sensitive assets. Consequently, it allows decentralized organizations to collaborate and form a community of shared interest. We conduct extensive experiments to demonstrate that the new method can significantly outperform locally trained RSs and mitigate the cold start problem.}
+}
+
+@inproceedings{diao2020heterofl,
   abbr={ICLR},
   selected={true},
-  title={Probe Pruning: Accelerating LLMs through Dynamic Pruning via Model-Probing},
-  author={Le, Qi and Diao, Enmao and Wang, Ziyan and Wang, Xinran and Ding, Jie and Yang, Li and Anwar, Ali},
+  title={HeteroFL: Computation and Communication Efficient Federated Learning for Heterogeneous Clients},
+  author={Diao, Enmao and Ding, Jie and Tarokh, Vahid},
   booktitle={International Conference on Learning Representations},
-  year={2025},
-  date={2025-01-23},
-  pdf={https://arxiv.org/abs/2502.15618},
-  abstract={We introduce Probe Pruning (PP), a novel framework for online, dynamic, structured pruning of Large Language Models (LLMs) applied in a batch-wise manner. PP leverages the insight that not all samples and tokens contribute equally to the model's output, and probing a small portion of each batch effectively identifies crucial weights, enabling tailored dynamic pruning for different batches. It comprises three main stages: probing, history-informed pruning, and full inference. In the probing stage, PP selects a small yet crucial set of hidden states, based on residual importance, to run a few model layers ahead. During the history-informed pruning stage, PP strategically integrates the probing states with historical states. Subsequently, it structurally prunes weights based on the integrated states and the PP importance score, a metric developed specifically to assess the importance of each weight channel in maintaining performance. In the final stage, full inference is conducted on the remaining weights. A major advantage of PP is its compatibility with existing models, as it operates without requiring additional neural network modules or fine-tuning. Comprehensive evaluations of PP on LLaMA-2/3 and OPT models reveal that even minimal probing-using just 1.5% of FLOPs-can substantially enhance the efficiency of structured pruning of LLMs. For instance, when evaluated on LLaMA-2-7B with WikiText2, PP achieves a 2.56 times lower ratio of performance degradation per unit of runtime reduction compared to the state-of-the-art method at a 40% pruning ratio.}
+  year={2021},
+  date={2021-05-03},
+  pdf={https://arxiv.org/abs/2010.01264},
+  code={https://github.com/diaoenmao/HeteroFL-Computation-and-Communication-Efficient-Federated-Learning-for-Heterogeneous-Clients},
+  abstract={Federated Learning (FL) is a method of training machine learning models on private data distributed over a large number of possibly heterogeneous clients such as mobile phones and IoT devices. In this work, we propose a new federated learning framework named HeteroFL to address heterogeneous clients equipped with very different computation and communication capabilities. Our solution can enable the training of heterogeneous local models with varying computation complexities and still produce a single global inference model. For the first time, our method challenges the underlying assumption of existing work that local models have to share the same architecture as the global model. We demonstrate several strategies to enhance FL training and conduct extensive empirical evaluations, including five computation complexity levels of three model architecture on three datasets. We show that adaptively distributing subnetworks according to clients' capabilities is both computation and communication efficient.}
 }
 
-@inproceedings{wang2024map,
-  abbr={ICLR},
+@article{ding2020statistical,
+  abbr={TIT},
+  title={On Statistical Efficiency in Learning},
+  author={Ding, Jie and Diao, Enmao and Zhou, Jiawei and Tarokh, Vahid},
+  journal={IEEE Transactions on Information Theory},
+  volume={67},
+  number={4},
+  pages={2488--2506},
+  year={2020},
+  date={2020-12-28},
+  publisher={IEEE},
+  pdf={https://arxiv.org/abs/2012.13307},
+  code={https://github.com/diaoenmao/On-Statistical-Efficiency-in-Learning},
+  abstract={A central issue of many statistical learning problems is to select an appropriate model from a set of candidate models. Large models tend to inflate the variance (or overfitting), while small models tend to cause biases (or underfitting) for a given fixed dataset. In this work, we address the critical challenge of model selection to strike a balance between model fitting and model complexity, thus gaining reliable predictive power. We consider the task of approaching the theoretical limit of statistical learning, meaning that the selected model has the predictive performance that is as good as the best possible model given a class of potentially misspecified candidate models. We propose a generalized notion of Takeuchi’s information criterion and prove that the proposed method can asymptotically achieve the optimal out-sample prediction loss under reasonable assumptions. It is the first proof of the asymptotic property of Takeuchi’s information criterion to our best knowledge. Our proof applies to a wide variety of nonlinear models, loss functions, and high dimensionality (in the sense that the models’ complexity can grow with sample size). The proposed method can be used as a computationally efficient surrogate for leave-one-out cross-validation. Moreover, for modeling streaming data, we propose an online algorithm that sequentially expands the model complexity to enhance selection stability and reduce computation cost. Experimental studies show that the proposed method has desirable predictive power and significantly less computational cost than some popular methods.}
+}
+
+@inproceedings{wang2020speech,
+  abbr={ICASSP},
   selected={true},
-  title={MAP: Multi-Human-Value Alignment Palette},
-  author={Wang, Xinran and Le, Qi and Ahmed, Ammar and Diao, Enmao and Zhou, Yi and Baracaldo, Nathalie and Ding, Jie and Anwar, Ali},
-  booktitle={International Conference on Learning Representations},
-  year={2025},
-  date={2025-01-23},
-  award={Oral},
-  award_name={Oral},
-  pdf={https://arxiv.org/abs/2410.19198},
-  abstract={Ensuring that generative AI systems align with human values is essential but challenging, especially when considering multiple human values and their potential trade-offs. Since human values can be personalized and dynamically change over time, the desirable levels of value alignment vary across different ethnic groups, industry sectors, and user cohorts. Within existing frameworks, it is hard to define human values and align AI systems accordingly across different directions simultaneously, such as harmlessness, helpfulness, and positiveness. To address this, we develop a novel, first-principle approach called Multi-Human-Value Alignment Palette (MAP), which navigates the alignment across multiple human values in a structured and reliable way. MAP formulates the alignment problem as an optimization task with user-defined constraints, which define human value targets. It can be efficiently solved via a primal-dual approach, which determines whether a user-defined alignment target is achievable and how to achieve it. We conduct a detailed theoretical analysis of MAP by quantifying the trade-offs between values, the sensitivity to constraints, the fundamental connection between multi-value alignment and sequential alignment, and proving that linear weighted rewards are sufficient for multi-value alignment. Extensive experiments demonstrate MAP's ability to align multiple values in a principled manner while delivering strong empirical performance across various tasks.}
+  title={Speech Emotion Recognition with Dual-Sequence LSTM Architecture},
+  author={Wang, Jianyou and Xue, Michael and Culhane, Ryan and Diao, Enmao and Ding, Jie and Tarokh, Vahid},
+  booktitle={ICASSP 2020-2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={6474--6478},
+  year={2020},
+  date={2020-05-04},
+  organization={IEEE},
+  pdf={https://arxiv.org/abs/1910.08874},
+  code={https://github.com/diaoenmao/Speech-Emotion-Recognition-with-Dual-Sequence-LSTM-Architecture},
+  abstract={Speech Emotion Recognition (SER) has emerged as a critical component of the next generation of human-machine interfacing technologies. In this work, we propose a new dual-level model that predicts emotions based on both MFCC features and mel-spectrograms produced from raw audio signals. Each utterance is preprocessed into MFCC features and two mel-spectrograms at different time-frequency resolutions. A standard LSTM processes the MFCC features, while a novel LSTM architecture, denoted as Dual-Sequence LSTM (DS-LSTM), processes the two mel-spectrograms simultaneously. The outputs are later averaged to produce a final classification of the utterance. Our proposed model achieves, on average, a weighted accuracy of 72.7% and an unweighted accuracy of 73.3% - a 6% improvement over current state-of-the-art unimodal models - and is comparable with multimodal models that leverage textual information as well as audio signals.}
+}
+
+@inproceedings{diao2020drasic,
+  abbr={DCC},
+  title={DRASIC: Distributed Recurrent Autoencoder for Scalable Image Compression},
+  author={Diao, Enmao and Ding, Jie and Tarokh, Vahid},
+  booktitle={2020 Data Compression Conference (DCC)},
+  pages={3--12},
+  year={2020},
+  date={2020-03-24},
+  organization={IEEE},
+  pdf={https://arxiv.org/abs/1903.09887},
+  code={https://github.com/diaoenmao/DRASIC-Distributed-Recurrent-Autoencoder-for-Scalable-Image-Compression},
+  selected={true},
+  abstract={We propose a new architecture for distributed image compression from a group of distributed data sources. The work is motivated by practical needs of data-driven codec design, low power consumption, robustness, and data privacy. The proposed architecture, which we refer to as Distributed Recurrent Autoencoder for Scalable Image Compression (DRASIC), is able to train distributed encoders and one joint decoder on correlated data sources. Its compression capability is much better than the method of training codecs separately. Meanwhile, the performance of our distributed system with 10 distributed sources is only within 2 dB peak signal-to-noise ratio (PSNR) of the performance of a single codec trained with all data sources. We experiment distributed sources with different correlations and show how our data-driven methodology well matches the Slepian-Wolf Theorem in Distributed Source Coding (DSC). To the best of our knowledge, this is the first data-driven DSC framework for general distributed code design with deep learning.}
+}
+
+@inproceedings{wu2020deep,
+  abbr={DCC},
+  title={Deep Clustering of Compressed Variational Embeddings},
+  author={Wu, Suya and Diao, Enmao and Ding, Jie and Tarokh, Vahid},
+  booktitle={2020 Data Compression Conference (DCC)},
+  pages={399},
+  year={2020},
+  date={2020-03-24},
+  organization={IEEE},
+  pdf={https://arxiv.org/abs/1910.10341},
+  code={https://github.com/diaoenmao/Deep-Clustering-of-Compressed-Variational-Embeddings},
+  abstract={Motivated by the ever-increasing demands for limited communication bandwidth and low-power consumption, we propose a new methodology, named joint Variational Autoencoders with Bernoulli mixture models (VAB), for performing clustering in the compressed data domain. The idea is to reduce the data dimension by Variational Autoencoders (VAEs) and group data representations by Bernoulli mixture models (BMMs). Once jointly trained for compression and clustering, the model can be decomposed into two parts: a data vendor that encodes the raw data into compressed data, and a data consumer that classifies the received (compressed) data. In this way, the data vendor benefits from data security and communication bandwidth, while the data consumer benefits from low computational complexity. To enable training using the gradient descent algorithm, we propose to use the Gumbel-Softmax distribution to resolve the infeasibility of the back-propagation algorithm when assessing categorical samples.}
+}
+
+@inproceedings{diao2019restricted,
+  abbr={IEEE Big Data},
+  selected={true},
+  title={Restricted Recurrent Neural Networks},
+  author={Diao, Enmao and Ding, Jie and Tarokh, Vahid},
+  booktitle={2019 IEEE International Conference on Big Data (Big Data)},
+  pages={56--63},
+  year={2019},
+  date={2019-12-09},
+  organization={IEEE},
+  award={Student Travel Award},
+  award_name={Student Travel Award},
+  pdf={https://arxiv.org/abs/1908.07724},
+  code={https://github.com/diaoenmao/Restricted-Recurrent-Neural-Networks},
+  abstract={Recurrent Neural Network (RNN) and its variations such as Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU), have become standard building blocks for learning online data of sequential nature in many research areas, including natural language processing and speech data analysis. In this paper, we present a new methodology to significantly reduce the number of parameters in RNNs while maintaining performance that is comparable or even better than classical RNNs. The new proposal, referred to as Restricted Recurrent Neural Network (RRNN), restricts the weight matrices corresponding to the input data and hidden states at each time step to share a large proportion of parameters. The new architecture can be regarded as a compression of its classical counterpart, but it does not require pre-training or sophisticated parameter fine-tuning, both of which are major issues in most existing compression techniques. Experiments on natural language modeling show that compared with its classical counterpart, the restricted recurrent architecture generally produces comparable results at about 50% compression rate. In particular, the Restricted LSTM can outperform classical RNN with even less number of parameters.}
+}
+
+@inproceedings{ding2018penalized,
+  abbr={ICASSP},
+  title={A Penalized Method for the Predictive Limit of Learning},
+  author={Ding, Jie and Diao, Enmao and Zhou, Jiawei and Tarokh, Vahid},
+  booktitle={2018 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={4414--4418},
+  year={2018},
+  date={2018-04-15},
+  organization={IEEE},
+  pdf={https://ieeexplore.ieee.org/abstract/document/8461832},
+  code={https://github.com/diaoenmao/On-Statistical-Efficiency-in-Learning},
+  abstract={Machine learning systems learn from and make predictions by building models from observed data. Because large models tend to overfit while small models tend to underfit for a given fixed dataset, a critical challenge is to select an appropriate model (e.g. set of variables/features). Model selection aims to strike a balance between the goodness of fit and model complexity, and thus to gain reliable predictive power. In this paper, we study a penalized model selection technique that asymptotically achieves the optimal expected prediction loss (referred to as the limit of learning) offered by a set of candidate models. We prove that the proposed procedure is both statistically efficient in the sense that it asymptotically approaches the limit of learning, and computationally efficient in the sense that it can be much faster than cross validation methods. Our theory applies for a wide variety of model classes, loss functions, and high dimensions (in the sense that the models' complexity can grow with data size). We released a python package with our proposed method for general usage like logistic regression and neural networks.}
 }
