@@ -5,6 +5,6 @@ inline: true
 related_posts: false
 ---
 
-One paper is accepted in NAACL 2024.
+[AID: Adaptive Integration of Detectors for Safe AI with Language Models]() is accepted in NAACL 2025.
 
 

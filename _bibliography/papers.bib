@@ -407,18 +407,6 @@
   abstract={Score-based statistical models play an important role in modern machine learning, statistics, and signal processing. For hypothesis testing, a score-based hypothesis test is proposed in \cite{wu2022score}. We analyze the performance of this score-based hypothesis testing procedure and derive upper bounds on the probabilities of its Type I and II errors. We prove that the exponents of our error bounds are asymptotically (in the number of samples) tight for the case of simple null and alternative hypotheses. We calculate these error exponents explicitly in specific cases and provide numerical studies for various other scenarios of interest.}
 }
 
-@article{wang2024map,
-  abbr={arXiv},
-  selected={true},
-  title={MAP: Multi-Human-Value Alignment Palette},
-  author={Wang, Xinran and Le, Qi and Ahmed, Ammar and Diao, Enmao and Zhou, Yi and Baracaldo, Nathalie and Ding, Jie and Anwar, Ali},
-  journal={arXiv preprint arXiv:2410.19198},
-  year={2024},
-  date={2024-10-24},
-  pdf={https://arxiv.org/abs/2410.19198},
-  abstract={Ensuring that generative AI systems align with human values is essential but challenging, especially when considering multiple human values and their potential trade-offs. Since human values can be personalized and dynamically change over time, the desirable levels of value alignment vary across different ethnic groups, industry sectors, and user cohorts. Within existing frameworks, it is hard to define human values and align AI systems accordingly across different directions simultaneously, such as harmlessness, helpfulness, and positiveness. To address this, we develop a novel, first-principle approach called Multi-Human-Value Alignment Palette (MAP), which navigates the alignment across multiple human values in a structured and reliable way. MAP formulates the alignment problem as an optimization task with user-defined constraints, which define human value targets. It can be efficiently solved via a primal-dual approach, which determines whether a user-defined alignment target is achievable and how to achieve it. We conduct a detailed theoretical analysis of MAP by quantifying the trade-offs between values, the sensitivity to constraints, the fundamental connection between multi-value alignment and sequential alignment, and proving that linear weighted rewards are sufficient for multi-value alignment. Extensive experiments demonstrate MAP's ability to align multiple values in a principled manner while delivering strong empirical performance across various tasks.}
-}
-
 @inproceedings{gu2024esc,
   abbr={EMNLP},
   selected={true},
@@ -449,4 +437,42 @@
   code={https://github.com/Qi-Le1/DynamicFL},
   organization={IEEE},
   abstract={Federated Learning (FL) is a collaborative machine learning framework that allows multiple users to train models utilizing their local data in a distributed manner. However, considerable statistical heterogeneity in local data across devices often leads to suboptimal model performance compared with independently and identically distributed (IID) data scenarios. In this paper, we introduce DynamicFL, a new FL framework that investigates the trade-offs between global model performance and communication costs for two widely adopted FL methods: Federated Stochastic Gradient Descent (FedSGD) and Federated Averaging (FedAvg). Our approach allocates diverse communication resources to clients based on their data statistical heterogeneity, considering communication resource constraints, and attains substantial performance enhancements compared to uniform communication resource allocation. Notably, our method bridges the gap between FedSGD and FedAvg, providing a flexible framework leveraging communication heterogeneity to address statistical heterogeneity in FL. Through extensive experiments, we demonstrate that DynamicFL surpasses current state-of-the-art methods with up to a 10% increase in model accuracy, demonstrating its adaptability and effectiveness in tackling data statistical heterogeneity challenges.}
+}
+
+@inproceedings{wang2025aid,
+  abbr={NAACL},
+  selected={true},
+  title={AID: Adaptive Integration of Detectors for Safe AI with Language Models},
+  author={Wang, Xinran and Le, Qi and and Diao, Enmao and Ding, Jie and Anwar, Ali},
+  booktitle={Nations of the Americas Chapter of the ACL},
+  year={2025},
+  date={2025-01-23},
+  pdf={},
+  abstract={As Large Language Models (LLMs) increasingly influence content generation across diverse platforms, there is a heightened urgency to regulate their outputs to ensure safe usage. However, defining ``safety'' is complex, given that entities across domains may interpret it through varied lenses and develop safety detectors—models trained to identify specific unsafe content based on predefined criteria. To address this complexity, we introduce the approach of Adaptive Integration of Detectors (AID) to orchestrate the strengths of multiple pretrained detectors to ensure comprehensive effectiveness in diverse scenarios. AID employs a Mixture-of-Experts (MoE) framework, wherein it dynamically assigns and learns data-adaptive weights for each detector using domain-specific annotated data and LLM-extracted features. We provide theoretical insights into why MoE can be effective by showing its optimality in a Neyman-Pearson setting. Our experimental studies using various detection tasks curated from benchmark datasets demonstrate AID's ability to synergistically combine the unique capabilities of individual detectors. For example, it is observed that AID can improve the area under the curve (AUC) by an absolute value of 0.07 to 0.21, with a median of 0.12, compared to the best individual detectors developed for specific safety aspects. The improvement is particularly significant for complex detection tasks that mix different unsafe data sources. }
+}
+
+@inproceedings{le2025probe,
+  abbr={ICLR},
+  selected={true},
+  title={Probe Pruning: Accelerating LLMs through Dynamic Pruning via Model-Probing},
+  author={Le, Qi and Diao, Enmao and Wang, Ziyan and Wang, Xinran and Ding, Jie and Yang, Li and Anwar, Ali},
+  booktitle={International Conference on Learning Representations},
+  year={2025},
+  date={2025-01-23},
+  pdf={https://arxiv.org/abs/2502.15618},
+  abstract={We introduce Probe Pruning (PP), a novel framework for online, dynamic, structured pruning of Large Language Models (LLMs) applied in a batch-wise manner. PP leverages the insight that not all samples and tokens contribute equally to the model's output, and probing a small portion of each batch effectively identifies crucial weights, enabling tailored dynamic pruning for different batches. It comprises three main stages: probing, history-informed pruning, and full inference. In the probing stage, PP selects a small yet crucial set of hidden states, based on residual importance, to run a few model layers ahead. During the history-informed pruning stage, PP strategically integrates the probing states with historical states. Subsequently, it structurally prunes weights based on the integrated states and the PP importance score, a metric developed specifically to assess the importance of each weight channel in maintaining performance. In the final stage, full inference is conducted on the remaining weights. A major advantage of PP is its compatibility with existing models, as it operates without requiring additional neural network modules or fine-tuning. Comprehensive evaluations of PP on LLaMA-2/3 and OPT models reveal that even minimal probing-using just 1.5% of FLOPs-can substantially enhance the efficiency of structured pruning of LLMs. For instance, when evaluated on LLaMA-2-7B with WikiText2, PP achieves a 2.56 times lower ratio of performance degradation per unit of runtime reduction compared to the state-of-the-art method at a 40% pruning ratio.}
+}
+
+@inproceedings{wang2024map,
+  abbr={ICLR},
+  selected={true},
+  title={MAP: Multi-Human-Value Alignment Palette},
+  author={Wang, Xinran and Le, Qi and Ahmed, Ammar and Diao, Enmao and Zhou, Yi and Baracaldo, Nathalie and Ding, Jie and Anwar, Ali},
+  booktitle={International Conference on Learning Representations},
+  year={2025},
+  date={2025-01-23},
+  award={Oral},
+  award_name={Oral},
+  pdf={https://arxiv.org/abs/2410.19198},
+  abstract={Ensuring that generative AI systems align with human values is essential but challenging, especially when considering multiple human values and their potential trade-offs. Since human values can be personalized and dynamically change over time, the desirable levels of value alignment vary across different ethnic groups, industry sectors, and user cohorts. Within existing frameworks, it is hard to define human values and align AI systems accordingly across different directions simultaneously, such as harmlessness, helpfulness, and positiveness. To address this, we develop a novel, first-principle approach called Multi-Human-Value Alignment Palette (MAP), which navigates the alignment across multiple human values in a structured and reliable way. MAP formulates the alignment problem as an optimization task with user-defined constraints, which define human value targets. It can be efficiently solved via a primal-dual approach, which determines whether a user-defined alignment target is achievable and how to achieve it. We conduct a detailed theoretical analysis of MAP by quantifying the trade-offs between values, the sensitivity to constraints, the fundamental connection between multi-value alignment and sequential alignment, and proving that linear weighted rewards are sufficient for multi-value alignment. Extensive experiments demonstrate MAP's ability to align multiple values in a principled manner while delivering strong empirical performance across various tasks.}
 }
