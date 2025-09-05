@@ -6,7 +6,7 @@ subtitle: <strong>Entrepreneur and Researcher</strong> <br> <em>Ambitious, Creat
 
 profile:
   align: left
-  image: prof_pic.png
+  image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
   more_info: <strong>Research interests</strong> <br> Distributed Machine Learning, Efficient Machine Learning, <br> Signal Processing, Artificial Intelligence
   goal: <center><em></em></center>
