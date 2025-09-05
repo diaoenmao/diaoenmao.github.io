@@ -4,7 +4,7 @@
     "label": "",
     "image": "",
     "email": "diao_em@hotmail.com",
-    "url": "https://diaoenmao.com/"
+    "url": "diaoenmao.com"
   },
   "experience": [
     {
@@ -34,7 +34,7 @@
     },
     {
       "institution": "Harvard University, Cambridge, Massachusetts",
-      "studyType": "M.S. in Electrical Engineering",
+      "studyType": "M.S. in Engineering Sciences",
       "startDate": "2016-08",
       "endDate": "2018-05",
       "courses": [

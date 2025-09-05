@@ -9,7 +9,7 @@ profile:
   image: prof_pic.png
   image_circular: true # crops the image to make it circular
   more_info: <strong>Research interests</strong> <br> Distributed Machine Learning, Efficient Machine Learning, <br> Signal Processing, Artificial Intelligence
-  goal: <center><em>To create AI like never before</em></center>
+  goal: <center><em></em></center>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -26,5 +26,5 @@ latest_posts:
 ---
 I was born in Chengdu, Sichuan, China in 1994. 
 I received my B.S. with the highest honor in Electrical Engineering and Computer Science from [Georgia Institute of Technology](https://www.gatech.edu/) in 2016.
-I received my M.S. degree in Electrical Engineering from [Harvard University](https://www.harvard.edu/) in 2018.
+I received my M.S. degree in Engineering Sciences from [Harvard University](https://www.harvard.edu/) in 2018.
 I received my Ph.D. degree in Electrical Engineering from [Duke University](https://www.duke.edu/) in 2023.
