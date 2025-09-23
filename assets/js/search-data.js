@@ -372,7 +372,12 @@ ninja.data = [{
           section: "News",},{id: "news-map-multi-human-value-alignment-palette-is-accepted-in-iclr-2025-oral-probe-pruning-accelerating-llms-through-dynamic-pruning-via-model-probing-is-accepted-in-iclr-2025",
           title: 'MAP: Multi-Human-Value Alignment Palette is accepted in ICLR 2025 (Oral). Probe Pruning: Accelerating...',
           description: "",
-          section: "News",},{id: "projects-project-1",
+          section: "News",},{id: "projects-project-10",
+          title: 'project 10',
+          description: "A project with an introduction section",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/10_project/";
+            },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
