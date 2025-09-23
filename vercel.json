@@ -1,6 +1,0 @@
-{
-  "builds": [
-    { "src": "Gemfile", "use": "@vercel/ruby" },
-    { "src": "index.html", "use": "@vercel/static" }
-  ]
-}
