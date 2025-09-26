@@ -1,14 +1,28 @@
+{% assign lang = site.active_lang | split: '-' | first %}
+
+{% case lang %}
+  {% when 'pt' %}
+    {% assign lang = site.active_lang %}
+
+  {% when 'zh' %}
+    {% assign lang = 'cn' %}
+
+    {% comment %} Add a new language using when... if needed {% endcomment %}
+    {% comment %} If you still encounter language-display issues, check the available locale codes in github-readme-stats (different from ISO-639 standard used in your website) {% endcomment %}
+    {% comment %} https://github.com/anuraghazra/github-readme-stats?tab=readme-ov-file#available-locales {% endcomment %}
+{% endcase %}
+
 <div class="repo p-2 text-center">
   <a href="https://github.com/{{ include.username }}">
     <img
       class="only-light w-100"
       alt="{{ include.username }}"
-      src="https://github-readme-stats-five-alpha-58.vercel.app/api?username={{ include.username }}&count_private=true&theme={{ site.repo_theme_light }}&show_icons=true"
+      src="https://github-readme-stats-five-alpha-58.vercel.app/api?username={{ include.username }}&count_private=true&theme={{ site.repo_theme_light }}&locale={{ lang }}&show_icons=true"
     >
     <img
       class="only-dark w-100"
       alt="{{ include.username }}"
-      src="https://github-readme-stats-five-alpha-58.vercel.app/api?username={{ include.username }}&count_private=true&theme={{ site.repo_theme_dark }}&show_icons=true"
+      src="https://github-readme-stats-five-alpha-58.vercel.app/api?username={{ include.username }}&count_private=true&theme={{ site.repo_theme_dark }}&locale={{ lang }}&show_icons=true"
     >
   </a>
 </div>

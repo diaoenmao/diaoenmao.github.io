@@ -2,7 +2,7 @@
 page_id: publications
 layout: page
 permalink: /publications/
-title: publications
+title: 论文
 description:
 nav: true
 nav_order: 2

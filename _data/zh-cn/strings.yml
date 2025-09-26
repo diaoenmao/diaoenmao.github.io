@@ -1,0 +1,164 @@
+archive:
+  prefix: 存档
+  category_suffix: 分类
+  tag_suffix: 标签
+  year_suffix: 年份
+bibliography:
+  abstract: 摘要
+  awarded: 获奖
+  blog: 博客
+  book_prefix: 收录于
+  code: 代码
+  last_author_prefix: 和
+  poster: 海报
+  slides: 幻灯片
+  supp: 附件
+  video: 视频
+  website: 网站
+blog:
+  navigation_title: 博客
+categories:
+  fun: 娱乐
+  work: 工作
+citation:
+  bibtex: "或作为 BibTeX 条目："
+  introduction: "如果您觉得有帮助，请引用如下："
+collections:
+  books: 图书
+  posts: 文章
+contact_note: diao_em@hotmail.com
+cv:
+  address: 地址
+  area: 领域
+  awarder: 授予机构
+  awards: 奖项
+  basics: 基本信息
+  certificates: 证书
+  city: 城市
+  countryCode: 国家代码
+  courses: 课程
+  date: 日期
+  education: 教育经历
+  email: 邮箱
+  endDate: 结束日期
+  fluency: 熟练度
+  highlights: 亮点
+  image: 照片
+  institution: 学校/机构
+  interests: 兴趣
+  issuer: 颁发者
+  keywords: 关键词
+  label: 标签
+  language: 语言
+  languages: 语言
+  level: 水平
+  location: 地点
+  name: 姓名
+  network: 社交平台
+  organization: 组织
+  phone: 电话
+  position: 职位
+  postalCode: 邮政编码
+  present: 至今
+  profiles: 个人主页
+  projects: 项目
+  publications: 出版物
+  publisher: 出版社
+  reference: 推荐人
+  references: 推荐
+  region: 地区
+  releaseDate: 发布日期
+  score: 成绩
+  skills: 技能
+  startDate: 开始日期
+  studyType: 学位类型
+  summary: 简介
+  table_of_contents: 目录
+  title: 标题
+  url: 链接
+  username: 用户名
+  volunteer: 志愿经历
+  work: 工作经历
+footer:
+  copyright: 版权
+  last_updated: "最后更新："
+footer_text: > 
+  基于 <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> 构建，使用 <a href="https://github.com/george-gca/multi-language-al-folio">multi-language-al-folio</a> 主题。<br>
+  部署在 <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>。<br>
+  图片来自 <a href="https://unsplash.com" target="_blank">Unsplash</a>。
+latest_posts: 最新文章
+months:
+  long:
+    january: 一月
+    february: 二月
+    march: 三月
+    april: 四月
+    may: 五月
+    june: 六月
+    july: 七月
+    august: 八月
+    september: 九月
+    october: 十月
+    november: 十一月
+    december: 十二月
+  short:
+    january: 1月
+    february: 2月
+    march: 3月
+    april: 4月
+    may: 5月
+    june: 6月
+    july: 7月
+    august: 8月
+    september: 9月
+    october: 10月
+    november: 11月
+    december: 12月
+news: 新闻
+newsletter:
+  back: 返回
+  error: "出错了！请再试一次。"
+  subscribe: 订阅
+  subscribed: "您已成功订阅新闻邮件。"
+  subscribe_to_receive: "订阅以接收未来的文章："
+  too_many_signups: "订阅过多，请稍后再试"
+  wait: "请稍候..."
+no_news: 暂无新闻...
+no_posts: 暂无文章...
+pagination:
+  page: 页
+post:
+  created_in: 创建于
+  created_by: 作者
+  last_updated: 最后更新于
+references: 参考文献
+related_posts:
+  description: "这里还有一些您可能感兴趣的文章："
+  title: 喜欢这篇文章吗？
+search:
+  dark_theme:
+    description: 将网站主题切换为深色
+    title: 切换到深色模式
+  dropdown: 下拉菜单
+  email: 发送邮件
+  footer:
+    close: 关闭
+    navigate: 导航
+    parent: 上级
+    select: 选择
+  languages: 语言
+  light_theme:
+    description: 将网站主题切换为浅色
+    title: 切换到浅色模式
+  navigation: 导航菜单
+  news: 新闻
+  placeholder: 输入开始搜索
+  posts: 文章
+  projects: 项目
+  socials: 社交
+  system_theme:
+    description: 将网站主题切换为系统默认
+    title: 使用系统默认主题
+  theme: 主题
+selected_publications: 精选出版物
+site_description: 一个简洁的学术主题，基于 [*folio](https://github.com/bogoli/-folio) 设计

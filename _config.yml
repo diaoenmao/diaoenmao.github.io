@@ -15,7 +15,7 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
 #  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 #  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 keywords: Enmao Diao # add your own keywords or leave empty
-lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
+#lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: icon.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://www.diaoenmao.com # the base hostname & protocol for your site
@@ -95,6 +95,7 @@ lsi: false # produce an index for related posts
 # Pagination
 pagination:
   enabled: true
+  title: ":title - pagination.page :num"
 
 related_blog_posts:
   enabled: true
@@ -198,7 +199,7 @@ keep_files:
 
 # Plug-ins
 plugins:
-  - jekyll-archives
+  - jekyll-archives-v2
   - jekyll-email-protect
   - jekyll-feed
   - jekyll-get-json
@@ -207,6 +208,7 @@ plugins:
   - jekyll-link-attributes
   - jekyll-minifier
   - jekyll-paginate-v2
+  - jekyll-polyglot
   - jekyll-regex-replace
   - jekyll/scholar
   - jekyll-sitemap
@@ -341,6 +343,17 @@ external_links:
   rel: external nofollow noopener
   target: _blank
   exclude:
+
+# -----------------------------------------------------------------------------
+# Jekyll Polyglot
+# -----------------------------------------------------------------------------
+
+languages: ["en-us", "zh-cn"]
+default_lang: "en-us"
+exclude_from_localization: ["assets"]
+lang_from_path: true
+country_flag: false # set true for allowing flag symbol in language toggle
+parallel_localization: false
 
 # -----------------------------------------------------------------------------
 # Responsive WebP Images
@@ -621,8 +634,12 @@ third_party_libraries:
 # -----------------------------------------------------------------------------
 
 jekyll_get_json:
-  - data: resume
-    json: assets/json/resume.json # it can also be an url
+#  - data: resume
+#    json: assets/json/resume.json # it can also be an url
+  - data: resume_en-us
+    json: assets/json/resume_en-us.json # it can also be an url
+  - data: resume_zh-cn
+    json: assets/json/resume_zh-cn.json # it can also be an url
 
 jsonresume:
   - basics

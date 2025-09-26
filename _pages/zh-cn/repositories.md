@@ -2,7 +2,7 @@
 page_id: repositories
 layout: page
 permalink: /repositories/
-title: repositories
+title: 项目
 description:
 nav: true
 nav_order: 3
@@ -10,7 +10,7 @@ nav_order: 3
 
 {% if site.data.repositories.github_users %}
 
-## GitHub users
+## GitHub 用户
 
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
   {% for user in site.data.repositories.github_users %}
@@ -38,7 +38,7 @@ nav_order: 3
 
 {% if site.data.repositories.github_repos %}
 
-## GitHub Repositories
+## GitHub 项目
 
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
   {% for repo in site.data.repositories.github_repos %}

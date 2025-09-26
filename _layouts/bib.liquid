@@ -37,6 +37,7 @@
             sizes = "200px"
             class="preview z-depth-1 rounded"
             zoomable=true
+            avoid_scaling=true
             alt=entry.preview
           %}
         {% endif %}
@@ -79,7 +80,9 @@
 
         {%- if forloop.length > 1 -%}
           {% if forloop.first == false %},&nbsp;{% endif %}
-          {%- if forloop.last and author_array_limit == author_array_size %}and&nbsp;{% endif -%}
+          {%- if forloop.last and author_array_limit == author_array_size -%}
+            {{- site.data[site.active_lang].strings.bibliography.last_author_prefix }}
+          {% endif -%}
         {% endif %}
         {%- if author_is_self -%}
           <em>
