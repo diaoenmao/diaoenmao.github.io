@@ -133,24 +133,20 @@
               {% else %}
                 {% assign other_language = site.languages.first %}
               {% endif %}
-              <li class="nav-item active">
-                {% if site.active_lang == site.default_lang %}
-                  <a class="nav-link" {% static_href -%} href="{{ site.baseurl }}/{{ other_language }}{{ page.url }}" {%- endstatic_href %}>
-                    {% if site.country_flag %}
-                      <span class="fi fi-{{ other_language | split: "-" | last }}"></span>
-                    {% else %}
-                      {{ other_language | upcase }}
-                    {%- endif -%}
-                  </a>
-                {% else %}
-                  <a class="nav-link" {% static_href -%} href="{{ site.baseurl }}{{ page.url }}" {%- endstatic_href %}>
-                    {% if site.country_flag %}
-                      <span class="fi fi-{{ site.default_lang | split: "-" | last }}"></span>
-                    {% else %}
-                      {{ site.default_lang | upcase }}
-                    {%- endif -%}
-                  </a>
-                {% endif %}
+              <li class="nav-item">
+                <a class="nav-link" {% static_href -%}
+                   {% if other_language == site.default_lang %}
+                     href="{{ site.baseurl }}{{ page.url }}"
+                   {% else %}
+                     href="{{ site.baseurl }}/{{ other_language }}{{ page.url }}"
+                   {% endif %}
+                {%- endstatic_href %}>
+                  {% if site.country_flag %}
+                    <span class="fi fi-{{ site.active_lang | split: "-" | last }}"></span>
+                  {% else %}
+                    {{ site.data.lang_labels[other_language] | default: other_language | upcase }}
+                  {%- endif -%}
+                </a>
               </li>
             {% else %}
               <li class="nav-item dropdown {% if page.title == p.title %}active{% endif %}">
@@ -208,8 +204,8 @@
             <li class="toggle-container">
               <button id="light-toggle" title="Change theme">
                 <i class="ti ti-sun-moon" id="light-toggle-system"></i>
-                <i class="ti ti-moon-filled" id="light-toggle-dark"></i>
-                <i class="ti ti-sun-filled" id="light-toggle-light"></i>
+                <i class="ti ti-moon-filled" id="light-toggle-light"></i>
+                <i class="ti ti-sun-filled" id="light-toggle-dark"></i>
               </button>
             </li>
           {% endif %}

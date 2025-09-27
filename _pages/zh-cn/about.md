@@ -3,13 +3,13 @@ page_id: about
 layout: about
 title: 关于
 permalink: /
-subtitle: <strong>Entrepreneur and Researcher</strong> <br> <em>Ambitious, Creative, Curious, Honest, Passionate</em>
+subtitle: <strong>创业者与研究者</strong> <br> <em>有抱负、富有创造力、好奇、诚实、充满热情</em>
 
 profile:
   align: left
   image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
-  more_info: <strong>Research interests</strong> <br> Distributed Machine Learning, Efficient Machine Learning, <br> Signal Processing, Artificial Intelligence
+  more_info: <strong>研究兴趣</strong> <br> 分布式机器学习、高效机器学习、信号处理、人工智能
   goal: <center><em></em></center>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
@@ -25,4 +25,7 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
-测试
+我于 1994 年出生在中国四川成都。
+2016 年，我以最高荣誉获得[佐治亚理工学院](https://www.gatech.edu/)电气工程与计算机科学学士学位。
+2018 年，我在[哈佛大学](https://www.harvard.edu/)获得工程科学硕士学位。
+2023 年，我在[杜克大学](https://www.duke.edu/)获得电气工程博士学位。

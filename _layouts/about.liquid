@@ -31,7 +31,7 @@ layout: default
               <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
               {{ site.last_name }}
             {% else %}
-              {{ site.title }}
+              {{ site.data[site.active_lang].strings.title }}
             {% endif %}
           </h1>
           <p class="desc">{{ page.subtitle }}</p>

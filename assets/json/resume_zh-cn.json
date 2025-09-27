@@ -1,6 +1,6 @@
 {
   "basics": {
-    "name": "Enmao Diao",
+    "name": "刁恩茂",
     "label": "",
     "image": "",
     "email": "diao_em@hotmail.com",
@@ -8,46 +8,46 @@
   },
   "experience": [
     {
-      "name": "Duke University, Durham, North Carolina",
-      "position": "Postdoctoral Researcher",
+      "name": "杜克大学，美国北卡罗来纳州达勒姆市",
+      "position": "博士后研究员",
       "startDate": "2023-10",
       "endDate": "2024-01",
-      "highlights": "测试"
+      "highlights": "开发高效协作的分布式机器学习方法，并研究基于得分的算法。"
     },
     {
-      "name": "Amazon Alexa, Amazon, Cambridge, Massachusetts",
-      "position": "Applied Scientist",
+      "name": "亚马逊 Alexa，美国马萨诸塞州剑桥市",
+      "position": "应用科学家",
       "startDate": "2022-02",
       "endDate": "2022-09",
-      "highlights": "Studied Semi-Supervised and Personalized Federated Learning and developed its applications for Alexa devices."
+      "highlights": "研究半监督和个性化的联邦学习，并将其应用于 Alexa 设备。"
     }
   ],
   "education": [
     {
-      "institution": "Duke University, Durham, North Carolina",
-      "studyType": "Ph.D. in Electrical Engineering",
+      "institution": "杜克大学，美国北卡罗来纳州达勒姆市",
+      "studyType": "电气工程博士",
       "startDate": "2018-08",
       "endDate": "2023-09",
       "courses": [
-        "Advised by <a href='https://ece.duke.edu/faculty/vahid-tarokh'>Prof. Vahid Tarokh</a> and <a href='http://jding.org/'>Prof. Jie Ding</a>"
+        "受 <a href='https://ece.duke.edu/faculty/vahid-tarokh'>Vahid Tarokh 教授</a>和<a href='http://jding.org/'>丁杰教授</a>的指导"
       ]
     },
     {
-      "institution": "Harvard University, Cambridge, Massachusetts",
-      "studyType": "M.S. in Engineering Sciences",
+      "institution": "哈佛大学，美国马萨诸塞州剑桥市",
+      "studyType": "工程科学硕士",
       "startDate": "2016-08",
       "endDate": "2018-05",
       "courses": [
-        "Advised by <a href='https://ece.duke.edu/faculty/vahid-tarokh'>Prof. Vahid Tarokh</a> and <a href='http://jding.org/'>Prof. Jie Ding</a>"
+        "受 <a href='https://ece.duke.edu/faculty/vahid-tarokh'>Vahid Tarokh 教授</a>和<a href='http://jding.org/'>丁杰教授</a>的指导"
       ]
     },
      {
-      "institution": "Georgia Institute of Technology, Atlanta, Georgia",
-      "studyType": "B.S. in Electrical Engineering and Computer Science",
+      "institution": "佐治亚理工学院，美国佐治亚州亚特兰大",
+      "studyType": "电气工程与计算机科学学士",
       "startDate": "2012-08",
       "endDate": "2016-05",
       "courses": [
-        "Highest honor"
+        "最高荣誉"
       ]
     }
   ],
@@ -57,12 +57,12 @@
   "skills": [],
   "languages": [
     {
-      "language": "Chinese",
-      "fluency": "Native"
+      "language": "中文",
+      "fluency": "母语"
     },
     {
-      "language": "English",
-      "fluency": "Fluent"
+      "language": "英语",
+      "fluency": "流利"
     }
   ],
   "interests": [],

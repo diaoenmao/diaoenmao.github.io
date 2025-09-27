@@ -38,7 +38,7 @@ cv:
   countryCode: 国家代码
   courses: 课程
   date: 日期
-  education: 教育经历
+  education: 教育
   email: 邮箱
   endDate: 结束日期
   fluency: 熟练度
@@ -162,3 +162,4 @@ search:
   theme: 主题
 selected_publications: 精选出版物
 site_description: 一个简洁的学术主题，基于 [*folio](https://github.com/bogoli/-folio) 设计
+title: 刁恩茂
