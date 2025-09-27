@@ -1,1 +1,5 @@
-document.addEventListener("readystatechange",()=>{"complete"===document.readyState&&new VenoBox});
+document.addEventListener("readystatechange", () => {
+  if (document.readyState === "complete") {
+    new VenoBox();
+  }
+});

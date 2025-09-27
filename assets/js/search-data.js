@@ -349,17 +349,17 @@ ninja.data = [{
           window.location.href = "/blog/2015/formatting-and-links/";
         
       },
-    },{id: "news-esc-efficient-speech-coding-with-cross-scale-residual-vector-quantized-transformers-is-accepted-in-emnlp-2024",
-          title: 'ESC: Efficient Speech Coding with Cross-Scale Residual Vector Quantized Transformers is accepted in...',
+    },{id: "news-esc-efficient-speech-coding-with-cross-scale-residual-vector-quantized-transformers-is-published-in-emnlp-2024",
+          title: 'ESC: Efficient Speech Coding with Cross-Scale Residual Vector Quantized Transformers is published in...',
           description: "",
-          section: "News",},{id: "news-dynamicfl-federated-learning-with-dynamic-communication-resource-allocation-is-accepted-in-ieee-bigdata-2024-best-student-paper",
-          title: 'DynamicFL: Federated Learning with Dynamic Communication Resource Allocation is accepted in IEEE BigData...',
+          section: "News",},{id: "news-dynamicfl-federated-learning-with-dynamic-communication-resource-allocation-is-published-in-ieee-bigdata-2024-best-student-paper",
+          title: 'DynamicFL: Federated Learning with Dynamic Communication Resource Allocation is published in IEEE BigData...',
           description: "",
-          section: "News",},{id: "news-aid-adaptive-integration-of-detectors-for-safe-ai-with-language-models-is-accepted-in-naacl-2025",
-          title: 'AID: Adaptive Integration of Detectors for Safe AI with Language Models is accepted...',
+          section: "News",},{id: "news-aid-adaptive-integration-of-detectors-for-safe-ai-with-language-models-is-published-in-naacl-2025",
+          title: 'AID: Adaptive Integration of Detectors for Safe AI with Language Models is published...',
           description: "",
-          section: "News",},{id: "news-map-multi-human-value-alignment-palette-is-accepted-in-iclr-2025-oral-probe-pruning-accelerating-llms-through-dynamic-pruning-via-model-probing-is-accepted-in-iclr-2025",
-          title: 'MAP: Multi-Human-Value Alignment Palette is accepted in ICLR 2025 (Oral). Probe Pruning: Accelerating...',
+          section: "News",},{id: "news-map-multi-human-value-alignment-palette-is-published-in-iclr-2025-oral-probe-pruning-accelerating-llms-through-dynamic-pruning-via-model-probing-is-published-in-iclr-2025",
+          title: 'MAP: Multi-Human-Value Alignment Palette is published in ICLR 2025 (Oral). Probe Pruning: Accelerating...',
           description: "",
           section: "News",},{id: "projects-project-10",
           title: 'project 10',
@@ -431,13 +431,6 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://www.linkedin.com/in/enmaodiao", "_blank");
-        },
-      },{
-        id: 'social-rss',
-        title: 'RSS Feed',
-        section: 'Socials',
-        handler: () => {
-          window.open("/feed.xml", "_blank");
         },
       },{
         id: 'social-scholar',
