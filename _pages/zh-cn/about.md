@@ -25,7 +25,7 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
-我于 1994 年出生在中国四川成都。
-2016 年，我以最高荣誉获得[佐治亚理工学院](https://www.gatech.edu/)电气工程与计算机科学学士学位。
-2018 年，我在[哈佛大学](https://www.harvard.edu/)获得工程科学硕士学位。
-2023 年，我在[杜克大学](https://www.duke.edu/)获得电气工程博士学位。
+我于1994年出生在中国四川成都。
+我于2016年以最高荣誉获得[佐治亚理工学院](https://www.gatech.edu/)电气工程与计算机科学学士学位。
+我于2018年在[哈佛大学](https://www.harvard.edu/)获得工程科学硕士学位。
+我于2023年在[杜克大学](https://www.duke.edu/)获得电气工程博士学位。
