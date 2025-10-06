@@ -3,7 +3,7 @@ page_id: about
 layout: about
 title: about
 permalink: /
-subtitle: <strong>Entrepreneur and Researcher</strong> <br> <em>Ambitious, Creative, Curious, Honest, Passionate</em>
+subtitle: <strong>Entrepreneur and Researcher</strong> <br> <em>Ambitious, Creative, Curious, Honest, Resilient</em>
 
 profile:
   align: left

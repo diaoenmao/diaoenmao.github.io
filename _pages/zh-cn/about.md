@@ -3,7 +3,7 @@ page_id: about
 layout: about
 title: 关于
 permalink: /
-subtitle: <strong>创业者与研究者</strong> <br> <em>有抱负、富有创造力、好奇、诚实、充满热情</em>
+subtitle: <strong>创业者与研究者</strong> <br> <em>勇敢、创新、好奇、诚实、坚韧</em>
 
 profile:
   align: left
