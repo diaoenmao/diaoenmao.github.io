@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.diaoenmao.com/</loc>
+  <lastmod>2025-10-17T16:08:31+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.diaoenmao.com/cv/</loc>
+  <lastmod>2025-10-17T13:53:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.diaoenmao.com/publications/</loc>
+  <lastmod>2025-10-17T16:08:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.diaoenmao.com/repositories/</loc>
+  <lastmod>2025-10-17T16:08:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.diaoenmao.com/zh-cn/</loc>
+  <lastmod>2025-10-17T16:08:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.diaoenmao.com/news/</loc>
+  <lastmod>2025-10-17T16:08:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.diaoenmao.com/zh-cn/cv/</loc>
+  <lastmod>2025-10-17T16:08:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diaoenmao.com/assets/pdf/en-us/CV.pdf</loc>
+  <lastmod>2025-10-17T16:08:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diaoenmao.com/zh-cn/publications/</loc>
+  <lastmod>2025-10-17T16:08:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diaoenmao.com/zh-cn/repositories/</loc>
+  <lastmod>2025-10-17T16:08:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diaoenmao.com/zh-cn/news/</loc>
+  <lastmod>2025-10-17T16:08:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.diaoenmao.com/assets/pdf/zh-cn/CV.pdf</loc>
+  <lastmod>2025-10-17T16:08:33+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
