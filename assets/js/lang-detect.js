@@ -1,29 +1,35 @@
 (function () {
-  if (localStorage.getItem("langSet")) return;
+  // Prevent infinite loops — only once per session
+  if (sessionStorage.getItem("langSet")) return;
 
-  var userLang = (navigator.language || navigator.userLanguage || "").toLowerCase();
+  const userLang = (navigator.language || navigator.userLanguage || "").toLowerCase();
 
-  // Map browser codes to site language codes
-  let langMap = {
+  // Map browser language → site language
+  const langMap = {
     "en": "en-us",
     "en-us": "en-us",
     "en-gb": "en-us",
     "zh": "zh-cn",
     "zh-cn": "zh-cn",
     "zh-sg": "zh-cn",
-    "zh-hans": "zh-cn", // simplified
-    "zh-hant": "zh-cn", // traditional
+    "zh-hans": "zh-cn",
+    "zh-hant": "zh-cn",
     "zh-hk": "zh-cn",
-    "zh-tw": "zh-cn"
+    "zh-tw": "zh-cn",
   };
 
-  // Get mapped site language
-  var siteLang = langMap[userLang] || "en-us";
+  // Determine mapped site language
+  const siteLang = langMap[userLang] || (userLang.includes("zh") ? "zh-cn" : "en-us");
+  const path = location.pathname;
 
-  if (siteLang === "zh-cn" && !window.location.pathname.startsWith("/zh-cn")) {
-    window.location.href =
-      "/zh-cn" + window.location.pathname + window.location.search + window.location.hash;
+  // Redirect logic
+  if (siteLang === "zh-cn" && !/^\/zh-cn(\/|$)/i.test(path)) {
+    sessionStorage.setItem("langSet", "true");
+    location.replace("/zh-cn" + path + location.search + location.hash);
+  } else if (siteLang === "en-us" && /^\/zh-cn(\/|$)/i.test(path)) {
+    sessionStorage.setItem("langSet", "true");
+    location.replace(path.replace(/^\/zh-cn/, "") + location.search + location.hash);
+  } else {
+    sessionStorage.setItem("langSet", "true");
   }
-
-  localStorage.setItem("langSet", "true");
 })();
