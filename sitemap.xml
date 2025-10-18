@@ -33,11 +33,6 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.diaoenmao.com/news/</loc>
-  <lastmod>2025-10-17T16:08:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://www.diaoenmao.com/zh-cn/cv/</loc>
   <lastmod>2025-10-17T16:08:32+00:00</lastmod>
   <priority>0.64</priority>
@@ -54,11 +49,6 @@
 </url>
 <url>
   <loc>https://www.diaoenmao.com/zh-cn/repositories/</loc>
-  <lastmod>2025-10-17T16:08:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.diaoenmao.com/zh-cn/news/</loc>
   <lastmod>2025-10-17T16:08:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
