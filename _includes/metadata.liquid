@@ -6,6 +6,9 @@
   {% if site.enable_bing_verification %}
     <meta name="msvalidate.01" content="{{ site.bing_site_verification }}">
   {% endif %}
+  {% if site.enable_baidu_verification %}
+    <meta name="baidu-site-verification" content="{{ site.baidu_site_verification }}">
+  {% endif %}
   <!--
     Avoid warning on Google Chrome Error with Permissions-Policy header:
     Origin trial controlled feature not enabled: 'interest-cohort'.
