@@ -23,13 +23,13 @@
   const path = location.pathname;
 
   // Redirect logic
-//  if (siteLang === "zh-cn" && !/^\/zh-cn(\/|$)/i.test(path)) {
-//    sessionStorage.setItem("langSet", "true");
-//    location.replace("/zh-cn" + path + location.search + location.hash);
-//  } else if (siteLang === "en-us" && /^\/zh-cn(\/|$)/i.test(path)) {
-//    sessionStorage.setItem("langSet", "true");
-//    location.replace(path.replace(/^\/zh-cn/, "") + location.search + location.hash);
-//  } else {
-//    sessionStorage.setItem("langSet", "true");
-//  }
+  if (siteLang === "zh-cn" && !/^\/zh-cn(\/|$)/i.test(path)) {
+    sessionStorage.setItem("langSet", "true");
+    location.replace("/zh-cn" + path + location.search + location.hash);
+  } else if (siteLang === "en-us" && /^\/zh-cn(\/|$)/i.test(path)) {
+    sessionStorage.setItem("langSet", "true");
+    location.replace(path.replace(/^\/zh-cn/, "") + location.search + location.hash);
+  } else {
+    sessionStorage.setItem("langSet", "true");
+  }
 })();
