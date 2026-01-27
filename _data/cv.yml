@@ -43,9 +43,19 @@
 - title: Experience
   type: time_table
   contents:
+    - title: Founder (CEO) & Principal Researcher
+      institution: DreamSoul
+      year: 2024-now
+      description:
+        - Description 1.
+        - Description 2.
+        - title: Description 3.
+          contents:
+            - Sub-description 1.
+            - Sub-description 2.
     - title: Postdoctoral Researcher
       institution: Duke University
-      year: 2023-now
+      year: 2023-2024
       description:
         - Description 1.
         - Description 2.
@@ -65,7 +75,7 @@
             - Sub-description 2.
     - title: Project Manager
       institution: Duke Data+
-      year: 1933
+      year: 2022
       description:
         - Description 1.
         - Description 2.

@@ -7,6 +7,13 @@
     "url": "https://www.diaoenmao.com"
   },
   "experience": [
+     {
+      "name": "DreamSoul",
+      "position": "Founder (CEO) & Principal Researcher",
+      "startDate": "2024-09",
+      "endDate": "",
+      "highlights": "Founded an AI infrastructure company building an AI-native operating system."
+    },
     {
       "name": "Duke University, Durham, North Carolina",
       "position": "Postdoctoral Researcher",

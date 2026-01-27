@@ -1,5 +1,62 @@
 ---
 ---
+@article{wang2025think,
+  abbr={arXiv},
+  title={Think Before You Prune: Self-Reflective Structured Pruning for Reasoning Language Models},
+  author={Wang, Ziyan and Diao, Enmao and Le, Qi and Wang, Pu and Wang, Guanchu and Lee, Minwoo and Yeh, Shu-ping and Yang, Li},
+  year={2025},
+  date={2025-12-01},
+  pdf={https://arxiv.org/abs/2512.02185},
+  abstract={Reasoning LLMs (RLMs) such as OpenAI o1, DeepSeek-R1, and Qwen3 deliver strong multi-step reasoning through chain-of-thought generation, but their large model sizes and lengthy decode-time outputs make them costly to deploy and unsuitable for resource-constrained settings. To reduce computing and memory cost, pruning offers a promising solution by removing unimportant parameters. However, despite their success on standard LLMs, existing pruning methods severely damage RLMs, as even moderate sparsity (e.g., 20%) can collapse accuracy and completely disrupt the model's reasoning coherence. We begin by analyzing why existing pruning pipelines fail on reasoning LLMs and find that their brittleness largely stems from a mismatch between the calibration data, the pruning objective, and the model's decode-time reasoning behavior. Our study further shows that the most reliable calibration signal comes not from human-written labels but from the model's own self-generated reasoning traces, which more accurately reflect its inference distribution. Guided by these insights, we introduce RESP, a self-reflective structured pruning framework that aligns pruning decisions with the model's reasoning dynamics through self-generated calibration, decode-only gradient-based importance estimation, and progressive regeneration that maintains calibration fidelity as sparsity increases. Experiments on Qwen3-8B demonstrate that RESP markedly outperforms existing structured pruning methods on both GSM8K and MathQA, preserving near-dense accuracy at 20-30% sparsity and substantially mitigating performance collapse at higher sparsity levels. At 40% sparsity, RESP attains 81.3% accuracy on GSM8K and 59.6% on MathQA, surpassing the strongest baselines by 66.87% and 47%, respectively.}
+}
+
+@article{sheng2025toward,
+  abbr={arXiv},
+  selected={true},
+  title={Toward Unifying Group Fairness Evaluation from a Sparsity Perspective},
+  author={Sheng, Zhecheng and Zhang, Jiawei and Diao, Enmao},
+  year={2025},
+  date={2025-11-01},
+  pdf={https://arxiv.org/abs/2511.00359},
+  abstract={Ensuring algorithmic fairness remains a significant challenge in machine learning, particularly as models are increasingly applied across diverse domains. While numerous fairness criteria exist, they often lack generalizability across different machine learning problems. This paper examines the connections and differences among various sparsity measures in promoting fairness and proposes a unified sparsity-based framework for evaluating algorithmic fairness. The framework aligns with existing fairness criteria and demonstrates broad applicability to a wide range of machine learning tasks. We demonstrate the effectiveness of the proposed framework as an evaluation metric through extensive experiments on a variety of datasets and bias mitigation methods. This work provides a novel perspective to algorithmic fairness by framing it through the lens of sparsity and social equity, offering potential for broader impact on fairness research and applications.}
+}
+
+@article{wang2025local,
+  abbr={arXiv},
+  title={From Local to Global: Revisiting Structured Pruning Paradigms for Large Language Models},
+  author={Wang, Ziyan and Diao, Enmao and Le, Qi and Wang, Pu and Lee, Minwoo and Yeh, Shu-ping and Stupachenko, Evgeny and Feng, Hao and Yang, Li},
+  year={2025},
+  date={2025-10-20},
+  pdf={https://www.arxiv.org/abs/2510.180301},
+  abstract={Structured pruning is a practical approach to deploying large language models (LLMs) efficiently, as it yields compact, hardware-friendly architectures. However, the dominant local paradigm is task-agnostic: by optimizing layer-wise reconstruction rather than task objectives, it tends to preserve perplexity or generic zero-shot behavior but fails to capitalize on modest task-specific calibration signals, often yielding limited downstream gains. We revisit global structured pruning and present GISP-Global Iterative Structured Pruning-a post-training method that removes attention heads and MLP channels using first-order, loss-based important weights aggregated at the structure level with block-wise normalization. An iterative schedule, rather than one-shot pruning, stabilizes accuracy at higher sparsity and mitigates perplexity collapse without requiring intermediate fine-tuning; the pruning trajectory also forms nested subnetworks that support a "prune-once, deploy-many" workflow. Furthermore, because importance is defined by a model-level loss, GISP naturally supports task-specific objectives; we instantiate perplexity for language modeling and a margin-based objective for decision-style tasks. Extensive experiments show that across Llama2-7B/13B, Llama3-8B, and Mistral-0.3-7B, GISP consistently lowers WikiText-2 perplexity and improves downstream accuracy, with especially strong gains at 40-50% sparsity; on DeepSeek-R1-Distill-Llama-3-8B with GSM8K, task-aligned calibration substantially boosts exact-match accuracy.}
+}
+
+@article{gu2025obcache,
+  abbr={arXiv},
+  selected={true},
+  title={OBCache: Optimal Brain KV Cache Pruning for Efficient Long-Context LLM Inference},
+  author={Gu, Yuzhe and Liang, Xiyu and Zhao, Jiaojiao and Diao, Enmao},
+  year={2025},
+  date={2025-10-09},
+  pdf={https://arxiv.org/abs/2510.07651},
+  code={https://github.com/DreamSoul-AI/OBCache},
+  abstract={Large language models (LLMs) with extended context windows enable powerful downstream applications but impose significant memory overhead, as caching all key-value (KV) states scales linearly with sequence length and batch size. Existing cache eviction methods address this by exploiting attention sparsity, yet they typically rank tokens heuristically using accumulated attention weights without considering their true impact on attention outputs. We propose Optimal Brain Cache (OBCache), a principled framework that formulates cache eviction as a layer-wise structured pruning problem. Building upon the Optimal Brain Damage (OBD) theory, OBCache quantifies token saliency by measuring the perturbation in attention outputs induced by pruning tokens, with closed-form scores derived for isolated keys, isolated values, and joint key-value pairs. Our scores account not only for attention weights but also for information from value states and attention outputs, thereby enhancing existing eviction strategies with output-aware signals. Experiments on LLaMA and Qwen models demonstrate that replacing the heuristic scores in existing works, which estimate token saliency across different query positions, with OBCache's output-aware scores consistently improves long-context accuracy.}
+}
+
+@inproceedings{wang2025beyond,
+  abbr={NeurIPS},
+  selected={true},
+  title={Beyond Expectations: Quantile-Guided Alignment for Risk-Calibrated Language Models},
+  author={Wang, Xinran and Du, Jin and Khan, Azal Ahmad and Le, Qi and Diao, Enmao and Zhou, Jiawei and Ding, Jie and Anwar, Ali},
+  year={2025},
+  date={2025-09-18},
+  award={Spotlight},
+  award_name={Spotlight},
+  pdf={https://openreview.net/forum?id=R7HJj1YvJH},
+  code={https://openreview.net/forum?id=R7HJj1YvJH},
+  abstract={Large language models can generate rare but catastrophic outputs, such as harmful conversations or insecure code. Existing Reinforcement Learning from Human Feedback (RLHF) typically maximizes average reward, leaving high-risk tail events insufficiently controlled. We introduce Quantile‑Guided Alignment (QA), a framework that allows users to specify desired improvements at any quantile—individually or across multiple reward dimensions—thus shifting the distribution of outputs with finer control toward safer, more desirable outcomes. The method extends standard RLHF via an augmented reward formulation that enforces quantile constraints. Experiments on conversation and code‐generation tasks show that quantile alignment significantly enhances quality at targeted tails while maintaining overall performance. The results position QA as a principled route to risk‑calibrated language models with tail‑focused alignment.}
+}
+
 @article{moushegian2025robust,
   abbr={TIT},
   title={Robust Score-Based Quickest Change Detection},
@@ -22,6 +79,7 @@
   award={Oral},
   award_name={Oral},
   pdf={https://arxiv.org/abs/2410.19198},
+  code={https://github.com/wang8740/MAP},
   abstract={Ensuring that generative AI systems align with human values is essential but challenging, especially when considering multiple human values and their potential trade-offs. Since human values can be personalized and dynamically change over time, the desirable levels of value alignment vary across different ethnic groups, industry sectors, and user cohorts. Within existing frameworks, it is hard to define human values and align AI systems accordingly across different directions simultaneously, such as harmlessness, helpfulness, and positiveness. To address this, we develop a novel, first-principle approach called Multi-Human-Value Alignment Palette (MAP), which navigates the alignment across multiple human values in a structured and reliable way. MAP formulates the alignment problem as an optimization task with user-defined constraints, which define human value targets. It can be efficiently solved via a primal-dual approach, which determines whether a user-defined alignment target is achievable and how to achieve it. We conduct a detailed theoretical analysis of MAP by quantifying the trade-offs between values, the sensitivity to constraints, the fundamental connection between multi-value alignment and sequential alignment, and proving that linear weighted rewards are sufficient for multi-value alignment. Extensive experiments demonstrate MAP's ability to align multiple values in a principled manner while delivering strong empirical performance across various tasks.}
 }
 
@@ -34,6 +92,7 @@
   year={2025},
   date={2025-01-23},
   pdf={https://arxiv.org/abs/2502.15618},
+  code={https://github.com/Qi-Le1/Probe_Pruning},
   abstract={We introduce Probe Pruning (PP), a novel framework for online, dynamic, structured pruning of Large Language Models (LLMs) applied in a batch-wise manner. PP leverages the insight that not all samples and tokens contribute equally to the model's output, and probing a small portion of each batch effectively identifies crucial weights, enabling tailored dynamic pruning for different batches. It comprises three main stages: probing, history-informed pruning, and full inference. In the probing stage, PP selects a small yet crucial set of hidden states, based on residual importance, to run a few model layers ahead. During the history-informed pruning stage, PP strategically integrates the probing states with historical states. Subsequently, it structurally prunes weights based on the integrated states and the PP importance score, a metric developed specifically to assess the importance of each weight channel in maintaining performance. In the final stage, full inference is conducted on the remaining weights. A major advantage of PP is its compatibility with existing models, as it operates without requiring additional neural network modules or fine-tuning. Comprehensive evaluations of PP on LLaMA-2/3 and OPT models reveal that even minimal probing-using just 1.5% of FLOPs-can substantially enhance the efficiency of structured pruning of LLMs. For instance, when evaluated on LLaMA-2-7B with WikiText2, PP achieves a 2.56 times lower ratio of performance degradation per unit of runtime reduction compared to the state-of-the-art method at a 40% pruning ratio.}
 }
 
@@ -45,7 +104,7 @@
   booktitle={Nations of the Americas Chapter of the ACL},
   year={2025},
   date={2025-01-23},
-  pdf={},
+  pdf={https://aclanthology.org/2025.naacl-long.229/},
   abstract={As Large Language Models (LLMs) increasingly influence content generation across diverse platforms, there is a heightened urgency to regulate their outputs to ensure safe usage. However, defining ``safety'' is complex, given that entities across domains may interpret it through varied lenses and develop safety detectors—models trained to identify specific unsafe content based on predefined criteria. To address this complexity, we introduce the approach of Adaptive Integration of Detectors (AID) to orchestrate the strengths of multiple pretrained detectors to ensure comprehensive effectiveness in diverse scenarios. AID employs a Mixture-of-Experts (MoE) framework, wherein it dynamically assigns and learns data-adaptive weights for each detector using domain-specific annotated data and LLM-extracted features. We provide theoretical insights into why MoE can be effective by showing its optimality in a Neyman-Pearson setting. Our experimental studies using various detection tasks curated from benchmark datasets demonstrate AID's ability to synergistically combine the unique capabilities of individual detectors. For example, it is observed that AID can improve the area under the curve (AUC) by an absolute value of 0.07 to 0.21, with a median of 0.12, compared to the best individual detectors developed for specific safety aspects. The improvement is particularly significant for complex detection tasks that mix different unsafe data sources. }
 }
 
@@ -223,7 +282,7 @@
   abbr={ICLR},
   selected={true},
   title={Pruning Deep Neural Networks from a Sparsity Perspective},
-  author={Diao*, Enmao and Wang*, Ganghua and Zhang, Jiawei and Yang, Yuhong and Ding, Jie and Tarokh, Vahid},
+  author={Diao, Enmao* and Wang, Ganghua* and Zhang, Jiawei and Yang, Yuhong and Ding, Jie and Tarokh, Vahid},
   note={*Equal contribution},
   booktitle={International Conference on Learning Representations},
   year={2023},

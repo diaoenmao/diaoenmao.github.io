@@ -8,6 +8,13 @@
   },
   "experience": [
     {
+      "name": "灵机一梦",
+      "position": "创始人（CEO）兼首席研究员",
+      "startDate": "2024-09",
+      "endDate": "现在",
+      "highlights": "创立一家人工智能基础设施公司，致力于构建 AI 原生操作系统。"
+    },
+    {
       "name": "杜克大学，美国北卡罗来纳州达勒姆市",
       "position": "博士后研究员",
       "startDate": "2023-10",

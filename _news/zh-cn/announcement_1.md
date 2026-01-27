@@ -1,8 +1,9 @@
 ---
 layout: post
-date: 2024-04-30 00:00:00-0000
+date: 2025-01-23 00:00:00-0000
 inline: true
 related_posts: false
 ---
 
-[ESC: Efficient Speech Coding with Cross-Scale Residual Vector Quantized Transformers](https://arxiv.org/abs/2404.19441) 发表于 EMNLP 2024.
+[AID: Adaptive Integration of Detectors for Safe AI with Language Models](https://aclanthology.org/2025.naacl-long.229/) 发表于 NAACL 2025.
+

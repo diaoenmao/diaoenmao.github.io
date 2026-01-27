@@ -1,9 +1,8 @@
 ---
 layout: post
-date: 2025-01-23 00:00:00-0000
+date: 2025-09-18 00:00:00-0000
 inline: true
 related_posts: false
 ---
 
-[AID: Adaptive Integration of Detectors for Safe AI with Language Models]() is published in NAACL 2025.
-
+[Beyond Expectations: Quantile-Guided Alignment for Risk-Calibrated Language Models](https://openreview.net/forum?id=R7HJj1YvJH) is published in NeurIPS 2025 (Spotlight).  

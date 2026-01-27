@@ -1,8 +1,9 @@
 ---
 layout: post
-date: 2024-12-15 00:00:00-0000
+date: 2025-01-23 00:00:00-0000
 inline: true
 related_posts: false
 ---
 
-[DynamicFL: Federated Learning with Dynamic Communication Resource Allocation](https://arxiv.org/abs/2409.04986) 发表于 IEEE BigData 2024 (Best Student Paper).
+[MAP: Multi-Human-Value Alignment Palette](https://arxiv.org/abs/2410.19198) 发表于 ICLR 2025 (Oral).  
+[Probe Pruning: Accelerating LLMs through Dynamic Pruning via Model-Probing](https://arxiv.org/abs/2502.15618) 发表于 in ICLR 2025.
