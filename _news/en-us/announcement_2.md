@@ -1,9 +1,8 @@
 ---
 layout: post
-date: 2025-01-23 00:00:00-0000
+date: 2026-02-24 00:00:00-0000
 inline: true
 related_posts: false
 ---
 
-[MAP: Multi-Human-Value Alignment Palette](https://arxiv.org/abs/2410.19198) is published in ICLR 2025 (Oral).  
-[Probe Pruning: Accelerating LLMs through Dynamic Pruning via Model-Probing](https://arxiv.org/abs/2502.15618) is published in ICLR 2025.
+[Think Before You Prune: Self-Reflective Structured Pruning for Reasoning Language Models](https://arxiv.org/abs/2512.02185) is published in DAC 2026.  
