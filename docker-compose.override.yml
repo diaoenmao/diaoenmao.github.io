@@ -1,0 +1,5 @@
+services:
+  jekyll:
+    volumes:
+      - .:/srv/jekyll
+      - /srv/jekyll/_site
