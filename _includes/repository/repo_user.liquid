@@ -1,15 +1,17 @@
-{% assign lang = site.active_lang | split: '-' | first %}
+{% assign site_lang = site.active_lang | default: 'en' %}
+{% assign base_lang = site_lang | split: '-' | first %}
 
-{% case lang %}
+{% assign stats_lang = base_lang %}
+{% assign streak_lang = base_lang %}
+
+{% case base_lang %}
   {% when 'pt' %}
-    {% assign lang = site.active_lang %}
+    {% assign stats_lang = site_lang %}
+    {% assign streak_lang = site_lang %}
 
   {% when 'zh' %}
-    {% assign lang = 'cn' %}
-
-    {% comment %} Add a new language using when... if needed {% endcomment %}
-    {% comment %} If you still encounter language-display issues, check the available locale codes in github-readme-stats (different from ISO-639 standard used in your website) {% endcomment %}
-    {% comment %} https://github.com/anuraghazra/github-readme-stats?tab=readme-ov-file#available-locales {% endcomment %}
+    {% assign stats_lang = 'cn' %}
+    {% assign streak_lang = 'zh-cn' %}
 {% endcase %}
 
 <div class="repo p-2 text-center">
@@ -17,12 +19,22 @@
     <img
       class="only-light w-100"
       alt="{{ include.username }}"
-      src="https://github-readme-stats-five-alpha-58.vercel.app/api?username={{ include.username }}&count_private=true&theme={{ site.repo_theme_light }}&locale={{ lang }}&show_icons=true"
+      src="https://github-readme-stats-five-alpha-58.vercel.app/api?username={{ include.username }}&count_private=true&theme={{ site.repo_theme_light }}&locale={{ stats_lang }}&show_icons=true&include_all_commits=true"
     >
     <img
       class="only-dark w-100"
       alt="{{ include.username }}"
-      src="https://github-readme-stats-five-alpha-58.vercel.app/api?username={{ include.username }}&count_private=true&theme={{ site.repo_theme_dark }}&locale={{ lang }}&show_icons=true"
+      src="https://github-readme-stats-five-alpha-58.vercel.app/api?username={{ include.username }}&count_private=true&theme={{ site.repo_theme_dark }}&locale={{ stats_lang }}&show_icons=true&include_all_commits=true"
+    >
+    <img
+      class="only-light w-100"
+      alt="{{ include.username }}"
+      src="https://github-readme-streak-stats-rouge-delta.vercel.app/?user={{ include.username }}&theme={{ site.repo_theme_light }}&locale={{ streak_lang }}"
+    >
+    <img
+      class="only-dark w-100"
+      alt="{{ include.username }}"
+      src="https://github-readme-streak-stats-rouge-delta.vercel.app/?user={{ include.username }}&theme={{ site.repo_theme_dark }}&locale={{ streak_lang }}"
     >
   </a>
 </div>
