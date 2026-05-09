@@ -4,11 +4,28 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
-  - diaoenmao/DRASIC-Distributed-Recurrent-Autoencoder-for-Scalable-Image-Compression
-  - diaoenmao/Dimension-Reduced-Turbulent-Flow-Data-From-Deep-Vector-Quantizers
-  - diaoenmao/GAL-Gradient-Assisted-Learning-for-Decentralized-Multi-Organization-Collaborations
-  - diaoenmao/HeteroFL-Computation-and-Communication-Efficient-Federated-Learning-for-Heterogeneous-Clients
+  - zcsheng95/Toward-Unifying-Group-Fairness-Evaluation-from-a-Sparsity-Perspective
+  - DreamSoul-AI/OBCache
+  - BUPT-GAMMA/Graph-Tokenization-for-Bridging-Graphs-and-Transformers
+  - Qi-Le1/Probe_Pruning
+  - Qi-Le1/DynamicFL
+  - yzguu830/efficient-speech-codec
+  - diaoenmao/Large-Deviation-Analysis-for-Hypothesis-Testing-for-Score-based-Models
+  - diaoenmao/ColA-Collaborative-Adaptation-with-Gradient-Learning
+  - suuyawu/Quickest-Change-Detection-for-Unnormalized-Statistical-Models
+  - diaoenmao/Semi-Supervised-Federated-Learing-for-Keyword-Spotting
+  - diaoenmao/Multimodal-Controller-for-Generative-Models
   - diaoenmao/Pruning-Deep-Neural-Networks-from-a-Sparsity-Perspective
-  - diaoenmao/Restricted-Recurrent-Neural-Networks
+  - diaoenmao/GAL-Gradient-Assisted-Learning-for-Decentralized-Multi-organization-Collaborations
   - diaoenmao/SemiFL-Semi-Supervised-Federated-Learning-for-Unlabeled-Clients-with-Alternate-Training
+  - diaoenmao/Personalized-Federated-Recommender-Systems-with-Private-and-Partially-Federated-AutoEncoders
+  - suuyawu/Score-based-Hypothesis-Testing-for-Unnormalized-Models
+  - diaoenmao/Dimension-Reduced-Turbulent-Flow-Data-From-Deep-Vector-Quantizers
+  - MReza89/Emulating-Spatio-Temporal-Realizations-of-Three-Dimensional-Isotropic-Turbulence-via-Deep-Sequence
+  - diaoenmao/Decentralized-Multi-Target-Cross-Domain-Recommendation-for-Multi-organization-Collaborations
+  - diaoenmao/HeteroFL-Computation-and-Communication-Efficient-Federated-Learning-for-Heterogeneous-Clients
+  - diaoenmao/On-Statistical-Efficiency-in-Learning
   - diaoenmao/Speech-Emotion-Recognition-with-Dual-Sequence-LSTM-Architecture
+  - diaoenmao/DRASIC-Distributed-Recurrent-Autoencoder-for-Scalable-Image-Compression
+  - diaoenmao/Deep-Clustering-of-Compressed-Variational-Embeddings
+  - diaoenmao/Restricted-Recurrent-Neural-Networks
