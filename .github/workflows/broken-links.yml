@@ -54,6 +54,7 @@ jobs:
             --exclude "https://openreview.net/*"
             --exclude "https://docs.conda.io/*"
             --exclude-path README.md
+            --exclude-path INSTALL.md
             --exclude-path _pages/404.md
             --exclude-path _pages/blog.md
             --exclude-path FAQ.md
