@@ -29,4 +29,4 @@ I was born in Chengdu, Sichuan, China in 1994.
 I received my B.S. with the highest honor in Electrical Engineering and Computer Science from [Georgia Institute of Technology](https://www.gatech.edu/) in 2016.
 I received my M.S. degree in Engineering Sciences from [Harvard University](https://www.harvard.edu/) in 2018.
 I received my Ph.D. degree in Electrical Engineering from [Duke University](https://www.duke.edu/) in 2023.
-I founded DreamSoul building AI Operating System (AIOS) in 2024.
+I founded [DreamSoul](https://www.dreamsoul.com/) building AI Operating System (AIOS) for Personal AI Agent in 2024.

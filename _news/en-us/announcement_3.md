@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-[From Local to Global: Revisiting Structured Pruning Paradigms for Large Language Models](https://arxiv.org/abs/2510.18030) is published in ACL 2026.  
+[From Local to Global: Revisiting Structured Pruning Paradigms for Large Language Models](https://arxiv.org/abs/2510.18030) is published in ACL 2026 (Outstanding Paper).  

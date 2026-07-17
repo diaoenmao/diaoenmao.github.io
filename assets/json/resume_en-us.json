@@ -9,24 +9,24 @@
   "experience": [
      {
       "name": "DreamSoul",
-      "position": "Founder, CEO & Principal Researcher",
+      "position": "CEO, Founder & Chief Scientist",
       "startDate": "2024-09",
       "endDate": "",
-      "highlights": "Founded an AI company building AI Operating System (AIOS)."
+      "highlights": "Founded an AI company building AI Operating System (AIOS) for Personal AI Agent"
     },
     {
       "name": "Duke University, Durham, North Carolina",
       "position": "Postdoctoral Researcher",
       "startDate": "2023-10",
       "endDate": "2024-01",
-      "highlights": "Developed Efficient and Collaborative Methods for Distributed Machine Learning and studied score-based methods."
+      "highlights": "Developed Efficient and Collaborative Methods for Distributed Machine Learning and studied score-based methods"
     },
     {
       "name": "Amazon Alexa, Amazon, Cambridge, Massachusetts",
       "position": "Applied Scientist",
       "startDate": "2022-02",
       "endDate": "2022-09",
-      "highlights": "Studied Semi-Supervised and Personalized Federated Learning and developed its applications for Alexa devices."
+      "highlights": "Studied Semi-Supervised and Personalized Federated Learning and developed its applications for Alexa devices"
     }
   ],
   "education": [

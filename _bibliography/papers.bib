@@ -1,5 +1,58 @@
 ---
 ---
+@inproceedings{wang2025think,
+  abbr={DAC},
+  selected={true},
+  title={Think Before You Prune: Self-Reflective Structured Pruning for Reasoning Language Models},
+  author={Wang, Ziyan and Diao, Enmao and Le, Qi and Wang, Pu and Wang, Guanchu and Lee, Minwoo and Yeh, Shu-ping and Yang, Li},
+  booktitle={Design Automation Conference (DAC)},
+  year={2026},
+  date={2026-07-27},
+  pdf={https://arxiv.org/abs/2512.02185},
+  abstract={Reasoning LLMs (RLMs) such as OpenAI o1, DeepSeek-R1, and Qwen3 deliver strong multi-step reasoning through chain-of-thought generation, but their large model sizes and lengthy decode-time outputs make them costly to deploy and unsuitable for resource-constrained settings. To reduce computing and memory cost, pruning offers a promising solution by removing unimportant parameters. However, despite their success on standard LLMs, existing pruning methods severely damage RLMs, as even moderate sparsity (e.g., 20%) can collapse accuracy and completely disrupt the model's reasoning coherence. We begin by analyzing why existing pruning pipelines fail on reasoning LLMs and find that their brittleness largely stems from a mismatch between the calibration data, the pruning objective, and the model's decode-time reasoning behavior. Our study further shows that the most reliable calibration signal comes not from human-written labels but from the model's own self-generated reasoning traces, which more accurately reflect its inference distribution. Guided by these insights, we introduce RESP, a self-reflective structured pruning framework that aligns pruning decisions with the model's reasoning dynamics through self-generated calibration, decode-only gradient-based importance estimation, and progressive regeneration that maintains calibration fidelity as sparsity increases. Experiments on Qwen3-8B demonstrate that RESP markedly outperforms existing structured pruning methods on both GSM8K and MathQA, preserving near-dense accuracy at 20-30% sparsity and substantially mitigating performance collapse at higher sparsity levels. At 40% sparsity, RESP attains 81.3% accuracy on GSM8K and 59.6% on MathQA, surpassing the strongest baselines by 66.87% and 47%, respectively.}
+}
+
+@inproceedings{li2026kinetic,
+  abbr={ICML},
+  selected={true},
+  title={A Kinetic-Energy Perspective of Flow Matching},
+  author={Li, Ziyun and Hu, Huancheng and Lim, Soon Hoe and Li, Xuyu and Gao, Fei and Diao, Enmao and Ding, Zezhen and Vazirgiannis, Michalis and Bostrom, Henrik},
+  booktitle={International Conference on Machine Learning (ICML)},
+  year={2026},
+  date={2026-07-06},
+  award={Spotlight},
+  award_name={Spotlight},
+  pdf={https://arxiv.org/abs/2602.07928},
+  abstract={Flow-based generative models can be viewed through a physics lens: sampling transports a particle from noise to data by integrating a time-varying velocity field, and each sample corresponds to a trajectory with its own dynamical effort. Motivated by classical mechanics, we introduce Kinetic Path Energy (KPE), an action-like, per-sample diagnostic that measures the accumulated kinetic effort along an Ordinary Differential Equation (ODE) trajectory. Empirically, KPE exhibits two robust correspondences: (i) higher KPE predicts stronger semantic fidelity; (ii) high-KPE trajectories terminate on low-density manifold frontiers. We further provide theoretical guarantees linking trajectory energy to data density. Paradoxically, this correlation is non-monotonic. At sufficiently high energy, generation can degenerate into memorization. Leveraging the closed-form of empirical flow matching, we show that extreme energies drive trajectories toward near-copies of training examples. This yields a Goldilocks principle and motivates Kinetic Trajectory Shaping (KTS), a training-free two-phase inference strategy that boosts early motion and enforces a late-time soft landing, reducing memorization and improving generation quality across benchmark tasks.}
+}
+
+@inproceedings{gu2025obcache,
+  abbr={ICML},
+  selected={true},
+  title={OBCache: Optimal Brain KV Cache Pruning for Efficient Long-Context LLM Inference},
+  author={Gu, Yuzhe and Liang, Xiyu and Zhao, Jiaojiao and Diao, Enmao},
+  booktitle={International Conference on Machine Learning (ICML)},
+  year={2026},
+  date={2026-07-06},
+  pdf={https://arxiv.org/abs/2510.07651},
+  code={https://github.com/DreamSoul-AI/OBCache},
+  abstract={Large language models (LLMs) with extended context windows enable powerful downstream applications but impose significant memory overhead, as caching all key-value (KV) states scales linearly with sequence length and batch size. Existing cache eviction methods address this by exploiting attention sparsity, yet they typically rank tokens heuristically using accumulated attention weights without considering their true impact on attention outputs. We propose Optimal Brain Cache (OBCache), a principled framework that formulates cache eviction as a layer-wise structured pruning problem. Building upon the Optimal Brain Damage (OBD) theory, OBCache quantifies token saliency by measuring the perturbation in attention outputs induced by pruning tokens, with closed-form scores derived for isolated keys, isolated values, and joint key-value pairs. Our scores account not only for attention weights but also for information from value states and attention outputs, thereby enhancing existing eviction strategies with output-aware signals. Experiments on LLaMA and Qwen models demonstrate that replacing the heuristic scores in existing works, which estimate token saliency across different query positions, with OBCache's output-aware scores consistently improves long-context accuracy.}
+}
+
+@inproceedings{wang2025local,
+  abbr={ACL},
+  selected={true},
+  title={From Local to Global: Revisiting Structured Pruning Paradigms for Large Language Models},
+  author={Wang, Ziyan and Diao, Enmao and Le, Qi and Wang, Pu and Lee, Minwoo and Yeh, Shu-ping and Stupachenko, Evgeny and Feng, Hao and Yang, Li},
+  booktitle={Association for Computational Linguistics (ACL)},
+  year={2026},
+  date={2026-07-02},
+  award={Outstanding Paper},
+  award_name={Outstanding Paper},
+  pdf={https://arxiv.org/abs/2510.18030},
+  abstract={Structured pruning is a practical approach to deploying large language models (LLMs) efficiently, as it yields compact, hardware-friendly architectures. However, the dominant local paradigm is task-agnostic: by optimizing layer-wise reconstruction rather than task objectives, it tends to preserve perplexity or generic zero-shot behavior but fails to capitalize on modest task-specific calibration signals, often yielding limited downstream gains. We revisit global structured pruning and present GISP, Global Iterative Structured Pruning, a post-training method that removes attention heads and MLP channels using first-order, loss-based important scores aggregated at the structure level with block-wise normalization. Built on this global importance metric, GISP adopts an iterative schedule, rather than one-shot pruning, stabilizes accuracy at higher sparsity, and mitigates perplexity collapse without requiring intermediate fine-tuning. Importantly, the iterative pruning forms nested subnetworks that support a ''prune-once, deploy-many'' workflow. Furthermore, GISP defines structural importance directly with respect to a target loss, making it easy to adapt pruning to task-specific objectives. In this work, we use perplexity for language modeling and a margin-based objective for decision-style tasks. Extensive experiments show that across Llama2-7B/13B, Llama3-8B, and Mistral-0.3-7B, GISP consistently lowers WikiText-2 perplexity and improves on downstream accuracy, with especially strong gains at 40-50% sparsity; on DeepSeek-R1-Distill-Llama-3-8B and Qwen3-8B with GSM8K, task-aligned calibration substantially boosts exact-match accuracy.}
+}
+
 @article{chen2026fedobp,
   abbr={arXiv},
   selected={false},
@@ -26,70 +79,6 @@
   abstract={Large language models (LLMs) have shown remarkable capabilities in dialogue generation and reasoning, yet their effectiveness in eliciting user-known but concealed information in open-ended conversations remains limited. In many interactive AI applications, such as personal assistants, tutoring systems, and legal or clinical support, users often withhold sensitive or uncertain information due to privacy concerns, ambiguity, or social hesitation. This makes it challenging for LLMs to gather complete and contextually relevant inputs. In this work, we define the problem of information elicitation in open-ended dialogue settings and propose Reinforcement Prompt Selection (RPS), a lightweight reinforcement learning framework that formulates prompt selection as a sequential decision-making problem. To analyze this problem in a controlled setting, we design a synthetic experiment, where a reinforcement learning agent outperforms a random query baseline, illustrating the potential of policy-based approaches for adaptive information elicitation. Building on this insight, RPS learns a policy over a pool of prompts to adaptively elicit concealed or incompletely expressed information from users through dialogue. We also introduce IELegal, a new benchmark dataset constructed from real legal case documents, which simulates dialogue-based information elicitation tasks aimed at uncovering case-relevant facts. In this setting, RPS outperforms static prompt baselines, demonstrating the effectiveness of adaptive prompt selection for eliciting critical information in LLM-driven dialogue systems.}
 }
 
-@article{sheng2025toward,
-  abbr={arXiv},
-  selected={true},
-  title={Toward Unifying Group Fairness Evaluation from a Sparsity Perspective},
-  author={Sheng, Zhecheng and Zhang, Jiawei and Diao, Enmao},
-  journal={arXiv},
-  year={2025},
-  date={2025-11-01},
-  pdf={https://arxiv.org/abs/2511.00359},
-  code={https://github.com/zcsheng95/Toward-Unifying-Group-Fairness-Evaluation-from-a-Sparsity-Perspective},
-  abstract={Ensuring algorithmic fairness remains a significant challenge in machine learning, particularly as models are increasingly applied across diverse domains. While numerous fairness criteria exist, they often lack generalizability across different machine learning problems. This paper examines the connections and differences among various sparsity measures in promoting fairness and proposes a unified sparsity-based framework for evaluating algorithmic fairness. The framework aligns with existing fairness criteria and demonstrates broad applicability to a wide range of machine learning tasks. We demonstrate the effectiveness of the proposed framework as an evaluation metric through extensive experiments on a variety of datasets and bias mitigation methods. This work provides a novel perspective to algorithmic fairness by framing it through the lens of sparsity and social equity, offering potential for broader impact on fairness research and applications.}
-}
-
-@inproceedings{gu2025obcache,
-  abbr={ICML},
-  selected={true},
-  title={OBCache: Optimal Brain KV Cache Pruning for Efficient Long-Context LLM Inference},
-  author={Gu, Yuzhe and Liang, Xiyu and Zhao, Jiaojiao and Diao, Enmao},
-  booktitle={International Conference on Machine Learning (ICML)},
-  year={2026},
-  date={2026-05-01},
-  pdf={https://arxiv.org/abs/2510.07651},
-  code={https://github.com/DreamSoul-AI/OBCache},
-  abstract={Large language models (LLMs) with extended context windows enable powerful downstream applications but impose significant memory overhead, as caching all key-value (KV) states scales linearly with sequence length and batch size. Existing cache eviction methods address this by exploiting attention sparsity, yet they typically rank tokens heuristically using accumulated attention weights without considering their true impact on attention outputs. We propose Optimal Brain Cache (OBCache), a principled framework that formulates cache eviction as a layer-wise structured pruning problem. Building upon the Optimal Brain Damage (OBD) theory, OBCache quantifies token saliency by measuring the perturbation in attention outputs induced by pruning tokens, with closed-form scores derived for isolated keys, isolated values, and joint key-value pairs. Our scores account not only for attention weights but also for information from value states and attention outputs, thereby enhancing existing eviction strategies with output-aware signals. Experiments on LLaMA and Qwen models demonstrate that replacing the heuristic scores in existing works, which estimate token saliency across different query positions, with OBCache's output-aware scores consistently improves long-context accuracy.}
-}
-
-@inproceedings{li2026kinetic,
-  abbr={ICML},
-  selected={true},
-  title={A Kinetic-Energy Perspective of Flow Matching},
-  author={Li, Ziyun and Hu, Huancheng and Lim, Soon Hoe and Li, Xuyu and Gao, Fei and Diao, Enmao and Ding, Zezhen and Vazirgiannis, Michalis and Bostrom, Henrik},
-  booktitle={International Conference on Machine Learning (ICML)},
-  year={2026},
-  date={2026-05-01},
-  award={Spotlight},
-  award_name={Spotlight},
-  pdf={https://arxiv.org/abs/2602.07928},
-  abstract={Flow-based generative models can be viewed through a physics lens: sampling transports a particle from noise to data by integrating a time-varying velocity field, and each sample corresponds to a trajectory with its own dynamical effort. Motivated by classical mechanics, we introduce Kinetic Path Energy (KPE), an action-like, per-sample diagnostic that measures the accumulated kinetic effort along an Ordinary Differential Equation (ODE) trajectory. Empirically, KPE exhibits two robust correspondences: (i) higher KPE predicts stronger semantic fidelity; (ii) high-KPE trajectories terminate on low-density manifold frontiers. We further provide theoretical guarantees linking trajectory energy to data density. Paradoxically, this correlation is non-monotonic. At sufficiently high energy, generation can degenerate into memorization. Leveraging the closed-form of empirical flow matching, we show that extreme energies drive trajectories toward near-copies of training examples. This yields a Goldilocks principle and motivates Kinetic Trajectory Shaping (KTS), a training-free two-phase inference strategy that boosts early motion and enforces a late-time soft landing, reducing memorization and improving generation quality across benchmark tasks.}
-}
-
-@inproceedings{wang2025local,
-  abbr={ACL},
-  selected={true},
-  title={From Local to Global: Revisiting Structured Pruning Paradigms for Large Language Models},
-  author={Wang, Ziyan and Diao, Enmao and Le, Qi and Wang, Pu and Lee, Minwoo and Yeh, Shu-ping and Stupachenko, Evgeny and Feng, Hao and Yang, Li},
-  booktitle={Association for Computational Linguistics (ACL)},
-  year={2026},
-  date={2026-04-07},
-  pdf={https://arxiv.org/abs/2510.18030},
-  abstract={Structured pruning is a practical approach to deploying large language models (LLMs) efficiently, as it yields compact, hardware-friendly architectures. However, the dominant local paradigm is task-agnostic: by optimizing layer-wise reconstruction rather than task objectives, it tends to preserve perplexity or generic zero-shot behavior but fails to capitalize on modest task-specific calibration signals, often yielding limited downstream gains. We revisit global structured pruning and present GISP, Global Iterative Structured Pruning, a post-training method that removes attention heads and MLP channels using first-order, loss-based important scores aggregated at the structure level with block-wise normalization. Built on this global importance metric, GISP adopts an iterative schedule, rather than one-shot pruning, stabilizes accuracy at higher sparsity, and mitigates perplexity collapse without requiring intermediate fine-tuning. Importantly, the iterative pruning forms nested subnetworks that support a ''prune-once, deploy-many'' workflow. Furthermore, GISP defines structural importance directly with respect to a target loss, making it easy to adapt pruning to task-specific objectives. In this work, we use perplexity for language modeling and a margin-based objective for decision-style tasks. Extensive experiments show that across Llama2-7B/13B, Llama3-8B, and Mistral-0.3-7B, GISP consistently lowers WikiText-2 perplexity and improves on downstream accuracy, with especially strong gains at 40-50% sparsity; on DeepSeek-R1-Distill-Llama-3-8B and Qwen3-8B with GSM8K, task-aligned calibration substantially boosts exact-match accuracy.}
-}
-
-@inproceedings{wang2025think,
-  abbr={DAC},
-  selected={true},
-  title={Think Before You Prune: Self-Reflective Structured Pruning for Reasoning Language Models},
-  author={Wang, Ziyan and Diao, Enmao and Le, Qi and Wang, Pu and Wang, Guanchu and Lee, Minwoo and Yeh, Shu-ping and Yang, Li},
-  booktitle={Design Automation Conference (DAC)},
-  year={2026},
-  date={2026-02-24},
-  pdf={https://arxiv.org/abs/2512.02185},
-  abstract={Reasoning LLMs (RLMs) such as OpenAI o1, DeepSeek-R1, and Qwen3 deliver strong multi-step reasoning through chain-of-thought generation, but their large model sizes and lengthy decode-time outputs make them costly to deploy and unsuitable for resource-constrained settings. To reduce computing and memory cost, pruning offers a promising solution by removing unimportant parameters. However, despite their success on standard LLMs, existing pruning methods severely damage RLMs, as even moderate sparsity (e.g., 20%) can collapse accuracy and completely disrupt the model's reasoning coherence. We begin by analyzing why existing pruning pipelines fail on reasoning LLMs and find that their brittleness largely stems from a mismatch between the calibration data, the pruning objective, and the model's decode-time reasoning behavior. Our study further shows that the most reliable calibration signal comes not from human-written labels but from the model's own self-generated reasoning traces, which more accurately reflect its inference distribution. Guided by these insights, we introduce RESP, a self-reflective structured pruning framework that aligns pruning decisions with the model's reasoning dynamics through self-generated calibration, decode-only gradient-based importance estimation, and progressive regeneration that maintains calibration fidelity as sparsity increases. Experiments on Qwen3-8B demonstrate that RESP markedly outperforms existing structured pruning methods on both GSM8K and MathQA, preserving near-dense accuracy at 20-30% sparsity and substantially mitigating performance collapse at higher sparsity levels. At 40% sparsity, RESP attains 81.3% accuracy on GSM8K and 59.6% on MathQA, surpassing the strongest baselines by 66.87% and 47%, respectively.}
-}
-
 @inproceedings{guo2026graph,
   abbr={ICLR},
   selected={true},
@@ -102,6 +91,19 @@
   pdf={https://arxiv.org/abs/2603.11099},
   code={https://github.com/BUPT-GAMMA/Graph-Tokenization-for-Bridging-Graphs-and-Transformers},
   abstract={The success of large pretrained Transformers is closely tied to tokenizers, which convert raw input into discrete symbols. Extending these models to graph-structured data remains a significant challenge. In this work, we introduce a graph tokenization framework that generates sequential representations of graphs by combining reversible graph serialization, which preserves graph information, with Byte Pair Encoding (BPE), a widely adopted tokenizer in large language models (LLMs). To better capture structural information, the graph serialization process is guided by global statistics of graph substructures, ensuring that frequently occurring substructures appear more often in the sequence and can be merged by BPE into meaningful tokens. Empirical results demonstrate that the proposed tokenizer enables Transformers such as BERT to be directly applied to graph benchmarks without architectural modifications. The proposed approach achieves state-of-the-art results on 14 benchmark datasets and frequently outperforms both graph neural networks and specialized graph transformers. This work bridges the gap between graph-structured data and the ecosystem of sequence models.}
+}
+
+@article{sheng2025toward,
+  abbr={arXiv},
+  selected={true},
+  title={Toward Unifying Group Fairness Evaluation from a Sparsity Perspective},
+  author={Sheng, Zhecheng and Zhang, Jiawei and Diao, Enmao},
+  journal={arXiv},
+  year={2025},
+  date={2025-11-01},
+  pdf={https://arxiv.org/abs/2511.00359},
+  code={https://github.com/zcsheng95/Toward-Unifying-Group-Fairness-Evaluation-from-a-Sparsity-Perspective},
+  abstract={Ensuring algorithmic fairness remains a significant challenge in machine learning, particularly as models are increasingly applied across diverse domains. While numerous fairness criteria exist, they often lack generalizability across different machine learning problems. This paper examines the connections and differences among various sparsity measures in promoting fairness and proposes a unified sparsity-based framework for evaluating algorithmic fairness. The framework aligns with existing fairness criteria and demonstrates broad applicability to a wide range of machine learning tasks. We demonstrate the effectiveness of the proposed framework as an evaluation metric through extensive experiments on a variety of datasets and bias mitigation methods. This work provides a novel perspective to algorithmic fairness by framing it through the lens of sparsity and social equity, offering potential for broader impact on fairness research and applications.}
 }
 
 @inproceedings{wang2025beyond,
@@ -130,6 +132,19 @@
   abstract={Methods in the field of quickest change detection rapidly detect in real-time a change in the data-generating distribution of an online data stream. Existing methods have been able to detect this change point when the densities of the pre- and post-change distributions are known. Recent work has extended these results to the case where the pre- and post-change distributions are known only by their score functions. This work considers the case where the pre- and post-change score functions are known only to correspond to distributions in two disjoint sets. This work selects a pair of least-favorable distributions from these sets to robustify the existing score-based quickest change detection algorithm, the properties of which are studied. This paper calculates the least-favorable distributions for specific model classes and provides methods of estimating the least-favorable distributions for common constructions. Simulation results are provided demonstrating the performance of our robust change detection algorithm.}
 }
 
+@inproceedings{le2025probe,
+  abbr={ICLR},
+  selected={true},
+  title={Probe Pruning: Accelerating LLMs through Dynamic Pruning via Model-Probing},
+  author={Le, Qi and Diao, Enmao and Wang, Ziyan and Wang, Xinran and Ding, Jie and Yang, Li and Anwar, Ali},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2025},
+  date={2025-01-23},
+  pdf={https://arxiv.org/abs/2502.15618},
+  code={https://github.com/Qi-Le1/Probe_Pruning},
+  abstract={We introduce Probe Pruning (PP), a novel framework for online, dynamic, structured pruning of Large Language Models (LLMs) applied in a batch-wise manner. PP leverages the insight that not all samples and tokens contribute equally to the model's output, and probing a small portion of each batch effectively identifies crucial weights, enabling tailored dynamic pruning for different batches. It comprises three main stages: probing, history-informed pruning, and full inference. In the probing stage, PP selects a small yet crucial set of hidden states, based on residual importance, to run a few model layers ahead. During the history-informed pruning stage, PP strategically integrates the probing states with historical states. Subsequently, it structurally prunes weights based on the integrated states and the PP importance score, a metric developed specifically to assess the importance of each weight channel in maintaining performance. In the final stage, full inference is conducted on the remaining weights. A major advantage of PP is its compatibility with existing models, as it operates without requiring additional neural network modules or fine-tuning. Comprehensive evaluations of PP on LLaMA-2/3 and OPT models reveal that even minimal probing-using just 1.5% of FLOPs-can substantially enhance the efficiency of structured pruning of LLMs. For instance, when evaluated on LLaMA-2-7B with WikiText2, PP achieves a 2.56 times lower ratio of performance degradation per unit of runtime reduction compared to the state-of-the-art method at a 40% pruning ratio.}
+}
+
 @inproceedings{wang2024map,
   abbr={ICLR},
   selected={true},
@@ -143,19 +158,6 @@
   pdf={https://arxiv.org/abs/2410.19198},
   code={https://github.com/wang8740/MAP},
   abstract={Ensuring that generative AI systems align with human values is essential but challenging, especially when considering multiple human values and their potential trade-offs. Since human values can be personalized and dynamically change over time, the desirable levels of value alignment vary across different ethnic groups, industry sectors, and user cohorts. Within existing frameworks, it is hard to define human values and align AI systems accordingly across different directions simultaneously, such as harmlessness, helpfulness, and positiveness. To address this, we develop a novel, first-principle approach called Multi-Human-Value Alignment Palette (MAP), which navigates the alignment across multiple human values in a structured and reliable way. MAP formulates the alignment problem as an optimization task with user-defined constraints, which define human value targets. It can be efficiently solved via a primal-dual approach, which determines whether a user-defined alignment target is achievable and how to achieve it. We conduct a detailed theoretical analysis of MAP by quantifying the trade-offs between values, the sensitivity to constraints, the fundamental connection between multi-value alignment and sequential alignment, and proving that linear weighted rewards are sufficient for multi-value alignment. Extensive experiments demonstrate MAP's ability to align multiple values in a principled manner while delivering strong empirical performance across various tasks.}
-}
-
-@inproceedings{le2025probe,
-  abbr={ICLR},
-  selected={true},
-  title={Probe Pruning: Accelerating LLMs through Dynamic Pruning via Model-Probing},
-  author={Le, Qi and Diao, Enmao and Wang, Ziyan and Wang, Xinran and Ding, Jie and Yang, Li and Anwar, Ali},
-  booktitle={International Conference on Learning Representations (ICLR)},
-  year={2025},
-  date={2025-01-23},
-  pdf={https://arxiv.org/abs/2502.15618},
-  code={https://github.com/Qi-Le1/Probe_Pruning},
-  abstract={We introduce Probe Pruning (PP), a novel framework for online, dynamic, structured pruning of Large Language Models (LLMs) applied in a batch-wise manner. PP leverages the insight that not all samples and tokens contribute equally to the model's output, and probing a small portion of each batch effectively identifies crucial weights, enabling tailored dynamic pruning for different batches. It comprises three main stages: probing, history-informed pruning, and full inference. In the probing stage, PP selects a small yet crucial set of hidden states, based on residual importance, to run a few model layers ahead. During the history-informed pruning stage, PP strategically integrates the probing states with historical states. Subsequently, it structurally prunes weights based on the integrated states and the PP importance score, a metric developed specifically to assess the importance of each weight channel in maintaining performance. In the final stage, full inference is conducted on the remaining weights. A major advantage of PP is its compatibility with existing models, as it operates without requiring additional neural network modules or fine-tuning. Comprehensive evaluations of PP on LLaMA-2/3 and OPT models reveal that even minimal probing-using just 1.5% of FLOPs-can substantially enhance the efficiency of structured pruning of LLMs. For instance, when evaluated on LLaMA-2-7B with WikiText2, PP achieves a 2.56 times lower ratio of performance degradation per unit of runtime reduction compared to the state-of-the-art method at a 40% pruning ratio.}
 }
 
 @inproceedings{wang2025aid,
@@ -370,6 +372,31 @@
   abstract={Classical change detection algorithms typically require modeling pre-change and post-change distributions. The calculations may not be feasible for various machine learning models because of the complexity of computing the partition functions and normalized distributions. Additionally, these methods may suffer from a lack of robustness to model mismatch and noise. In this paper, we develop a new variant of the classical Cumulative Sum (CUSUM) change detection, namely Score-based CUSUM (SCUSUM), based on Fisher divergence and the Hyvärinen score. Our method allows the applications of the quickest change detection for unnormalized distributions. We provide a theoretical analysis of the detection delay given the constraints on false alarms. We prove the asymptotic optimality of the proposed method in some particular cases. We also provide numerical experiments to demonstrate our method’s computation, performance, and robustness advantages.}
 }
 
+@inproceedings{collins2022perfedsi,
+  abbr={NeurIPS},
+  title={PerFedSI: A Framework for Personalized Federated Learning with Side Information},
+  author={Collins, Liam and Diao, Enmao and Roosta, Tanya and Ding, Jie and Zhang, Tao},
+  booktitle={Workshop on Federated Learning: Recent Advances and New Challenges (NeurIPS)},
+  year={2022},
+  date={2022-11-28},
+  pdf={https://openreview.net/forum?id=HRZjvFkX-faD},
+  abstract={With an ever-increasing number of smart edge devices with computation and communication constraints, Federated Learning (FL) is a promising paradigm for learning from distributed devices and their data. Typical approaches to FL aim to learn a single model that simultaneously performs well for all clients. But such an approach may be ineffective when the clients’ data distributions are heterogeneous. In these cases, we aim to learn personalized models for each client’s data yet still leverage shared information across clients. A critical avenue that may allow for such personalization is the presence of client-specific side information available to each client, such as client embeddings obtained from domain-specific knowledge, pre-trained models, or simply one-hot encodings. In this work, we propose a new FL framework for utilizing a general form of client-specific side information for personalized federated learning. We prove that incorporating side information can improve model performance for simplified multi-task linear regression and matrix completion problems. Further, we validate these results with image classification experiments on Omniglot, CIFAR-10, and CIFAR-100, revealing that proper use of side information can be beneficial for personalization.}
+}
+
+@inproceedings{le2022personalized,
+  abbr={Asilomar},
+  title={Personalized Federated Recommender Systems with Private and Partially Federated AutoEncoders},
+  author={Le, Qi and Diao, Enmao and Wang, Xinran and Anwar, Ali and Tarokh, Vahid and Ding, Jie},
+  booktitle={Asilomar Conference on Signals, Systems, and Computers},
+  pages={1157--1163},
+  year={2022},
+  date={2022-10-31},
+  organization={IEEE},
+  pdf={https://arxiv.org/abs/2212.08779},
+  code={https://github.com/diaoenmao/Personalized-Federated-Recommender-Systems-with-Private-and-Partially-Federated-AutoEncoders},
+  abstract={Recommender Systems (RSs) have become increasingly important in many application domains, such as digital marketing. Conventional RSs often need to collect users' data, centralize them on the server-side, and form a global model to generate reliable recommendations. However, they suffer from two critical limitations: the personalization problem that the RSs trained traditionally may not be customized for individual users, and the privacy problem that directly sharing user data is not encouraged. We propose Personalized Federated Recommender Systems (PersonalFR), which introduces a personalized autoencoder-based recommendation model with Federated Learning (FL) to address these challenges. PersonalFR guarantees that each user can learn a personal model from the local dataset and other participating users' data without sharing local data, data embeddings, or models. PersonalFR consists of three main components, including AutoEncoder-based RSs (ARSs) that learn the user-item interactions, Partially Federated Learning (PFL) that updates the encoder locally and aggregates the decoder on the server-side, and Partial Compression (PC) that only computes and transmits active model parameters. Extensive experiments on two real-world datasets demonstrate that PersonalFR can achieve private and personalized performance comparable to that trained by centralizing all users' data. Moreover, PersonalFR requires significantly less computation and communication overhead than standard FL baselines.}
+}
+
 @inproceedings{diao2022gal,
   abbr={NeurIPS},
   selected={true},
@@ -400,31 +427,6 @@
   pdf={https://arxiv.org/abs/2106.01432},
   code={https://github.com/diaoenmao/SemiFL-Semi-Supervised-Federated-Learning-for-Unlabeled-Clients-with-Alternate-Training},
   abstract={Federated Learning allows the training of machine learning models by using the computation and private data resources of many distributed clients. Most existing results on Federated Learning (FL) assume the clients have ground-truth labels. However, in many practical scenarios, clients may be unable to label task-specific data due to a lack of expertise or resource. We propose SemiFL to address the problem of combining communication-efficient FL such as FedAvg with Semi-Supervised Learning (SSL). In SemiFL, clients have completely unlabeled data and can train multiple local epochs to reduce communication costs, while the server has a small amount of labeled data. We provide a theoretical understanding of the success of data augmentation-based SSL methods to illustrate the bottleneck of a vanilla combination of communication-efficient FL with SSL. To address this issue, we propose alternate training to 'fine-tune global model with labeled data' and 'generate pseudo-labels with the global model.' We conduct extensive experiments and demonstrate that our approach significantly improves the performance of a labeled server with unlabeled clients training with multiple local epochs. Moreover, our method outperforms many existing SSFL baselines and performs competitively with the state-of-the-art FL and SSL results.}
-}
-
-@inproceedings{collins2022perfedsi,
-  abbr={NeurIPS},
-  title={PerFedSI: A Framework for Personalized Federated Learning with Side Information},
-  author={Collins, Liam and Diao, Enmao and Roosta, Tanya and Ding, Jie and Zhang, Tao},
-  booktitle={Workshop on Federated Learning: Recent Advances and New Challenges (NeurIPS)},
-  year={2022},
-  date={2022-11-28},
-  pdf={https://openreview.net/forum?id=HRZjvFkX-faD},
-  abstract={With an ever-increasing number of smart edge devices with computation and communication constraints, Federated Learning (FL) is a promising paradigm for learning from distributed devices and their data. Typical approaches to FL aim to learn a single model that simultaneously performs well for all clients. But such an approach may be ineffective when the clients’ data distributions are heterogeneous. In these cases, we aim to learn personalized models for each client’s data yet still leverage shared information across clients. A critical avenue that may allow for such personalization is the presence of client-specific side information available to each client, such as client embeddings obtained from domain-specific knowledge, pre-trained models, or simply one-hot encodings. In this work, we propose a new FL framework for utilizing a general form of client-specific side information for personalized federated learning. We prove that incorporating side information can improve model performance for simplified multi-task linear regression and matrix completion problems. Further, we validate these results with image classification experiments on Omniglot, CIFAR-10, and CIFAR-100, revealing that proper use of side information can be beneficial for personalization.}
-}
-
-@inproceedings{le2022personalized,
-  abbr={Asilomar},
-  title={Personalized Federated Recommender Systems with Private and Partially Federated AutoEncoders},
-  author={Le, Qi and Diao, Enmao and Wang, Xinran and Anwar, Ali and Tarokh, Vahid and Ding, Jie},
-  booktitle={Asilomar Conference on Signals, Systems, and Computers},
-  pages={1157--1163},
-  year={2022},
-  date={2022-10-31},
-  organization={IEEE},
-  pdf={https://arxiv.org/abs/2212.08779},
-  code={https://github.com/diaoenmao/Personalized-Federated-Recommender-Systems-with-Private-and-Partially-Federated-AutoEncoders},
-  abstract={Recommender Systems (RSs) have become increasingly important in many application domains, such as digital marketing. Conventional RSs often need to collect users' data, centralize them on the server-side, and form a global model to generate reliable recommendations. However, they suffer from two critical limitations: the personalization problem that the RSs trained traditionally may not be customized for individual users, and the privacy problem that directly sharing user data is not encouraged. We propose Personalized Federated Recommender Systems (PersonalFR), which introduces a personalized autoencoder-based recommendation model with Federated Learning (FL) to address these challenges. PersonalFR guarantees that each user can learn a personal model from the local dataset and other participating users' data without sharing local data, data embeddings, or models. PersonalFR consists of three main components, including AutoEncoder-based RSs (ARSs) that learn the user-item interactions, Partially Federated Learning (PFL) that updates the encoder locally and aggregates the decoder on the server-side, and Partial Compression (PC) that only computes and transmits active model parameters. Extensive experiments on two real-world datasets demonstrate that PersonalFR can achieve private and personalized performance comparable to that trained by centralizing all users' data. Moreover, PersonalFR requires significantly less computation and communication overhead than standard FL baselines.}
 }
 
 @article{wu2022score,
@@ -540,6 +542,20 @@
   abstract={Speech Emotion Recognition (SER) has emerged as a critical component of the next generation of human-machine interfacing technologies. In this work, we propose a new dual-level model that predicts emotions based on both MFCC features and mel-spectrograms produced from raw audio signals. Each utterance is preprocessed into MFCC features and two mel-spectrograms at different time-frequency resolutions. A standard LSTM processes the MFCC features, while a novel LSTM architecture, denoted as Dual-Sequence LSTM (DS-LSTM), processes the two mel-spectrograms simultaneously. The outputs are later averaged to produce a final classification of the utterance. Our proposed model achieves, on average, a weighted accuracy of 72.7% and an unweighted accuracy of 73.3% - a 6% improvement over current state-of-the-art unimodal models - and is comparable with multimodal models that leverage textual information as well as audio signals.}
 }
 
+@inproceedings{wu2020deep,
+  abbr={DCC},
+  title={Deep Clustering of Compressed Variational Embeddings},
+  author={Wu, Suya and Diao, Enmao and Ding, Jie and Tarokh, Vahid},
+  booktitle={Data Compression Conference (DCC)},
+  pages={399},
+  year={2020},
+  date={2020-03-24},
+  organization={IEEE},
+  pdf={https://arxiv.org/abs/1910.10341},
+  code={https://github.com/diaoenmao/Deep-Clustering-of-Compressed-Variational-Embeddings},
+  abstract={Motivated by the ever-increasing demands for limited communication bandwidth and low-power consumption, we propose a new methodology, named joint Variational Autoencoders with Bernoulli mixture models (VAB), for performing clustering in the compressed data domain. The idea is to reduce the data dimension by Variational Autoencoders (VAEs) and group data representations by Bernoulli mixture models (BMMs). Once jointly trained for compression and clustering, the model can be decomposed into two parts: a data vendor that encodes the raw data into compressed data, and a data consumer that classifies the received (compressed) data. In this way, the data vendor benefits from data security and communication bandwidth, while the data consumer benefits from low computational complexity. To enable training using the gradient descent algorithm, we propose to use the Gumbel-Softmax distribution to resolve the infeasibility of the back-propagation algorithm when assessing categorical samples.}
+}
+
 @inproceedings{diao2020drasic,
   abbr={DCC},
   title={DRASIC: Distributed Recurrent Autoencoder for Scalable Image Compression},
@@ -553,20 +569,6 @@
   code={https://github.com/diaoenmao/DRASIC-Distributed-Recurrent-Autoencoder-for-Scalable-Image-Compression},
   selected={true},
   abstract={We propose a new architecture for distributed image compression from a group of distributed data sources. The work is motivated by practical needs of data-driven codec design, low power consumption, robustness, and data privacy. The proposed architecture, which we refer to as Distributed Recurrent Autoencoder for Scalable Image Compression (DRASIC), is able to train distributed encoders and one joint decoder on correlated data sources. Its compression capability is much better than the method of training codecs separately. Meanwhile, the performance of our distributed system with 10 distributed sources is only within 2 dB peak signal-to-noise ratio (PSNR) of the performance of a single codec trained with all data sources. We experiment distributed sources with different correlations and show how our data-driven methodology well matches the Slepian-Wolf Theorem in Distributed Source Coding (DSC). To the best of our knowledge, this is the first data-driven DSC framework for general distributed code design with deep learning.}
-}
-
-@inproceedings{wu2020deep,
-  abbr={DCC},
-  title={Deep Clustering of Compressed Variational Embeddings},
-  author={Wu, Suya and Diao, Enmao and Ding, Jie and Tarokh, Vahid},
-  booktitle={Data Compression Conference (DCC)},
-  pages={399},
-  year={2020},
-  date={2020-03-24},
-  organization={IEEE},
-  pdf={https://arxiv.org/abs/1910.10341},
-  code={https://github.com/diaoenmao/Deep-Clustering-of-Compressed-Variational-Embeddings},
-  abstract={Motivated by the ever-increasing demands for limited communication bandwidth and low-power consumption, we propose a new methodology, named joint Variational Autoencoders with Bernoulli mixture models (VAB), for performing clustering in the compressed data domain. The idea is to reduce the data dimension by Variational Autoencoders (VAEs) and group data representations by Bernoulli mixture models (BMMs). Once jointly trained for compression and clustering, the model can be decomposed into two parts: a data vendor that encodes the raw data into compressed data, and a data consumer that classifies the received (compressed) data. In this way, the data vendor benefits from data security and communication bandwidth, while the data consumer benefits from low computational complexity. To enable training using the gradient descent algorithm, we propose to use the Gumbel-Softmax distribution to resolve the infeasibility of the back-propagation algorithm when assessing categorical samples.}
 }
 
 @inproceedings{diao2019restricted,
