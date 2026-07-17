@@ -344,7 +344,7 @@ ninja.data = [{
           section: "News",},{id: "news-think-before-you-prune-self-reflective-structured-pruning-for-reasoning-language-models-is-published-in-dac-2026",
           title: 'Think Before You Prune: Self-Reflective Structured Pruning for Reasoning Language Models is published...',
           description: "",
-          section: "News",},{id: "news-from-local-to-global-revisiting-structured-pruning-paradigms-for-large-language-models-is-published-in-acl-2026",
+          section: "News",},{id: "news-from-local-to-global-revisiting-structured-pruning-paradigms-for-large-language-models-is-published-in-acl-2026-outstanding-paper",
           title: 'From Local to Global: Revisiting Structured Pruning Paradigms for Large Language Models is...',
           description: "",
           section: "News",},{id: "news-obcache-optimal-brain-kv-cache-pruning-for-efficient-long-context-llm-inference-is-published-in-icml-2026-a-kinetic-energy-perspective-of-flow-matching-is-published-in-icml-2026-spotlight",
